@@ -1,2 +1,4 @@
-# cs480-projects.github.io
-CS480 course project website
+CS480 Projects
+=========================
+
+The site to show CS480 course projects.
