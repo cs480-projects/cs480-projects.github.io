@@ -1,0 +1,48 @@
+body {
+	background: #ff0000;
+	font-family: Arial, Helvetica;
+}
+
+#container
+{
+	background: #fff;
+}
+
+#header
+{
+	background: #961515;
+	padding: 10px;
+}
+
+#header h2
+{
+	color: #FAF20A;
+	margin: 0;
+}
+
+#header h3
+{
+	color: #FAF20A;
+	margin: 0;
+}
+
+#content
+{
+	clear: left;
+	padding: 10px;
+}
+
+#content h2
+{
+	color: #000;
+	font-size: 160%;
+	margin: 0 0 .5em;
+}
+
+#footer
+{
+	background: #961515;
+	color: #FAF20A;
+	text-align: right;
+	padding: 5px;
+}
