@@ -49,7 +49,7 @@ video#bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  background: url(mtwabp.jpg) no-repeat;
+  background: url(http://lewisalva.com/files/mtwabp/mtwabp.jpg) no-repeat;
   background-size: cover;
 }
 #overlay {
@@ -102,11 +102,11 @@ video#bgvid {
 <script>
 var visited = $.cookie('visited-mtwabp');
 var vid = document.getElementById("bgvid");
-if (visited === 'yes' || true) {
+if (visited === 'yes') {
   vid.muted = true;
   $('#overlay').show();
 } else {
-  $.cookie('visited-mtwabp', 'yes', { expires: 90, path: '/'});
+  $.cookie('visited-mtwabp', 'yes', { expires: 30, path: '/'});
   vid.onseeked = function() {
     vid.muted = true;
     $('#overlay').show();
