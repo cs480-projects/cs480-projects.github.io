@@ -69,13 +69,26 @@ video#bgvid {
 #right_column {
   float: right;
 }
+#skip {
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  width: 300px;
+  line-height: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
-<video autoplay loop poster="http://lewisalva.com/files/mtwabp/mtwabp.jpg" id="bgvid">
-  <source src="http://lewisalva.com/files/mtwabp/mtwabp.webm" type="video/webm" />
-  <source src="http://lewisalva.com/files/mtwabp/mtwabp.mp4" type="video/mp4" />
-</video>
+<section id="intro">
+  <div id="skip">
+    <a href="">Click here to skip</a>
+  </div>
+  <video autoplay loop poster="http://lewisalva.com/files/mtwabp/mtwabp.jpg" id="bgvid">
+    <source src="http://lewisalva.com/files/mtwabp/mtwabp.webm" type="video/webm" />
+    <source src="http://lewisalva.com/files/mtwabp/mtwabp.mp4" type="video/mp4" />
+  </video>
+</section>
 <section id="overlay" style="display:none">
   <header>
     <a href="https://github.com/MTWABP">Making the World a Better Place</a><br />
@@ -83,10 +96,9 @@ video#bgvid {
   </header>
   <article>
     <div class="column" id="right_column">
-      Projects:
-      <ul>
-        <li><a href="http://groog.me">Groog</a> - <a href="https://github.com/MTWABP/Groog">GitHub</a></li>
-      </ul>
+      Projects:<br />
+      <a href="http://groog.me"><img src="http://lewisalva.com/files/mtwabp/groog-logo.png" width="200" /></a><br />
+      <a href="https://github.com/MTWABP/Groog" style="font-size: 20px;">Groog on GitHub</a>
     </div>
     <div class="column">
       Members:
@@ -102,14 +114,19 @@ video#bgvid {
 <script>
 var visited = $.cookie('visited-mtwabp');
 var vid = document.getElementById("bgvid");
-if (visited === 'yes') {
+var showOverlay = function(ev) {
+  if (ev) ev.preventDefault();
+  $('#skip').hide();
   vid.muted = true;
   $('#overlay').show();
+}
+$('#skip').click(showOverlay);
+if (visited === 'yes') {
+  showOverlay();
 } else {
   $.cookie('visited-mtwabp', 'yes', { expires: 30, path: '/'});
   vid.onseeked = function() {
-    vid.muted = true;
-    $('#overlay').show();
+    showOverlay();
   };
 }
 </script>
