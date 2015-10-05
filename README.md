@@ -1,13 +1,13 @@
 CS480 Projects
 =========================
 
-The site to show CS480 course projects.
+The site to showcase all the CS480 student projects. We will keep this site maintained permanently, so make sure that you have a nice and professional team page here!
 
 
-Git Exercise 1 - Add Your Info in the Homepage
-==============================================
+Git Exercise 1 - Add Your Personal Info in the Homepage
+=======================================================
 
-For this exercise, please add a table row in the `index.html` page by following the format. 
+For this exercise, please add an HTML table row in the `teams-fall2015/index-fall2015.html` page by following the same format. 
 
 Once done, please check in your code and push to our Git repository. To push the changes, the command you will be using are:
 
@@ -41,10 +41,14 @@ If you can successfully push your code, go to `https://github.com/cs480-projects
 
 Also, your change will appear in our project site: `http://cs480-projects.github.io`
 
+And our class page is at: `http://cs480-projects.github.io/teams-fall2015/index-fall2015.html`
+
 Exercise 2 - Add Your Team Page
 ===============================
 
-Each team should add a simple team page in `teams/` folder and link it from the `index.html` page.
+Each team should add a simple team page in `teams-fall2015/` folder and link it from the `teams-fall2015/index-fall2015.html` page.
+
+Note: make sure that you create a folder for your team. You should NOT modify or change other teams' folders. 
 
 You don't have to spend a lot of effort to make the page pretty, but everyone in the team should contribute a little bit to this page.
 
@@ -52,4 +56,5 @@ Once done, you still need to push the code with the same set of instructions.
 
 If everything works, you should be able to see the changes in the project website `http://cs480-projects.github.io`
 
-  
+Again, our class page is at: `http://cs480-projects.github.io/teams-fall2015/index-fall2015.html`
+
