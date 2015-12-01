@@ -16,6 +16,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
+img {  
+  max-width: 600px;
+  max-height: 650px;
+}
 
 .container {
   margin: 0 auto;
@@ -30,7 +34,7 @@ header {
   text-align: center;
 }
 header:before {
-  background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7)), url("https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?q=80&fm=jpg&s=c895a1f219d174952415b9b7a0811e62");
+  background: linear-gradient(rgba(0, 235, 235, 0.7), rgba(0, 235, 235, 0.7)), url("logo.jpg");
   background-color: #CCCCCC;
   background-attachment: fixed;
   background-position: center center;
@@ -93,4 +97,3 @@ section p.lead-in:first-letter {
   line-height: .1;
   top: -0.200em;
 }
-
