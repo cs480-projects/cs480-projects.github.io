@@ -1,0 +1,75 @@
+html {
+	background: #000000 url(bgline.jpg) repeat-x top left;
+}
+body {
+	font-family: "Bitstream Vera Sans",Verdana,Arial,Helvetica,Sans,"Bitstream Vera Serif";
+	font-size: 1em;
+	width: 1024px;
+	height: 791px;
+	color: #feffb7;
+	background: #000000 url(bg.jpg) no-repeat scroll top left;
+	margin: 0px;
+}
+
+a {
+	color: #D3F1A8;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffffff;
+}
+
+#contain {
+	position: relative;
+	top: 25px;
+	left: 460px;
+	width: 520px;
+}
+
+.title {
+	font: 3em Georgia, "Times New Roman", Times, serif;
+	color: #78C553;
+	padding-top: 60px;
+}
+
+.menu {
+	height: 40px;
+}
+
+.bouquet {
+	position: relative;
+	top: 6px;
+}
+.bouquet img {
+	float: left;
+	clear: left;
+	margin-right: 1em;
+}
+
+* html .hollyhack {height: 1%; margin-top: -8px; margin-left: 2px;}
+
+.filler {
+	clear: left;
+	float: left;
+	width: 2em;
+	height: 150px;
+}
+
+h3 {
+	clear:both; 
+	margin:10px 0 10px 0; 
+	color:#9BD67C; 
+	font-weight:normal; 
+	font-size: 1.5em; 
+	letter-spacing:-2px;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	top: 20px;
+	padding-top: 3px;
+	border-top: 1px solid #cbcd65;
+	font-size: .75em;
+	text-align: right;
+}
