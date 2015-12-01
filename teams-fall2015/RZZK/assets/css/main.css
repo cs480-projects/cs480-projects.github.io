@@ -2453,11 +2453,11 @@
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 2em 0 2em 0;
 		}
 
 			.main.style3 .content > header {
-				margin-bottom: 2em;
+				margin-bottom: 1em;
 			}
 
 			.main.style3.primary {
