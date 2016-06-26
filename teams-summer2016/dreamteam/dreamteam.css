@@ -1,0 +1,45 @@
+body {
+    background-image: url("https://c2.staticflickr.com/4/3924/19273196175_5e183e2101_h.jpg");
+}
+
+#container
+{
+    background: #fff;
+}
+
+#header {
+    background: #005c27;
+    padding: 10px;
+}
+
+#header h2 {
+    color: #111;
+    margin: 0px;
+}
+
+#header h3 {
+    color: #000;
+    margin: 0px;
+}
+
+#content {
+    clear: left;
+    padding: 10px;
+}
+
+#content h2 {
+    color: #000;
+    font-size: 160%;
+    margin: 0 0 .5em;
+}
+
+#footer {
+    background: #005c27;
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+}
+
+#footer a {
+    color: #fff;
+}
