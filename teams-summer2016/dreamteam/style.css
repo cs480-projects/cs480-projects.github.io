@@ -1,35 +1,56 @@
 body {
-    background: #24C0EB;
-    font-family: Arial, Helvetica;
+    background-image: url("https://c2.staticflickr.com/4/3924/19273196175_5e183e2101_h.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    font-family: Georgia, Helvetica;
 }
 
-#container
-{
-    background: #fff;
-}
 
 #header
 {
-    background: #005c27;
     padding: 10px;
 }
 
 #header h2
 {
-    color: #ffffff;
+    color: #fff;
     margin: 0;
+	font-size: 44px;
+	text-shadow: 4px 4px #111;
+	text-align: center;
 }
 
 #header h3
 {
-    color: #ffffff;
+    color: #fff;
     margin: 0;
+	font-size: 24px;
+	text-shadow: 2px 2px #111;
+	text-align: center;
+
 }
 
 #content
 {
     clear: left;
     padding: 10px;
+}
+
+#intro-graph 
+{
+	height: 370px;
+	padding-top: 0px;
+	text-align: center;
+
+}
+
+p {
+	color: #333;
+}
+
+.credit {
+	font-size: 12px;
+	text-align: center;
 }
 
 #content h2
@@ -41,10 +62,9 @@ body {
 
 #footer
 {
-    background: #005c27;
     color: #fff;
     text-align: right;
-    padding: 5px;
+    padding: 1px 15px 1px;
 }
 
 #footer a
