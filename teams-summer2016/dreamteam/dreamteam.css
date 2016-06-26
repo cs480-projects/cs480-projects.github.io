@@ -1,5 +1,6 @@
 body {
-    background-image: url("https://c2.staticflickr.com/4/3924/19273196175_5e183e2101_h.jpg");
+    background: #FFAC90;
+    font-family: Arial, Helvetica;
 }
 
 #container
@@ -7,39 +8,66 @@ body {
     background: #fff;
 }
 
-#header {
+#header
+{
     background: #005c27;
     padding: 10px;
 }
 
-#header h2 {
-    color: #111;
-    margin: 0px;
+#header h2
+{
+    color: #ffffff;
+    margin: 0;
 }
 
-#header h3 {
-    color: #000;
-    margin: 0px;
+#header h3
+{
+    color: #ffffff;
+    margin: 0;
 }
 
-#content {
+#content
+{
     clear: left;
     padding: 10px;
 }
 
-#content h2 {
+#content h2
+{
     color: #000;
     font-size: 160%;
     margin: 0 0 .5em;
 }
 
-#footer {
+#footer
+{
     background: #005c27;
     color: #fff;
     text-align: right;
     padding: 5px;
 }
 
-#footer a {
+#footer a
+{
     color: #fff;
+}
+
+table, td
+{
+    border: 1px solid #C0C0C0;
+}
+
+.auto-style1 {
+    color: #808080;
+}
+.auto-style2 {
+    color: #000000;
+    background-color: #FFAB61;
+}
+.auto-style3 {
+    background-color: #FFAB61;
+}
+.auto-style4 {
+    font-weight: bold;
+    background-color: #9DEDF3;
 }
