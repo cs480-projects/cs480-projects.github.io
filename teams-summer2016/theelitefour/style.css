@@ -1,6 +1,8 @@
-body {
+body
+ {
     background: #FFAC90;
     font-family: Arial, Helvetica;
+	background-color:lightgreen;
 }
 
 #container
@@ -10,8 +12,12 @@ body {
 
 #header
 {
+	
     background: #005c27;
-    padding: 10px;
+    width:100%;
+	top:0;
+
+
 }
 
 #header h2
@@ -40,11 +46,14 @@ body {
 }
 
 #footer
-{
+{   position:absolute;
     background: #005c27;
     color: #fff;
-    text-align: right;
-    padding: 5px;
+    text-align:left;
+    left:0px;
+	bottom:0px;
+	width:100%;
+	
 }
 
 #footer a
