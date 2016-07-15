@@ -1,16 +1,21 @@
 body {
-    background: #FFFFFF;
-    font-family: Arial, Helvetica;
+
+    background-image: url("http://i.imgur.com/PXzIsJx.jpg");
+    background-color: #cccccc;
+    //background: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #container
 {
-    background: #FFFFFF;
+    //background: #FFFFFF;
 }
 
 #header
 {
-    background: #5cabc8;
+    //background: #5cabc8;
     padding: 10px;
 }
 
@@ -41,7 +46,7 @@ body {
 
 #footer
 {
-    background: #5cabc8;
+    //background: #5cabc8;
     color: #fff;
     text-align: right;
     padding: 5px;
@@ -49,7 +54,7 @@ body {
 
 #footer a
 {
-    color: #fff;
+    color: #cc0000;
 }
 
 table, td
