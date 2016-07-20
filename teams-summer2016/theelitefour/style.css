@@ -79,7 +79,7 @@ img.aligncenter {
 #logo {
 	margin: 0 0 30px 0;
 	padding: 0;
-	color: #D4A817;
+	color: #D17804;
 }
 
 #logo h1, #logo p {
@@ -103,7 +103,7 @@ img.aligncenter {
 	border: none;
 	background: none;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #D17804;
 }
 
 /* Search */
@@ -135,7 +135,6 @@ img.aligncenter {
 	background: #636900;
 	line-height: 35px;
 	letter-spacing: 1px;
-	text-transform: lowercase;
 	font-family: 'Abel', sans-serif;
 	font-size: 16px;
 	color: #FFFFFF;
@@ -212,7 +211,6 @@ img.aligncenter {
 .post .title {
 	padding-bottom: 20px;
 	letter-spacing: -1px;
-	text-transform: lowercase;
 	color: #FFFFFF;
 }
 
