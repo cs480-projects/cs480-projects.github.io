@@ -79,7 +79,7 @@ img.aligncenter {
 #logo {
 	margin: 0 0 30px 0;
 	padding: 0;
-	color: #FFFFFF;
+	color: #D4A817;
 }
 
 #logo h1, #logo p {
@@ -169,7 +169,6 @@ img.aligncenter {
 	margin-right: 1px;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
-	text-transform: lowercase;
 	font-family: 'Abel', sans-serif;
 	font-size: 18px;
 	font-weight: normal;
