@@ -1,8 +1,8 @@
 body {
 
     background-image: url("http://i.imgur.com/PXzIsJx.jpg");
+    background-size:cover;
     background-color: #cccccc;
-    //background: #FFFFFF;
     font-family: "Times New Roman", Times, serif;
     font-size: 25px;
     font-weight: bold;
@@ -10,12 +10,10 @@ body {
 
 #container
 {
-    //background: #FFFFFF;
 }
 
 #header
 {
-    //background: #5cabc8;
     padding: 10px;
 }
 
