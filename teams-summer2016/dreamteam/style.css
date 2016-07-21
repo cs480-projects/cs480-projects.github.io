@@ -64,6 +64,7 @@ a {
 	color: #fff;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 980px) {
 	#content {
 		margin: 5px;
@@ -77,3 +78,7 @@ a {
 }
 }
 
+||||||| merged common ancestors
+
+=======
+>>>>>>> fb16f36aaa5703bf1959c8ce10ab1e1d155289ba
