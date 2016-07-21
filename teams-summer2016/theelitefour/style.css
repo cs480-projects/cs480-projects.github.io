@@ -79,7 +79,7 @@ img.aligncenter {
 #logo {
 	margin: 0 0 30px 0;
 	padding: 0;
-	color: #D10240;
+	color: #10E0A2;
 }
 
 #logo h1, #logo p {
@@ -103,7 +103,7 @@ img.aligncenter {
 	border: none;
 	background: none;
 	text-decoration: none;
-	color: #D10240;
+	color: #10E0A2;
 }
 
 /* Search */
@@ -345,12 +345,12 @@ img.aligncenter {
 	line-height: normal;
 	text-align: center;
 	font-size: 12px;
-	color: #D10240;
+	color: #10E0A2;
 }
 
 #footer a {
 	text-decoration: underline;
-	color: #D10240;
+	color: #10E0A2;
 }
 
 #about {
