@@ -12,22 +12,36 @@
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">DevSpecs</a>
+              <a class="navbar-brand" href="#" id="home">DevSpecs</a>
             </div>
             <ul class="nav navbar-nav">
-              <li id="prodlist" class="active"><a href="#" id="products">Products</a></li>
+              <li id="prodlist"><a href="#" id="products">Products</a></li>
               <li id="devlist"><a href="#" id="developers">Developers</a></li>
             </ul>
           </div>
         </nav>
         <div class="container">
+            <img src="panoramaoverlay.png" class="leadImage">
             <div class="jumbotron dark" id="mainContent">
-                <h2>Welcome</h2>
+                <h2>DevSpecs</h2>
+                More and more, games are taking over schools, but those schools are not embracing the change (with the exception of UC Irvine). We at DevSpecs think schools should do more to build resources for gamers within the classroom. Our primary mission is to build services for game centered interactions at schools.
             </div>
         </div>
 
     </body>
     <script>
+        $('#home').click(function(e){
+            e.preventDefault();
+            $('#prodlist').attr('class', "");
+            $('#devlist').attr('class', "");
+            $('#mainContent').html(`
+                <h2>DevSpecs</h2>
+
+                More and more, games are taking over schools, but those schools are not embracing the change (with the exception of UC Irvine). We at DevSpecs think schools should do more to build resources for gamers within the classroom. Our primary mission is to build services for game centered interactions at schools.
+            `);
+
+            return false;
+        })
         $('#products').click(function(e){
             e.preventDefault();
             $('#prodlist').attr('class', "active");

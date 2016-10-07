@@ -7,3 +7,7 @@ body {
     color: #c0c0c0;
     background-color: #000;
 }
+
+.leadImage {
+    width: 100%;
+}
