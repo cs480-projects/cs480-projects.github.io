@@ -23,16 +23,17 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class = "navbar navbar-inverse" role = "navigation">
+        <nav class = "navbar navbar-inverse navbar-static-top" role = "navigation">
+            <div class="container">
                 <div class = "navbar-header">
                     <a class = "navbar-brand" href = "#">SoundsNeat</a>
                 </div>
 
                 <div>
                     <ul class = "nav navbar-nav">
-                        <li class = "active"><a href = "#">Problem</a></li>
-                        <li><a href = "#">Features</a></li>
+                        <li class = "active"><a href = "#Project">Problem</a></li>
+                        <li><a href = "#Features">Features</a></li>
+                        <li><a href = "https://github.com/orgs/SoundsNeat/dashboard" target="_blank">Source Code</a></li>
                         <li class = "dropdown">
                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
                                 Members
@@ -47,22 +48,108 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-    <div class="container">
+    <div id="mainTitle" class = "container">
+        <div class = "jumbotron">
+            <h1>Welcome to SoundsNeat!</h1>
+            <p>Explore our humble project here.</p>
+        </div>
+    </div>
+    <div id="Project" class="container">
         <div class="row">
             <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                Will do later.
+                <h3>Problem Overview</h3>
+                <p>
+                    Have you ever driven around the country and wonder whether the area that you are currently in safe?
+                </p>
+                <p>
+                    Have you ever got lost and wonder whether this is safe?
+                </p>
+                <p>
+                    Would a service which can tell you the answer straight away without reading all the statistics be wonderful?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img src = "http://2.bp.blogspot.com/-rXbs8VzHf5s/UPWrQ1XT0GI/AAAAAAAAJgM/P7hVa-lHXZU/s1600/2+bogota+colombia+calle+en+la+noche+night+time+street.JPG"
+                     class = "img img-responsive img-rounded" alt="Sketchy Neighborhoood">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>The solution is here!</h3>
+                <p>
+                    "Am I Safe Here?" web service is coming up!!!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="Features" class="container">
+        <div class="row">
+            <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>Features!!!</h3>
+                <ol class="list-style">
+                    <li>
+                        <p class="text-info">
+                            Get your current location via
+                            <strong> HTML5 Geolocation </strong>
+                            and uses crime statistics to determine
+                            <em> the city </em>
+                            you are in is safe!!
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-info">
+                            Improve the <em> the city </em> feature &amp;
+                            Focus on the <em>Neighborhood</em>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-info">
+                            <strong>Globalize </strong>
+                            the feature to other countries...
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-info">
+                            <strong>Navigation System </strong>
+                            with
+                            <em>safest routes</em>
+                        </p>
+                    </li>
+                </ol>
+
+
+
+
             </div>
         </div>
     </div>
 
+    <nav class = "navbar navbar-inverse navbar-static-bottom" role = "footer">
+        <div class="container">
+            <div class = "col col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <span class="text-warning text-left">&#169; CopyRight 2016</span>
+            </div>
+
+            <div class = "col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <p class="text-info text-left"><strong>Disclaimer:</strong>
+                    <br/>
+                    Any Images used is found on Google.
+                </p>
+            </div>
+            <div class = "col col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+        </div>
+    </nav>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
