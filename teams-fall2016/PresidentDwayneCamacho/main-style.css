@@ -1,0 +1,186 @@
+/* CSS Main Style */
+
+/* Header Property */
+body {
+	background-color: lightBlue;
+}
+h1 {
+	background-color: #FCDF87;
+}
+h2 {
+	padding: 5px;
+	color: white;
+	background-color: blue;
+	width: 50%
+}
+em {
+	font-weight: 700;
+	color: red;
+}
+div.project {
+	border: 5px solid blue;
+	min-height: 100px;
+	max-width: 50%;
+}
+
+
+p.border1{border: 10px solid red;}
+p.border2{
+	border-style: solid;
+	border-width: 5px;
+	border-color: green; /* name */
+}
+p.border3{
+	border-style: solid;
+	border-width: 5px;
+	border-color: #FF6600; /* hex */
+}
+p.border4{
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(0,153,153); /* rgb */
+}
+p.border5{border-style: dotted;}
+p.border6{border-style: dashed;}
+p.border7{border-style: double;}
+p.border8{border-style: groove;}
+p.border9{border-style: ridge;}
+p.border10{border-style: inset;}
+p.border11{border-style: outset;}
+p.border12{border-style: hidden;}
+p.border13{border-left-style: solid;}
+p.border14{border-top-style: solid;}
+p.border15{border-right-style: solid;}
+p.border16{border-bottom-style: solid;}
+p.border17{
+	border-top-style: dashed;
+	border-left-style: solid;
+	border-right-style: ridge;
+	border-bottom-style: dotted;
+	border-top-width: 7px;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 10px;
+	border-top-color: yellow;
+	border-left-color: red;
+	border-right-color: blue;
+	border-bottom-color: green;
+}
+
+/* Width and Height Property */
+div.div1{
+	border: 5px solid green;
+	width: 290px;
+	height: 90px;
+}
+div.div2{
+	border: 5px solid green;
+	width: 75%;
+	height: 90px;
+}
+div.div3{
+	border: 5px solid blue;
+	min-height: 100px;
+}
+div.div4{
+	border: 5px solid blue;
+	max-width: 25%;
+}
+
+/* Background-color Property */
+div.div5{
+	border: 5px solid blue;
+	max-width:35%;
+	background-color: #87CEFA;
+}
+p.divp1{background-color: #FACE87;}
+p.divp2{background-color: #CE87FA;}
+
+/* Background-image Property */
+div.div6{
+	border: 5px solid black;
+	min-height: 200px;
+	max-width: 50%;
+	background-image: url("css_logo.jpg");
+}
+
+/* Background-repeat Property */
+div.div7{
+	border: 5px solid orange;
+	min-height: 200px;
+	max-width: 50%;
+	background-image: url("css_logo.jpg");
+	background-repeat: repeat-x;
+}
+div.div8{
+	border: 5px solid lime;
+	min-height: 200px;
+	max-width: 50%;
+	background-image: url("css_logo.jpg");
+	background-repeat: repeat-y;
+}
+div.div9{
+	border: 5px solid lightBlue;
+	min-height: 200px;
+	max-width: 50%;
+	background-image: url("css_logo.jpg");
+	background-repeat: no-repeat;
+}
+
+/* Background-attachment Property */
+div.div10{
+	border: 5px solid lightGray;
+	min-height: 200px;
+	max-width: 25%;
+	background-image: url("css_logo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* List-style-type Property */
+ol.olmarker1{ list-style-type: lower-alpha; }
+ol.olmarker2{ list-style-type: circle; }
+ol.olmarker3{ list-style-type: square; }
+ol.olmarker4{ list-style-type: decimal; }
+ol.olmarker5{ list-style-type: disc; }
+ol.olmarker6{ 
+	list-style-type: disc;
+	list-style-position: inside;
+}
+ol.olmarker7{ 
+	list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+	list-style-position: inside;
+}	
+
+/* Table Property */
+table.tbl1{
+	border-collapse: separate;
+	border-spacing: 20px 40px;
+	caption-side: top;
+}
+table.tbl2{
+	caption-side: top;
+	border-collapse: separate;
+	empty-cells: show;
+}
+table.tbl3{
+	caption-side: bottom;
+	border-collapse: separate;
+	empty-cells: hide;
+}
+table.tbl3{
+	caption-side: bottom;
+	border-collapse: separate;
+	table-layout: fixed;
+}
+
+/* Link Properties*/
+a:link { 
+	color: lightBlue; 
+	text-decoration: none;
+	border: none; /* Remove border on image links */
+	outline: none; /* Remove dotted border in IE */
+}
+a:visited { color: green; }
+a:hover { color: darkblue; text-decoration: underline; }
+a:active { color: red; }
