@@ -1,0 +1,289 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300';
+
+ body {
+    overflow-x: hidden;
+ }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#webheads-brand {
+    margin-top: 50px;
+    width: 100px;
+    height: auto;
+}
+
+#title-brand {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.first-diamonds {
+    margin-top: 170px;
+    margin-bottom: 45px;
+}
+
+.second-diamonds {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 300px;
+    width: 0;
+    height: 100%;
+    margin-left: -300px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 300px;
+}
+
+.follow-us {
+    width: 10px;
+    height: auto;
+}
+
+.footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.bg1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("http://i.imgur.com/Um73DLk.jpg");
+}
+
+.bg2 {
+    background-color: #353535;
+}
+
+#wrapper.toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -300px;
+}
+
+.center-align {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.full-width {
+    width: 90%;
+}
+
+.page-content-wrapper h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.page-content-wrapper h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.page-content-wrapper p {
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.page-content-wrapper .diamonds {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 7px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.page-content-wrapper button {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: transparent;
+    border-radius: 0;
+    -webkit-transition: background-color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-content-wrapper button:hover {
+    background-color: white;
+    border-radius: 0;
+    color: black;
+}
+
+.team-member {
+    float: left;
+    margin-right: 30px;
+    width: 175px;
+    text-align: center;
+}
+
+.member-name {
+    margin-top: 25px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.member-link {
+    width: 20px;
+    height: auto;
+}
+
+.no-rmargin {
+    margin-right: 0;
+}
+
+.member-pic {
+    border-radius: 50%;
+    width: 175px;
+    height: auto;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+}
+
+.sidebar-nav .diamonds {
+    font-size: 7px;
+    letter-spacing: 5px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #999999;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    /*background: rgba(255,255,255,0.2);*/
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 300px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 300px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    .page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
