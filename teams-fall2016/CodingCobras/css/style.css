@@ -4,7 +4,7 @@ body {
 }
 
 .nav {
-    height: 50px;
+    height: 60px;
     width: 100%;
     background: white;
     box-shadow: 0px 0px 5px #ccc;
@@ -19,7 +19,7 @@ body {
 }
 
 .nav-logo > img {
-    height: 40px;
+    height: 60px;
 }
 
 .nav-logo > span {
