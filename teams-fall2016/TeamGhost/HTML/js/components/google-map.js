@@ -27,12 +27,12 @@ var GoogleMap = function() {
             }];
 
             // Create a map object and specify the DOM element for display.
-            var NewYork = new google.maps.LatLng(41.850, -73.961);
+            var NewYork = new google.maps.LatLng(34.058929, -117.818898);
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: NewYork,
                 styles: styleArray,
                 scrollwheel: false,
-                zoom: 6,
+                zoom: 16,
                 streetViewControl: false,
                 mapTypeControl: false,
                 zoomControl: false,
