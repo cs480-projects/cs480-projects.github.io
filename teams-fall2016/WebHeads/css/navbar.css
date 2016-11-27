@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+/* Navbar Defaults */
+.navbar {
+    margin-bottom: 0;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    border: 0;
+    transition-duration: .5s;
+}
+
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+/* Brand */
+.navbar-default .navbar-brand {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    -webkit-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #A8E0A3;
+}
+
+/* Navbar right links */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    transition: 0.5s color ease;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.navbar-default .navbar-nav > li > a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    bottom: -0.25em;
+    height: 5px;
+    height: 0.35rem;
+    width: 0;
+    background: #2C3145;
+}
+
+.navbar-default .navbar-nav > li > a.mid-cen-line:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #E3E59A;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a.after:hover:after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-brand,
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
