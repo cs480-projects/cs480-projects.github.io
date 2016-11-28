@@ -1,6 +1,6 @@
 body {
     background-color: #353535;
-    background-Image: URL(Images/Grey-Gradient-Texture.gif);
+    background-Image: URL(https://images.freecreatives.com/wp-content/uploads/2015/04/dark-gray.jpg);
 }
 
 #home {
@@ -10,6 +10,7 @@ body {
 .dark {
     color: #ebf5ff;
     margin:0;
+    padding-top:2em;
 
 
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c2f35+0,222428+100 */
@@ -25,6 +26,7 @@ body {
     width: 100%;
     border-radius:1em 1em 0em 0em;
 }
+
 
 .container {
     padding:0;
