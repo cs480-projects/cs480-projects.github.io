@@ -1,127 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>equipo-dev</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    body { 
-  background: url(Groups_Individual.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: rgb(255,151,17);
-}
+  <head>
 
-
-    p {
-      font-size: 150%;
-    }
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    .navbar-inverse .navbar-brand {
-      padding: 0;
-    }
-    .navbar-inverse .navbar-brand img{
-    	height: 50px;
-    	width: 50px;
-    	padding: 0;
-    }
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="EquipoLogo.png"/></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      </ul>
-    </div>
-  </div>
-</nav>
+    <title>Equipo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+  </head>
   
-<div class="container-fluid text-center">
-  <div class="row content">
-
-    <div class="col-sm-8 text-left">
-      <h1>Welcome to equipo-dev!</h1>
-      <p style="te">Equipo is a tool to help distribute experience among project groups. Currently, it is in 
-        development for use in future CS480 courses, but we eventually hope to let any professor in 
-        Cal Poly Pomona use it to help create diverse groups.</p>
-		
-    </div>
-  </div>
-</div>
-<section>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <h1 class="section-heading">Why Equipo?</h1>
-                    
-                    <p class="section-paragraph">During our time as students, we have noticed that when we are assigned a group project
-					one of three things happen:<br/>
-					<br/>
-					1. Friends stick with friends<br/>
-					2. People with the similar knoweledge group up<br/>
-					3. People get into groups without knowing the skill sets of the other people in the group.<br/>
-					<br/>
-					By generating groups based on skill levels and personalities, we will create an ideal group environment where everyone
-					can learn a lot. 
-					</p>
-                </div>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand nav-link active" href="#Home">Home</a>
+          </div>
+          
+          <div class="collapse navbar-collapse breadcrumb-default" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="nav-link active" href="#About">About</a></li>
+                <li><a class="nav-link active" href="#Equipo">Equipo!</a></li>
+                <li><a class="nav-Link active" href="#Developers">Developers</a></li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="jumbotron" id="Home">
+      <div class="container text-center" style="padding-top: 40px;">
+        <h1>Welcome to Equipo!</h1>
+          <img src="img/EquipoLogo.png" alt="Logo" height="30%" width="30%" class="img-circle" style="display:inline">      
+        <h2>Lets get started</h2>
+      </div>
+    </div>
+    
+    <div data-spy="scroll" data-target= "#myNavBar" dataoffest="0">
+      <div class="container-fluid bg-1 text-center" id="About">
+        <div class="row">
+          
+          <div class="col-sm-8 text-left">
+            <h1>What IS Equipo?</h1>
+            <p style="font-size: 18px">
+              Equipo is a tool to help distribute experience among project groups. Currently, it is in development for use in future CS480 courses, but we eventually hope to let any professor in Cal Poly Pomona use it to help create diverse groups.
+            </p>
+          </div>
+          <div class="col-sm-4 center">
+            <img src="img/question.png" at="ideaLogo" style="position: center;padding: 20px; margin-right: -10em; margin-bottom: -10em; height: 90%; width: 90%">
+          </div>  
+        </div>
+      </div>
+
+      <div class="container-fluid bg-2 text-center" id="Equipo">
+        <div class="row">
+          <div class="col-sm-8 text-left">
+            <h2>Why Equipo?</h2>
+            <p>During our time as students, we have noticed that when we are assigned a group project one of three things happen:</p>
+            <div class="container-nested-fluid text-center">
+              <ol type="1" >
+                <li> Friends stick with friends</li>
+                <li> People with the similar knoweledge group up</li>
+                <li> People form groups without knowing the skill sets of other individuals.</li>         
+              </ol>
+            </div>
+            <p>By generating groups based on skill levels and personalities, we will create an ideal group environment where everyone can learn a lot.</p>
+            <div class="container-nested-fluid text-center">
+              <a class="btn btn-primary btn-lg">Page Under Construction</a>
             </div>
         </div>
-    </section>
+        <div class="col-sm-4 center">
+          <img src="img/idea.png" alt="whyLogo" style="position: center; padding: 20px; margin-right: -10em; margin-bottom: -10em;background-size:auto">
+        </div>
+        
+      </div>
+      
+    </div>
 
+    <div class="container-fluid bg-3 text-center" id="Developers">
+      <h2>About Us</h2>
+      <div class="row">
+          <div class="col-sm-3">
+           
+            <img src="img/EquipoLogo.png" alt="profile-img" height="100px" width="100px" class="img-circle">
+              <p>Fanny Avila</p>
+          </div>
+          <div class="col-sm-3">
+              <img src="img/EquipoLogo.png" alt="profile-img" height="100px" width="100px" class="img-circle">
+              <p>Elinor Huntington</p>
+          </div>
+          <div class="col-sm-3">    
+            <img src="img/EquipoLogo.png" alt="profile-img" height="100px" width="100px" class="img-circle">
+            <p>Christian Garcia</p>
+          </div>
+          <div class="col-sm-3">          
+            <img src="img/EquipoLogo.png" alt="profile-img" height="100px" width="100px" class="img-circle">
+            <p>Prasanthi Bhavana</p>
+          </div>
+        </div>
+      </div>
+  </body>
 
-
-
-</body>
 </html>
-
