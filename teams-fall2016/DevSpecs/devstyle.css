@@ -1,13 +1,89 @@
 body {
     background-color: #353535;
+    background-Image: URL(https://images.freecreatives.com/wp-content/uploads/2015/04/dark-gray.jpg);
+}
 
+#home {
+    color: #ebf5ff;
 }
 
 .dark {
-    color: #c0c0c0;
-    background-color: #000;
+    color: #ebf5ff;
+    margin:0;
+    padding-top:2em;
+
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c2f35+0,222428+100 */
+    background: rgb(44,47,53); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(44,47,53,1) 0%, rgba(34,36,40,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(44,47,53,1) 0%,rgba(34,36,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(44,47,53,1) 0%,rgba(34,36,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2f35', endColorstr='#222428',GradientType=0 ); /* IE6-9 */
+
 }
 
 .leadImage {
     width: 100%;
+    border-radius:1em 1em 0em 0em;
+}
+
+
+.container {
+    padding:0;
+    margin-bottom: 3em;
+    border-radius: 0em 0em 1em 1em;
+
+    -webkit-box-shadow: 0px 0px 24px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 6px rgba(0,0,0,0.75);
+}
+
+.container-fluid {
+    -webkit-box-shadow: 0px -20px 24px 23px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -20px 24px 23px rgba(0,0,0,0.75);
+    box-shadow: 0px -20px 24px 23px rgba(0,0,0,0.75);
+    z-index:10;
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b3d47+25,2a2b33+100 */
+    background: #3b3d47; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #3b3d47 25%, #2a2b33 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #3b3d47 25%,#2a2b33 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #3b3d47 25%,#2a2b33 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3d47', endColorstr='#2a2b33',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(143, 147, 165, 0.44);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: rgba(102, 102, 102, 0.17);
+  border: 52px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
