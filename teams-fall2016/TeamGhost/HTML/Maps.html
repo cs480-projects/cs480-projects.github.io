@@ -3,26 +3,60 @@
 <!DOCTYPE html>
 <html>
 <body>
-
 <script src="Maps.js"></script>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"><strong>Filter Your Search!</strong></button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#" id="Bathrooms"><strong>Bathrooms</strong></a>
-    <a href="#"><strong>Water Stations</strong></a>
-    <a href="#" id="Microwaves"><strong>Microwaves</strong></a>
-  </div>
-</div>
+<title>UFinder</title>
+
+
+
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#news" style="padding: 10px 220px; font-size: 23px;" id="coverName">Cal Poly Pomona Campus Maps</a></li>
+  <li style="float:right">
+		  <button onclick="myFunction()" class="dropbtn"><strong>Filter Your Search!</strong></button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#" id="Bathrooms" class="test"><strong>Bathrooms</strong></a>
+		    <a href="#" id="WaterStations"><strong>Water Stations</strong></a>
+		    <a href="#" id="Microwaves"><strong>Microwaves</strong></a>
+		</div>
+		</li>
+</ul>
+
+
+
+
 
 <h1>
 	<style>
-		body {background-color: #FFFED3;}
-		h1   {color: #13640E; text-shadow: 1px 1px yellow; font-size: 45px;}
+		body {background-color: #B7B7B7;}
 	</style>
-	Cal Poly Pomona Campus Map
 </h1>
 
-<div id="map" style="width:65%;height:500px; outline: #ffffff solid thick;"></div>
+<div id="map" style="width:65%;height:80%; outline: #C2B943 solid thick; margin: 0 auto;"></div>
+
+<!-- THIS IS THE MODAL CODE -->
+<div id="myModal" class="modal">
+
+  <!-- ITS CONTENT -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">x</span>
+      <h2>Building 8</h2>
+    </div>
+    <div class="modal-body">
+      <h3>All Bathrooms Within Building 8</h3>
+            <center><img id = "image" src="http://www.oakleymotorsports.com/wp-content/uploads/2016/02/22520129_l.jpg"
+                     alt="" width="400" height="320"></img></center>
+
+    </div>
+    <div class="modal-footer">
+      <h3>Bathrooms</h3>
+    </div>
+  </div>
+
+</div>
+
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <script src="myscripts.js"></script>
