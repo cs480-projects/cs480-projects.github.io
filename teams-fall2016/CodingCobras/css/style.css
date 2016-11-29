@@ -24,7 +24,7 @@ body {
 }
 
 .nav-logo > img {
-    height: 60px;
+    height: 45px;
 }
 
 .nav-logo > span {
@@ -196,4 +196,38 @@ body {
 
 .logo {
     width: 100px;
+}
+
+.section.screenshots {
+    background: #525c63;
+    height: auto;
+}
+
+.screenshot {
+    background: #525c63;
+}
+
+.screenshot > img {
+    width: 100%;
+}
+
+.screenshot-divider {
+    height: 50px;
+    background: #525c63;
+}
+
+.section.slides {
+    background: #525c63;
+    height: auto;
+}
+
+.slides-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.slides-frame {
+    width: 640px;
+    height: 480px;
 }
