@@ -100,6 +100,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b5059', end
 
 }
 
+#UGLogo {
+  animation:up-and-down 1s infinite ease;
+  animation-direction:alternate;
+}
+
+@keyframes up-and-down {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -10px);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 2px;
