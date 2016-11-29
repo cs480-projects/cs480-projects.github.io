@@ -194,7 +194,7 @@ ul.navbar-nav li a:focus { background: none; color: #2ba560; outline: 0; }
 .navbar-brand {
 	width: 117px;
 	height: 66px;
-	background: url(../img/logo.png) left center no-repeat;
+	background: url(../img/mlogo.png) left center no-repeat;
 	text-indent: -99999px;
 }
 
@@ -262,30 +262,6 @@ ul.navbar-nav li a:focus { background: none; color: #2ba560; outline: 0; }
 
 .block-3-box .block-3-box-icon i, .block-3-box .block-3-box-icon span { vertical-align: middle; }
 
-
-/***** Clients *****/
-
-.clients-container {
-	padding-bottom: 0;
-}
-
-.clients-text {
-	text-align: left;
-}
-
-.clients-text h3 { color: #ccc; }
-
-.clients {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.clients a {
-	display: inline-block;
-	margin: 10px 20px;
-}
-
-.clients a:hover, .clients a:focus { outline: 0; opacity: 0.6; }
 
 
 /***** Block 2 *****/
@@ -535,68 +511,6 @@ ul.navbar-nav li a:focus { background: none; color: #2ba560; outline: 0; }
 
 .about-social a { margin: 0 10px 0 0; color: #ddd; }
 .about-social a:hover, .about-social a:focus { color: #ddd; opacity: 0.6; }
-
-
-/***** Contact us *****/
-
-.contact-container {
-	padding-top: 0;
-	background: #444;
-	color: #fff;
-}
-
-.contact-container h2 { color: #fff; }
-
-.contact-container .divider-1 span { background: #666; }
-
-.contact-form h3, .contact-address h3 { padding: 0 0 10px 0; color: #fff; }
-
-.contact-form p { margin: 0; }
-
-.contact-form form { margin: 15px 0 0 0; }
-
-.contact-form form input, .contact-form form textarea {
-    width: 95%;
-    height: 52px;
-    margin-bottom: 5px;
-}
-
-.contact-form form textarea { height: 162px; }
-
-.contact-form form .contact-error { border-color: #2ba560; }
-
-.contact-address p { margin-bottom: 5px; }
-
-.contact-address p a { color: #fff; border: 0; }
-.contact-address p a:hover, .contact-address p a:focus { color: #fff; border-bottom: 1px dotted #fff; }
-
-.contact-address p i, .contact-address p span {
-	width: 40px;
-	font-size: 24px;
-	color: #666;
-	vertical-align: middle;
-}
-
-.contact-address p span { display: inline-block; }
-
-.contact-container .container {
-	position: relative;
-	overflow: hidden;
-}
-
-.contact-icon-container {
-	position: absolute;
-	top: 300px;
-	right: 0;
-	padding-right: 20px;
-	font-size: 320px;
-	color: #555;
-	line-height: 300px;
-	-ms-transform: rotate(20deg);
-	-moz-transform: rotate(20deg);
-	-webkit-transform: rotate(20deg);
-	transform: rotate(20deg);
-}
 
 
 /***** Footer *****/
