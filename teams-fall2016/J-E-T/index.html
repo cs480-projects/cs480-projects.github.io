@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>J-E-T Home Page</title>
+    <style type="text/css">
+    	#header{
+    		top:0;
+    		left: 0;
+    		position: absolute;
+    		height: 32px;
+    		width: 100%;
+    		background: green;
+    	}
+
+    	.resize{
+    		width: 500px;
+    		height: auto;
+    	}
+
+    	.resize{
+    		width: 600px;
+    		height: auto
+    	}
+
+
+    </style>
 </head>
 <body>
-	<h1>COMING SOON!</h1>
-	<p style="color: blue"> J as in James.</p>
-	<h6>Sincerely, J-E-T</h6>
+	<div id="container">
+		<div id="header">
+			<img src="./images/JET_small.png">
+		</div>
+
+		<div id="content">
+			<img src="./images/Whiteboard.png">
+
+			<h3>Screen Shots</h3>
+			<img src="./images/homescreen.png" class="resize">
+			<img src="./images/boardscreen.png" class="resize">
+
+			<h2>Find it <a href="http://35.165.12.184:8081/">here</a> </h2>
+
+			<h5> Developers: James Chee, Eugene Lee, Timothy Ngo </h5>
+			<h6> Download it at https://github.com/J-E-T/Whiteboard-Project.git </h6>
+		</div>
+
+	</div>
 </body>
 </html>
