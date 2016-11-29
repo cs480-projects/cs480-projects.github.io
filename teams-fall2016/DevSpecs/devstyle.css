@@ -15,6 +15,18 @@ body {
   color:#e6e6e6;
 }
 
+.navItem {
+  transition:all .3s;
+  border-radius:.25em;
+}
+
+.navItem:hover {
+  padding-right:.25em;
+  padding-left:.25em;
+  background-color:rgba(112,121,135,0.25);
+
+}
+
 .logoBG {
   background-color:white;
   padding-right:1.7em;
@@ -65,6 +77,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41454c', end
     -webkit-box-shadow: 0px 0px 24px 6px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 24px 6px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 24px 6px rgba(0,0,0,0.75);
+}
+
+.container:hover {
+    -webkit-box-shadow: -4px 0px 105px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 0px 105px 9px rgba(0,0,0,0.75);
+    box-shadow: -4px 0px 105px 9px rgba(0,0,0,0.75);
 }
 
 .container-fluid {
