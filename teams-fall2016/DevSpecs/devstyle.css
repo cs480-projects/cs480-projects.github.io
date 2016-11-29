@@ -7,18 +7,47 @@ body {
     color: #ebf5ff;
 }
 
+#products {
+  color:#e6e6e6;
+}
+
+#developers {
+  color:#e6e6e6;
+}
+
+.logoBG {
+  background-color:white;
+  padding-right:1.7em;
+  margin-bottom:.03em;
+  border-radius:0em .3em .3em 0em;
+
+  -webkit-box-shadow: -4px 0px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 0px 35px 0px rgba(0,0,0,0.75);
+box-shadow: -4px 0px 35px 0px rgba(0,0,0,0.75);
+  z-index:10;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c4c4c4+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(196,196,196,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(196,196,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgb(248, 248, 248) 0%,rgba(196,196,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c4c4c4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
 .dark {
     color: #ebf5ff;
     margin:0;
     padding-top:2em;
 
 
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c2f35+0,222428+100 */
-    background: rgb(44,47,53); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(44,47,53,1) 0%, rgba(34,36,40,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(44,47,53,1) 0%,rgba(34,36,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(44,47,53,1) 0%,rgba(34,36,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2f35', endColorstr='#222428',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41454c+0,222428+100 */
+background: rgb(65,69,76); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(65,69,76,1) 0%, rgba(34,36,40,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(65,69,76,1) 0%,rgba(34,36,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(65,69,76,1) 0%,rgba(34,36,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41454c', endColorstr='#222428',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -44,19 +73,19 @@ body {
     box-shadow: 0px -20px 24px 23px rgba(0,0,0,0.75);
     z-index:10;
 
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b3d47+25,2a2b33+100 */
-    background: #3b3d47; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #3b3d47 25%, #2a2b33 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  #3b3d47 25%,#2a2b33 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  #3b3d47 25%,#2a2b33 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3d47', endColorstr='#2a2b33',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b5059+0,222428+100 */
+background: rgb(75,80,89); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(75,80,89,1) 0%, rgba(34,36,40,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(75,80,89,1) 0%,rgba(34,36,40,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(75,80,89,1) 0%,rgba(34,36,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b5059', endColorstr='#222428',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 
 ::-webkit-scrollbar {
   width: 6px;
   height: 2px;
+  z-index:-100;
 }
 ::-webkit-scrollbar-button {
   width: 6px;
@@ -86,4 +115,18 @@ body {
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+.brand-image {
+    width: inherit;
+    height: inherit;
+    margin: -15px;
+    margin-left: 3px;
+    padding: 2px;
+}
+
+.highlight {
+    font-weight: bold;
+    text-shadow: -2px -2px #555;
+    color:lightblue;
 }
