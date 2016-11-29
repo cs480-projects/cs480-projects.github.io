@@ -91,6 +91,8 @@ body {
 .brand-image {
     width: inherit;
     height: inherit;
+    margin: -20px;
+    padding: 2px;
 }
 
 .highlight {
