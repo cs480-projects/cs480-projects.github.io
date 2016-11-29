@@ -3,6 +3,15 @@ body {
     background-Image: URL(https://images.freecreatives.com/wp-content/uploads/2015/04/dark-gray.jpg);
 }
 
+#devSpecLogo {
+  transition:all .3s;
+}
+
+#devSpecLogo:hover {
+  margin-left:1em;
+  margin-right:.05em;
+}
+
 #home {
     color: #ebf5ff;
 }
