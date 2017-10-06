@@ -150,3 +150,20 @@ footer {
 p.copyright {
   margin: 15px 0 0;
 }
+
+.profile-container {
+	border-style: solid;
+	border-color: blue;
+}
+
+.profile {
+	position: relative;
+	border-style: solid;
+	border-color: red;
+	height: 200px;
+}
+
+.profile-name {
+	text-align: center;
+	border-style: solid;
+}
