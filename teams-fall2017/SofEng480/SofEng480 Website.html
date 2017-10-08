@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> SoftEng480</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    
+    <div class = "content">
+        <h1><img src = "pictures/brickwall.jpeg" class = "bricks"> Bric Now 
+            <img src = "pictures/brickwall.jpeg" class = "bricks">
+        </h1>
+        <h2>By: SofEng480</h2>
+        
+        <div class ="inline-text">
+                <form action = "https://docs.google.com/presentation/d/1fFMoDr177KDGa7kwuAsonNVD_JPi67gAV6neMrrgfNo/edit#slide=id.p" target="_blank">
+                <button class = "button1" type = "submit" value="Click here ">Slides</button>
+        </form>
+        </div>
+            
+        <div class ="inline-text">
+                <form action = "https://github.com/SofEng480" target="_blank">
+             <button class = "button1" type = "submit" value="Click here ">Github</button>
+        </form>
+        </div>
+    
+        <div class="inline-text">
+                <form action = "#" target="_blank">
+             <button class = "button1" type = "submit" value="Click here " button disabled="true">Project</button>
+        </form>
+            
+    </div>      
+                
+        <div class=container>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'about')" id = "default">About</button>
+                <button class="tablinks" onclick="openTab(event, 'team')">The Team</button>
+                <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+            </div>
+            
+            <div id="about" class="tabcontent">
+                <h3>About the Project:</h3>
+                <p>The purpose of this project is to enlighten students of the current and future number of students at the BRIC (Cal Poly Pomona's Campus Recreation).
+                    <br>More importantly it is to help 4 CS students pass a required class for graduation.
+                </p>
+            </div>
+            
+            <div id="team" class = "tabcontent">
+                <div class="members">
+                    The Creators
+                </div>   
+                
+                <figure class="profilerow">
+                    <img src="pictures/pic3.jpg" class="profile">
+                    <figcaption class="name">Ethan Smith</figcaption>
+                </figure>
+
+                <figure class="profilerow">
+                    <img src="pictures/pic4.jpg" class="profile">
+                    <figcaption class="name">Josh Montgomery</figcaption>
+
+                </figure>
+                
+                <figure class="profilerow">
+                    <img src="pictures/pic1.jpg" class="profile">
+                    <figcaption class="name">Erick Lopez</figcaption>
+                </figure>
+
+                <figure class="profilerow">
+                    <img src="pictures/pic2.jpg" class="profile">
+                    <figcaption class="name">Byung Hun Lee</figcaption>
+                </figure>                
+            </div>
+            
+            <div id="contact" class="tabcontent">
+                <h3>Contact Us:</h3>
+                <p>555-555-DONT</p>
+            </div>            
+            
+        </div>
+        
+        <div class = "footer">
+            <p class=copyright>
+                <img src = "pictures/copyright.png" class= cimage>
+                Copyright 2017 SofEng480</p>
+        </div>
+            
+    </div>
+    
+    <script>
+        function openTab(evt, tabName){
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");            
+            for(i=0; i<tabcontent.length; i++){
+                tabcontent[i].style.display="none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for(i=0; i<tablinks.length; i++){
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("default").click();
+        
+    </script>
+    
+</body>
+
+</html>
