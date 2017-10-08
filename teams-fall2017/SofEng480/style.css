@@ -1,11 +1,9 @@
 html{
-
 	background-image: url(pictures/back.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
     background-attachment: fixed;
-
 }
 
 img.bricks{
