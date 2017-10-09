@@ -125,9 +125,24 @@ a:after {
 
 #f {
 	background: #1a1a1a;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	text-align: center
+}
+
+.questions {
+	font-size: 38px;
+	font-weight:900;
+	letter-spacing: 1px;
+	color:white;
+	font-family: 'Abril Fatface', cursive;
+}
+
+#pitch {
+	color: white;
+	font-size: 33px;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 #f h3 {
@@ -136,6 +151,7 @@ a:after {
 	font-weight: 700;
 	letter-spacing: 1px;	
 }
+
 
 #f i {
 	font-size: 8px;
