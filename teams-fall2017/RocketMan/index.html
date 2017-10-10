@@ -1,27 +1,62 @@
-﻿<!DOCTYPE html>
-<html ng-app>
+﻿<!doctype html>
+<html>
     <head>
-        <title> parking++ </title>
-        <script src="angular.min.js"></script>
+        <!-- These 3 meta tags *must* come first in the head -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- tab text -->
+        <title> parking++ </title>
+
+        <!-- background image -->
         <style>
             body {
-                background-image: url("background.png");
+                background-image: url("zach_johnsen.jpg");
                 background-size: 100%;
             }
         </style>
     </head>
 
     <body>
-        <!--header-->      
-        <h1>RocketMan presents...</h1>
 
-		<p>Absolutely Nothing!</p>
+        <!-- main body columns -->
+        <div class="container">
+            <div class="row">
 
-		<p>Nothing is presented by: Nobody </p>
-		
-        <a href="https://jrgunderson.wixsite.com/parking">link to splash page</a>
+                <!-- left side bar -->
+                <div class="col-lg-2"></div>
 
+                <!-- main content area -->
+                <div class="col-lg-8">
+
+                    <!-- header (not to be confused with 'head')-->
+                    <header>
+                        <h1>RocketMan presents...</h1>
+                    </header>
+
+                    <!-- title links -->
+                    <nav>
+                        <ul>
+                            <li><a href="https://jrgunderson.wixsite.com/parking"> Website </a></li>
+                            <li><a href="https://github.com/CS480RocketManGitHub"> GitHub </a></li>
+                            <li><a href="https://goo.gl/xP9QbZ"> Presentation </a></li>
+                        </ul>
+                    </nav>
+                
+                </div>
+
+                <!-- right side bar -->
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
-
 </html>
