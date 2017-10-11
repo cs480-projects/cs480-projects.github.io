@@ -1,0 +1,29 @@
+﻿
+/*
+    Stylesheet specifically designed for a landing page
+    with a non repeating background that remains centered
+*/
+
+/* background (applied to entire page) */
+body {
+    background-image: url("zach_johnsen.jpg");
+    background-repeat:no-repeat;
+
+    /* this ensures background image stays in center */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+}
+
+/* center vertically */
+.center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* center horizontally */
+.middle {
+    text-align: center;
+    width: 100vw; /*vw = view width*/
+}
