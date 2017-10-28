@@ -41,3 +41,8 @@ h1{
     /*font-size: 4.9vw;*/
     font-size: 7.8vh;
 }
+
+/* formatting */
+.padding {
+  padding: 10px;
+}
