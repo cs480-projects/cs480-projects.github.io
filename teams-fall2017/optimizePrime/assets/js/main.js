@@ -41,3 +41,7 @@
 	});
 
 })(jQuery);
+
+function openLinkNewTab(url) {
+	window.open(url, '_blank');
+}
