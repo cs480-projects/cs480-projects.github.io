@@ -43,7 +43,11 @@ p {
 =======================*/
 
 .first-section {
-	background-image: url(../img/first-section-bg.png);
+    background: #38678B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#38678B, #618CAD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#38678B, #618CAD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#38678B, #618CAD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#38678B, #618CAD); /* Standard syntax (must be last) */
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -107,7 +111,11 @@ p {
 =======================*/
 
 .third-section {
-	background-image: url(../img/third-section-bg.png);
+    background: #38678B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#38678B, #618CAD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#38678B, #618CAD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#38678B, #618CAD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#38678B, #618CAD); /* Standard syntax (must be last) */
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -150,7 +158,11 @@ p {
 =======================*/
 
 .fourth-section {
-	background-image: url(../img/fourth-section-bg.png);
+    background: #38678B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#38678B, #618CAD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#38678B, #618CAD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#38678B, #618CAD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#38678B, #618CAD); /* Standard syntax (must be last) */
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -227,7 +239,12 @@ p {
 =======================*/
 
 .fivth-section {
-	background-image: url(../img/fivth-section-bg.png);
+	background-    background: #38678B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#38678B, #618CAD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#38678B, #618CAD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#38678B, #618CAD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#38678B, #618CAD); /* Standard syntax (must be last) */
+: url(../img/fivth-section-bg.png);
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -275,7 +292,11 @@ p {
 =======================*/
 
 .sixth-section {
-	background-image: url(../img/sixth-section-bg.png);
+    background: #38678B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#38678B, #618CAD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#38678B, #618CAD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#38678B, #618CAD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#38678B, #618CAD); /* Standard syntax (must be last) */
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -371,7 +392,11 @@ p {
 
 footer {
 	text-align: center;
-	background-image: url(../img/footer-bg.png);
+    background: #38678B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#38678B, #618CAD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#38678B, #618CAD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#38678B, #618CAD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#38678B, #618CAD); /* Standard syntax (must be last) */
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
