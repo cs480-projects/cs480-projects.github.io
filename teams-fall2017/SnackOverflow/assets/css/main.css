@@ -2459,7 +2459,7 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
+			background-image: url("images/commuter-study-gradient.png");
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -3392,7 +3392,7 @@
 				}
 
 			#banner .content .image {
-				border-radius: 100%;
+				/*border-radius: 100%;*/
 				display: inline-block;
 				height: 18em;
 				margin-left: 3em;
@@ -3401,7 +3401,7 @@
 			}
 
 				#banner .content .image img {
-					border-radius: 100%;
+					/*border-radius: 100%;*/
 					display: block;
 					width: 100%;
 				}
