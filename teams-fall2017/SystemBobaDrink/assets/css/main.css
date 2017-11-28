@@ -58,6 +58,10 @@
 
 /* Grid */
 
+	.glyphicon {
+    	font-size: 50px;
+	}
+
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
