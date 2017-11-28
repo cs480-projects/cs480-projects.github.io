@@ -1823,7 +1823,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: #4eb980;
 		text-decoration: none;
 	}
@@ -3139,7 +3139,7 @@
 
 	/* Have some space between buttons*/
 	div.buttonCenter button {
-		margin: 0px 10px;
+		margin: 10px 10px;
 	}
 	
 	/* Flat Button */
