@@ -13,13 +13,14 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 		<script src="./assets/js/jquery.min.js"></script>
 		<script src="./assets/js/skel.min.js"></script>
 		<script src="./assets/js/util.js"></script>
 		<script src="./assets/js/main.js"></script>
+		<script src="./assets/js/slideshow.js"></script>
 	</head>
-	<body>
-
+	<body ng-app="optPrimeApp" ng-controller="optPrimeController">
 		<!-- Header -->
 			<div id="header">
 				<!-- <span class="logo icon fa-paper-plane-o"></span> -->
@@ -41,36 +42,65 @@
 				</header>
 
 				<div class="box container 125% buttonCenter">
-					<button type="button" class="ph-button ph-btn-blue"
-					onclick="openLinkNewTab('http://foodtruckop.com')">	
-						Project Site
-					</button>
-					<button type="button" class="ph-button ph-btn-green"
-					onclick="openLinkNewTab('https://github.com/Optimize-Prime-CS480-Cal-Poly-Fall17/demo-web-project')">
+					<a href="http://foodtruckop.com" target="_blank">
+						<button type="button" class="ph-button ph-btn-blue">
+							Project Site
+						</button>
+					</a>
+					<a href="https://github.com/Optimize-Prime-CS480-Cal-Poly-Fall17/demo-web-project" target="_blank">
+						<button type="button" class="ph-button ph-btn-green">
 							GitHub
-					</button>
-					<button type="button" class="ph-button ph-btn-grey"
-					onclick="openLinkNewTab('https://docs.google.com/presentation/d/1J07LMCrP5hHme9I92vr1PfGikKNNXHOF4lO7drE2KQM/edit#slide=id.g35f391192_00')">
-						Presentation
-					</button>
-					<button type="button" class="ph-button ph-btn-red"
-					onclick="openLinkNewTab('https://youtube.com')">
-						YouTube Demo
-					</button>
+						</button>
+					</a>
+					<a href="https://docs.google.com/presentation/d/1J07LMCrP5hHme9I92vr1PfGikKNNXHOF4lO7drE2KQM/edit#slide=id.g35f391192_00" target="_blank">
+						<button type="button" class="ph-button ph-btn-grey">
+							Presentation
+						</button>
+					</a>
+					<a href="https://youtu.be/uw9VHZkL614" target="_blank">
+						<button type="button" class="ph-button ph-btn-red">
+							YouTube Demo
+						</button>
+					</a>
 				</div>
 
 				<div class="box container 125% buttonCenter">
-					Screenshots here
+					<h3>Screenshots</h3>
+					<img class="imageBorder" ng-src="{{linkToShow}}" alt="screenshot">
+					<div class="buttonPlacement">
+						<button type="button" class="ph-button2 ph-btn-grey" ng-click="previousClick()">Previous</button>
+						<button type="button" class="ph-button2 ph-btn-grey" ng-click="nextClick()">Next</button>
+					</div>
 				</div>
 
 				<footer class="major container 125%">
 					<h3>Our Team Members</h3>
 					<ul style="list-style-type: none">
-						<li>Adrian Cuellar</li>
-						<li>Chi-Wei (John) Wang</li>
-						<li>Rachel Chiang</li>
-						<li>Tho (Todd) Nguyen</li>
-						<li>Allen Artoonian</li>
+						<li>Adrian Cuellar
+							<a href="https://github.com/AACuellar96" target="_blank">
+								<img src="./images/github.png">
+							</a>
+						</li>
+						<li>Chi-Wei Wang (John) 
+							<a href="https://github.com/johnHaloWang" target="_blank">
+								<img src="./images/github.png">
+							</a>
+						</li>
+						<li>Allen Artoonian 
+								<a href="https://github.com/asartoonian" target="_blank">
+									<img src="./images/github.png">
+								</a>
+							</li>
+						<li>Rachel Chiang 
+							<a href="https://github.com/raechiang" target="_blank">
+								<img src="./images/github.png">
+							</a>
+						</li>
+						<li>Tho Nguyen (Todd) 
+							<a href="https://github.com/toddnguyen11" target="_blank">
+								<img src="./images/github.png">
+							</a>
+						</li>
 					</ul>
 				</footer>
 

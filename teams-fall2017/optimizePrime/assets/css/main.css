@@ -1823,7 +1823,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: #4eb980;
 		text-decoration: none;
 	}
@@ -3139,7 +3139,7 @@
 
 	/* Have some space between buttons*/
 	div.buttonCenter button {
-		margin: 0px 10px;
+		margin: 10px 10px;
 	}
 	
 	/* Flat Button */
@@ -3177,20 +3177,19 @@
 	
 	}
 	button.ph-btn-green:hover, .ph-btn-green:focus, .ph-btn-green:active {
-		background-color: #4BC970;
+		background-color: rgb(67, 184, 100);
 		border-color: #3AC162;    
 	}
 	
 	/*Blue
 	==========================*/
 	button.ph-btn-blue {
-	
 		border-color: #326E99;
 		background-color: #3F8ABF;
 	}
 	
 	button.ph-btn-blue:hover, .ph-btn-blue:focus, .ph-btn-blue:active {
-		background-color: #397CAC;
+		background-color: rgb(46, 110, 155);
 		border-color: #326E99;   
 	}
 	
@@ -3198,12 +3197,14 @@
 	==========================*/
 	button.ph-btn-grey {
 	
-		 background-color: #C6CCD2;
-		 border-color: #AAB3BB;
+		/*background-color: #C6CCD2;*/
+		background-color: rgb(120, 126, 131);
+		border-color: rgb(146, 155, 163); 
 	}
 	button.ph-btn-grey:hover, .ph-btn-grey:focus, .ph-btn-grey:active {
-		background-color: #B8BFC7;
-		border-color: #AAB3BB; 
+		/*background-color: #B8BFC7;*/
+		background-color: rgb(96, 101, 105);
+		border-color: rgb(146, 155, 163); 
 	}
 	
 	/*Red
@@ -3215,6 +3216,41 @@
 	
 	}
 	button.ph-btn-red:hover, .ph-btn-red:focus, .ph-btn-red:active {
-		background: none repeat scroll 0 0 #EB4848 !important;
-		border-color: #E83131 !important;    
+		background: none repeat scroll 0 0 rgb(209, 63, 63) !important;
+		border-color: #E83131 !important;
+	}
+
+	/* Flat Button */
+	button.ph-button2 {		
+		border-style: solid;
+		border-width: 0px 0px 3px;
+		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+		color: #FFFFFF;	   
+		border-radius: 6px;
+		cursor: pointer;
+		display: inline-block;
+		font-style: normal;
+		overflow: hidden;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		transition: all 200ms ease-in-out 0s;
+		white-space: nowrap;	
+		font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+		font-weight: 700;	
+		padding: 15px 30px 15px;
+		font-size: 14px;
+	}
+
+	button.ph-button a {
+		color:#FFFFFF;
+	}
+
+	img.imageBorder {
+		border: 1px solid rgb(146, 155, 163);
+		height: 600px;
+	}
+
+	div.buttonPlacement {
+		padding: 20px 0px 0px 0px;
 	}
