@@ -1,0 +1,9 @@
+body{
+	background-color: red;
+}
+
+.content{
+	background-color: white;
+	margin: 1em;
+	padding: 1em;
+}
