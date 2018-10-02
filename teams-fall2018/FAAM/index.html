@@ -10,5 +10,28 @@
     <p><h2>Group members</h2>
     <b>F</b>ederico Wang, <b>A</b>nh Nguyen, <b>A</b>lex Su, <b>M</b>arco Villafuerte</p>
 
+    <!--Adding pics-->
+    <div class ="siema">
+        <div><img src="person1(federico).jpg" alt="Federico" style="width:300px;height:300px;"></div>
+        <div><img src="person2(anh).jpg" alt="Anh" style="width:300px;height:300px;"></div>
+        <div><img src="person3(alex).jpg" alt="Alex" style="width:300px;height:300px;"></div>
+        <div><img src="person4(marco).jpg" alt="Marco" style="width:300px;height:300px;"></div>
+    </div>
+    
+    <!--Buttons-->
+    <button class="prev">prev</button>
+    <button class="next">next</button>
+    
+    <!--Adding Siema-->
+    <script src="siema/dist/siema.min.js"></script>
+    <script>
+        const mySiema = new Siema({
+            duration:600,
+            easing: 'cubic-bezier(.11,.73,.57,1.53)',
+        });
+        document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+        document.querySelector('.next').addEventListener('click', () => mySiema.next());
+    </script>
+
   </body>
 </html>
