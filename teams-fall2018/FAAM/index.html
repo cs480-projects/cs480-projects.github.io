@@ -21,8 +21,9 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a> 
     <a href="#objective" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Objective</a> 
-    <a href="#developers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Developers</a> 
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Team</a> 
     <a href="#used" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What We Used</a> 
   </div>
 </nav>
@@ -41,14 +42,11 @@ body {font-size:16px;}
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="showcase1.jpg" style="width:70%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="showcase3.jpg" style="width:70%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-    </div>
-
-    <div class="w3-half">
-      <img src="showcase4.jpg" style="width:70%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="showcase2.jpg" style="width:70%" onclick="onClick(this)" alt="Bedroom and office in one space">
+    <div class="w3-horizontal">
+      <img src="showcase1.jpg" style="width:20%" onclick="onClick(this)" alt="Calendar">
+      <img src="showcase2.jpg" style="width:20%" onclick="onClick(this)" alt="Message">
+      <img src="showcase3.jpg" style="width:20%" onclick="onClick(this)" alt="Go">
+      <img src="showcase4.jpg" style="width:20%" onclick="onClick(this)" alt="Network">
     </div>
   </div>
 
@@ -60,6 +58,15 @@ body {font-size:16px;}
       <p id="caption"></p>
     </div>
   </div>
+  
+  <!-- Links -->
+    <div class="w3-container" id="links" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-green"><b>Links.</b></h1>
+        <hr style="width:50px;border:5px solid green" class="w3-round">
+        <div class="app-buttons">
+            <a href="https://github.com/FAAM-2018" class="app-btn">GitHub</a>
+        </div>
+    </div>
 
   <!-- Objective -->
   <div class="w3-container" id="objective" style="margin-top:75px">
@@ -71,15 +78,15 @@ body {font-size:16px;}
     </p>
   </div>
   
-  <!-- Developers -->
-  <div class="w3-container" id="developers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Developers.</b></h1>
+  <!-- Team -->
+  <div class="w3-container" id="team" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>The Team.</b></h1>
     <hr style="width:50px;border:5px solid green" class="w3-round">
   </div>
 
   <!-- The Team -->
   <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-col m3 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="person1(federico).jpg" alt="Federico" style="width:100%">
         <div class="w3-container">
@@ -89,7 +96,7 @@ body {font-size:16px;}
         </div>
       </div>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-col m3 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="person2(anh).jpg" alt="Anh" style="width:100%">
         <div class="w3-container">
@@ -99,7 +106,7 @@ body {font-size:16px;}
         </div>
       </div>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-col m3 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="person3(alex).jpg" alt="Alex" style="width:100%">
         <div class="w3-container">
@@ -109,7 +116,7 @@ body {font-size:16px;}
         </div>
       </div>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-col m3 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="person4(marco).jpg" alt="Marco" style="width:100%">
         <div class="w3-container">
@@ -143,8 +150,8 @@ body {font-size:16px;}
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<!-- Extra space at the bottom -->
+<div class="w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></p></div>
 
 <script>
 // Script to open and close sidebar
