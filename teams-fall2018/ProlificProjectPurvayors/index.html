@@ -9,21 +9,21 @@
 <link rel="icon" type="image/vnd.microsoft.icon"
      href="favicon.ico" />
 <style>
-#about {padding-top:50px;height:500px;color: #fff; background-color: black; border: 1px solid grey}
-#contact {padding-top:50px;height:500px;color: #fff; background-color: black; border: 1px solid grey}
-#demo {padding-top:50px;height:500px;color: #fff; background-color: black; border: 1px solid grey}
+#about {padding-top:50px;height:300px;color: #fff; background-color: black; border: 1px solid grey}
+#contact {padding-top:50px;height:100%;color: #fff; background-color: black; border: 1px solid grey}
+#demo {padding-top:50px;height:100%;color: #fff; background-color: black; border: 1px solid grey}
 body {
       position: relative; 
 	  background-image: linear-gradient(grey, black);
   }
 h1{
-color:white;
+	color:white;
 }
 p{
-color: white;
+	color: white;
 }
 #contain {
-     list-style-type: none;
+    list-style-type: none;
     margin: 0;
     position: fixed;
     background-color: #333;
@@ -68,7 +68,7 @@ color: white;
 }
 
 .active {
-	background-color: black; /* Green */
+	background-color: black;
 	float:right;
     border: none;
     color: white;
@@ -105,6 +105,44 @@ icon {
 	width: 5px;
 	height: 5px;
 }
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px; 
+	text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 </style>
 </head>
@@ -114,10 +152,11 @@ icon {
 		<div class="container-fluid" >
 				<div  id="myNavbar" div class="container rounded"   >
 					<ul class="list-inline">
-					  <li><a href="#about" class="active">About</a></li>
-					  <li><a href="#demo" class="active">Demo</a></li>
-					  <li><a href="#links" class="active">Screenshot or something</a></li>
 					  <li><a href="#contact" class="active">Contact</a></li>
+					  <li><a href="#demo" class="active">Demo</a></li>
+					  <li><a href="#about" class="active">About</a></li>
+					  <li><a href="#links" class="active">Screenshot or something</a></li>
+
 					</ul>
 				</div>	
 		</div>
@@ -131,9 +170,9 @@ icon {
 				<ul class="list-inline">
 					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 					<button type="submit" class = "button1"  onclick="location.href = 'https://github.com/ProlificProjectPurveyors';"><i class="fab fa-git"></i>  GitHub</button>
-					<button type="submit" class = "button1"  onclick="location.href = 'http:\\www.google.com';">Bronco Events</button>
-					<button type="submit" class = "button1"  onclick="location.href = 'http:\\www.google.com';">Some Other Thing</button>
-					<button type="submit" class = "button1"  onclick="location.href = 'http:\\www.cpp.edu';">Cal Poly Pomona</button>
+					<button type="submit" class = "button1"  onclick="location.href = 'http://www.google.com';">Bronco Events</button>
+					<button type="submit" class = "button1"  onclick="location.href = 'http://www.google.com';">Some Other Thing</button>
+					<button type="submit" class = "button1"  onclick="location.href = 'https://www.cpp.edu';">Cal Poly Pomona</button>
 				</ul>
 			</div>	
 		</div>
@@ -143,23 +182,46 @@ icon {
 		</div>
 		<div id="demo" div class="container rounded" class="container-fluid">
 			<h1>Demo</h1>
-			<p><iframe width="500" height="315" src="https://www.youtube.com/embed/Mccsvo-lnkQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+			<div class="videoWrapper">
+				<p><iframe width="500" height="315" src="https://www.youtube.com/embed/Mccsvo-lnkQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+			</div>
 		</div>
 		<div id="contact" div class="container rounded" class="container-fluid">
 			<h1>Contact</h1>
-			<i class="fas fa-envelope-square" style="font-size: 30px"></i>
-			<p><b>Camron Fortenbery: <a href="mailto:camronfortenbery@gmail.com?Subject=" target="_top">camronfortenbery@gmail.com</a></b></p>
-			<p><b>(Richard) Matt Musquiz: <a href="mailto:matthewmusquiz@gmail.com?Subject=" target="_top">matthewmusquiz@gmail.com</a></b></p>
-			<p><b>Justin (Yeram) Hwang: <a href="mailto:yeramy96@gmail.com?Subject=" target="_top">yeramy96@gmail.com</a></b></p>
-			<p><b>Diego Bautista: <a href="mailto:BautistaGDiego@gmail.com?Subject=" target="_top">BautistaGDiego@gmail.com</a></b></p>
-			<i class="fab fa-linkedin" style="font-size: 30px"></i>
-			<p><b>Camron Fortenbery: </b></p>
-			<p><b>(Richard) Matt Musquiz: </b></p>
-			<p><b><a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/" target="_blank">Justin (Yeram) Hwang </a></b></p>
-			<p><b>Diego Bautista: </b></p>
+			<div class="row">
+				<div class="column" style="background-color:#aaa;">
+					<p><b>Camron Fortenbery:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:camronfortenbery@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i></a>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/"<i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href=""><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+				<div class="column" style="background-color:#bbb;">
+					<p><b>(Richard) Matt Musquiz:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:matthewmusquiz@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/"<i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href=""><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column" style="background-color:#ccc;">
+					<p><b>Justin (Yeram) Hwang:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:yeramy96@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i></a>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/" target="_blank"><i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href="https://github.com/yeramy"><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+				<div class="column" style="background-color:#ddd;">
+					<p><b>Diego Bautista:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:BautistaGDiego@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i></a>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/"<i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href=""><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+			</div>
 		</div>
-	</div>
-		
+	</div>	
 	
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
