@@ -39,11 +39,14 @@ li a:hover{
 }
 
 img{
-    border-radius: 50%;
     width=100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+img.rounded{
+    border-radius: 50%;
 }
 
 table, th, td {
@@ -73,6 +76,10 @@ div td img{
 
 div p a{
     color:white;
+}
+
+div p a:hover{
+    background-color: #228B22
 }
 
 div p a.greenBox{
