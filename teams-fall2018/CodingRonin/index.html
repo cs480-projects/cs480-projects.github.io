@@ -1,10 +1,239 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Coding Ronin</title>
-  </head>
-  <body>
-    <p>Team Ronin</p>
-  </body>
+<html>
+<title>Coding Ronins</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom">Coding Ronins</h1>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>Modal footer</p>
+      </footer>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Github</h3><br>
+  <a href="https://github.com/Coding-Ronin/scheduler"><img border="0" alt="RoninsGit" src="images/git.png" width="200" height="160"></a>
+  <p>Team Github Page</p>
+  <p>System.Exit(-1);</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Tempus Scheduler</h3><br>
+  <a href="https://www.w3schools.com"><img border="0" alt="RoninsProject" src="images/logo.png" width="200" height="150"></a>
+  <p>Angular and NodeJS</p>
+  <p>Online Scheduler Web Service</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Presentation Slides</h3><br>
+  <a href="https://www.w3schools.com"><img border="0" alt="RoninsSlides" src="images/slides.png" width="200" height="160"></a>
+  <p>Google Slides Presentation</p>
+  <p>Pretty Colors and Fancy Graphics</p>
+  </div>
+</div>
+</div>
+
+<!-- BREAK POINT --> <br>
+<hr>
+<div class="w3-center">
+  <header class="w3-container w3-black">
+    <h1>Meet the Team</h1>
+  </header>
+</div>
+</div>
+
+<!-- BREAK POINT --> <br>
+<div class="w3-row-padding">
+
+<div class="w3-half">
+<div class="w3-card white">
+  <div class="w3-container w3-light-blue">
+    <h2>Front-End Developers</h2>
+  </div>
+  <div class="w3-container">
+  </div>
+  <ul class="w3-ul w3-border-top">
+    <li>
+      <h2>William Lam</h2>
+    </li>
+    <li>
+      <h2>Brandon Wong</h2>
+    </li>
+    <li>
+      <h2>Warren Xie</h2>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="w3-half">
+<div class="w3-card white">
+  <div class="w3-container w3-orange">
+    <h2>Back-End Developers</h2>
+  </div>
+  <div class="w3-container">
+  </div>
+  <ul class="w3-ul w3-border-top">
+    <li>
+      <h2>Joshua Yi</h2>
+    </li>
+    <li>
+      <h2>Aaron Soe</h2>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<!-- BREAK POINT --> <br>
+<hr>
+<div class="w3-center">
+  <header class="w3-container w3-black">
+    <h1>Tempus' Mission</h1>
+  </header>
+</div>
+</div>
+
+<!-- BREAK POINT --> <br>
+<div class="w3-center">
+  <a href="https://www.w3schools.com"><img border="0" alt="RoninsProject" src="images/logo.png" width="250" height="200"></a>
+    <h1>Elegant, Robust, and Highly Customizable</h1>
+    <h1>Tempus' Mission is to provide fast and easy-to-use Scheduler Web Service</h1>
+    <h1>Created using Angular 6.0 and NodeJS</h1>
+</div>
+</div>
+
+<!-- BREAK POINT --><br><br>
+
+<hr>
+<div class="w3-center">
+  <header class="w3-container w3-black">
+    <h1>Tempus in Action</h1>
+  </header>
+</div>
+</div>
+
+<hr>
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Month View')">Month View</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Week View')">Week View</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Day View')">Day View</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Event Color View')">Customize Colors</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Event Date View')">Customize Dates</button>
+</div>
+
+<div id="Month View" class="w3-container tab w3-animate-opacity">
+  <h2>Month View</h2>
+  <img src="tempus/images/tempusMonthView.png">
+</div>
+
+<div id="Week View" class="w3-container tab w3-animate-opacity">
+  <h2>Week View</h2>
+  <img src="tempus/images/tempusWeekView.png">
+</div>
+
+<div id="Day View" class="w3-container tab w3-animate-opacity">
+  <h2>Day View</h2>
+  <img src="tempus/images/tempusDayView.png">
+</div>
+
+<div id="Event Color View" class="w3-container tab w3-animate-opacity">
+  <h2>Adding a New Event - Customize Colors</h2>
+  <img src="tempus/images/tempusNewEventColor.png">
+</div>
+
+<div id="Event Date View" class="w3-container tab w3-animate-opacity">
+  <h2>Adding a New Event - Customize Dates</h2>
+  <img src="tempus/images/tempusNewEventDate.png">
+</div></div>
+
+<!-- BREAK POINT --><br><br><br><br><br>
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openTab(evt, tabName) {
+  var i;
+  var x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
 </html>
