@@ -1,11 +1,3 @@
-body {
-    background-image: url("background2.jpg");
-    background-repeat:no-repeat;
-
-    background-position: center;
-    background-size: contain;
-}
-
 .center{
     position: absolute;
     top: 50%;
