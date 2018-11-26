@@ -27,10 +27,7 @@ app.get('/', function(req, resp) {
 			var title = 'Welcome';
 			var description = 'Hello';
 			var list = template.list(rows);
-			var html = template.HTML(title, list,
-				`<h2>${title}</h2>${description}`,
-				`<a href="/create">create</a>`
-			);
+			var html = template.HTML(title, list);
 			resp.writeHead(200);
 			console.log(rows);
 			resp.end(html);
