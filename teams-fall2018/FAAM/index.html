@@ -20,11 +20,8 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>FAAM<br>2018</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Team</a> 
     <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Links</a> 
-    <a href="#objective" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Objective</a> 
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Team</a> 
-    <a href="#used" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What We Used</a> 
   </div>
 </nav>
 
@@ -35,57 +32,15 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:250px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Event Calendar</b></h1>
-    <hr style="width:50px;border:5px solid green" class="w3-round">
+  <div class="w3-container" style="margin-top:30px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-green w3-jumbo"><b>CPP Calendar</b></h1>
   </div>
   
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-horizontal">
-      <img src="showcase1.jpg" style="width:20%" onclick="onClick(this)" alt="Calendar">
-      <img src="showcase2.jpg" style="width:20%" onclick="onClick(this)" alt="Message">
-      <img src="showcase3.jpg" style="width:20%" onclick="onClick(this)" alt="Go">
-      <img src="showcase4.jpg" style="width:20%" onclick="onClick(this)" alt="Network">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-  
-  <!-- Links -->
-    <div class="w3-container" id="links" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-green"><b>Links.</b></h1>
-        <hr style="width:50px;border:5px solid green" class="w3-round">
-        <div class="app-buttons">
-            <a href="https://github.com/FAAM-2018" class="app-btn">GitHub</a>
-        </div>
-    </div>
-
-  <!-- Objective -->
-  <div class="w3-container" id="objective" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>Objective.</b></h1>
-    <hr style="width:50px;border:5px solid green" class="w3-round">
-    <p>We are students at Cal Poly Pomona developing a web service to keep track of events for students are our school</p>
-    <p>This event calendar allows students to post events happening on that particular day.
-        Overall, our goal is to inform students of all the events on campus to make their school life more enjoyable.
-    </p>
-  </div>
-  
-  <!-- Team -->
-  <div class="w3-container" id="team" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>The Team.</b></h1>
-    <hr style="width:50px;border:5px solid green" class="w3-round">
-  </div>
+  <br>
+  <br>
 
   <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
+  <div class="w3-row-padding">
     <div class="w3-col m3 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="person1(federico).jpg" alt="Federico" style="width:100%">
@@ -128,24 +83,35 @@ body {font-size:16px;}
     </div>
   </div>
 
-  <!-- What we used -->
-  <div class="w3-container" id="used" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-green"><b>What We Used.</b></h1>
-    <hr style="width:50px;border:5px solid green" class="w3-round">
-    <p>What We Used to Create our Web Service.</p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-padding-16">MongoDB</li>
-        <li class="w3-padding-16">Express</li>
-        <li class="w3-padding-16">Angular JS</li>
-        <li class="w3-padding-16">Node.js</li>
-        <li class="w3-padding-16">add on here</li>
-      </ul>
+  <!-- Links -->
+    <div class="w3-container" id="links" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-green"><b>Links.</b></h1>
+        <hr style="width:50px;border:5px solid green" class="w3-round">
+        <div class="app-buttons">
+            <a href="https://github.com/FAAM-2018/node" class="app-btn">GitHub</a>
+            <br>
+            <a href="https://docs.google.com/presentation/d/14HjrUqTqgLm7apskXNxbFxQ26kDOjDWwxpCx0woKPDA/edit?fbclid=IwAR39C5wNyv9oWz658klpFMw3MTpEgqjD2Cfm3NVOdCnZi8saY9y_2WqcJYI#slide=id.g483c2dc6ca_0_5" class="app-btn">Slide Show</a>
+        </div>
     </div>
 
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <!-- <hr style="width:50px;border:5px solid green" class="w3-round"> -->
+    <div class="w3-horizontal">
+      <img src="showcase1.jpg" style="width:20%" onclick="onClick(this)" alt="Calendar">
+      <img src="showcase2.jpg" style="width:20%" onclick="onClick(this)" alt="AddEvents">
+      <img src="showcase3.jpg" style="width:20%" onclick="onClick(this)" alt="LoginRegister">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 
 <!-- End page content -->
 </div>
