@@ -6,9 +6,9 @@
 
 /* background (applied to entire page) */
 body {
-    background-image: url("background.gif");
     background-repeat:no-repeat;
-
+    background-color: #2e3131;
+    color: #e8ecf1;
     /* this ensures background image stays in center */
     background-attachment: fixed;
     background-position: center;
@@ -31,7 +31,7 @@ body {
 /* add color and border */
 .dyed{
     color: #755b82;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
                  1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
