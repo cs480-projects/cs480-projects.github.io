@@ -130,11 +130,34 @@ h3
 	text-align: center;
 	margin-top: 200px;
 }
-	
-	
-	
-	
 
+.insp
+{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 25px;
+}
+	
+.btn2
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+	
+}
+	
+.btn2:hover
+{
+	background-color: darkorange;
+	transition: all 0.5s ease
+}
 
 
 
