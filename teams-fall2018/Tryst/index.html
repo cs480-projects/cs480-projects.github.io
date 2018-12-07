@@ -17,10 +17,24 @@
 		    background-repeat: no-repeat;
 		    background-size: cover;
 		}
+		* {
+		    margin: 0;
+		    padding: 0;
+		}
+		.imgbox {
+		    display: grid;
+		    height: 100%;
+		}
+		.center-fit {
+		    max-width: 100%;
+		    max-height: 100vh;
+		    margin: auto;
+		}	
 		</style>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	        <title> SyllaShare </title>
         	<link href="homePage.css" rel="stylesheet">
+		
 	</head>
 	<body>
 
@@ -67,10 +81,10 @@
 		    <div class="col">Thanh Doan</div>
 		  </div>
 		</div>
-		<a href="https://imgur.com/SBT1ghI"><img src="https://i.imgur.com/SBT1ghIb.png" title="source: imgur.com" /></a>
-		<a href="https://imgur.com/tKVtu4F"><img src="https://i.imgur.com/tKVtu4F.png" title="source: imgur.com" /></a>
-		<a href="https://imgur.com/pSpaaSt"><img src="https://i.imgur.com/pSpaaSt.png" title="source: imgur.com" /></a>
-		<a href="https://imgur.com/tgdcNsQ"><img src="https://i.imgur.com/tgdcNsQ.png" title="source: imgur.com" /></a>
+		<div class="imgbox">
+		    <img class="center-fit" src='https://i.imgur.com/SBT1ghI.png'>
+		</div>
+		
 	</div>
 	
 	<div class="parallax"></div>
