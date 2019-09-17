@@ -7,7 +7,7 @@ The site to showcase all the CS480 student projects. We will keep this site main
 Git Exercise 1 - Add Your Personal Info in the Homepage
 =======================================================
 
-For this exercise, please add an HTML table row in the `teams-fall2019/index.html` page by following the same format. 
+For this exercise, please add an HTML table row in the `teams-fall2019/index.html` web page by following the same format.
 
 Once done, please check in your code and push to our Git repository. To push the changes, the command you will be using are:
 
