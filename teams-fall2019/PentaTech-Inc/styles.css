@@ -1,0 +1,113 @@
+html {
+	overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+	width: 100ch;
+	display: block;
+	margin: auto;
+}
+
+h1 {
+	font-size: 3.5em;
+	font-family: 'Megrim', cursive;
+	color: #17616b;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .25em;
+	margin-bottom: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+h2 {
+	font-size: 2.8em;
+	font-family: Megrim, cursive;
+	margin-bottom: .04em;
+	text-align: center;
+	z-index: 1;
+}
+
+h3 {
+	font-size: 1.8em;
+	text-align: center;
+	font-family: 'Megrim', cursive;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-size: .9em;
+	font-family: 'Poppins', sans-serif;
+	color: #00b6cb;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	text-align: center;
+}
+
+p {
+	font-size: 1.1em;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	line-height: 1.7em;
+	color: #17616b;
+	overflow-wrap: normal;
+}
+
+img {
+	display: block;
+	text-align: center;
+}
+
+#home {
+	height: 30ch;
+	vertical-align: middle;
+	margin-top: 20%;
+}
+
+.topnav {
+	position: fixed; 
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #164d56;
+	overflow: auto;
+	height: 3.5em;
+	text-align: center;
+	font-family: Megrim, cursive;
+	z-index: 1;
+}
+
+.topnav a {
+	float: center;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	margin: .4em 1.5em;
+	line-height: 3.45em;
+	font-size: 1em;
+}
+
+.topnav a:hover {
+	color: #a0e3f0;
+	border-bottom: solid;
+	border-bottom-color: #fff;
+	border-bottom-width: .08em;
+	padding-bottom: .31em;
+}
+
+.topnav a.active {
+	color: #a0e3f0;
+	border-bottom: solid;
+	border-bottom-color: #fff;
+	border-bottom-width: .08em;
+	padding-bottom: .31em;
+}
+
+.topnav a.active:hover {
+	color: #fff;
+}
+
+
+
