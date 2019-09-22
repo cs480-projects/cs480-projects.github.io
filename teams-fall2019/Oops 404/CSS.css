@@ -1,14 +1,16 @@
 li {
-   color: #36C;
+   color: black;
+   aligh-content;
    font-weight: normal;
+   font-color: black;
    letter-spacing: .4em;
    background-color: lightblue;
    padding-bottom: 30px;
    padding-top: 30px;
-   padding-left: 30px;
-   padding-right: 30px;
-   border:3px dashed red;
+   border-style: solid;
+   border-color: black;
    margin-bottom: 1em;
+   margin-left: -2.5em;
 }
 li:hover{
    background-color: lightgreen;
