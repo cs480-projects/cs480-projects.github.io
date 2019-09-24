@@ -133,48 +133,11 @@
 </section>
 
 
-
-
-
-
-
 <!-- footer Start -->
 
 <footer class="footer">
 
 	<div class="container">
-
-		<div class="row">
-
-        <div class="col-md-3 col-sm-4 col-xs-12">
-
-            <div class="footer-menu">
-    
-              <a href="https://locator.rockwellautomation.com/SystemIntegrator/CompanyDetails/317fa07b-c356-86a9-0581-ec7e682a16a0" class="scrollToTop"><img style="height:auto;max-width:300px;width: expression(this.width > 300 ? 300: true);" src="/images/2019_RA-Partner-Logos_Recognized-System-Integrator_rgb.svg"/></a>  
-              
-            </div>
-    
-        </div>
-
-        <div class="col-md-6 col-sm-4 col-xs-12">
-
-          <div class="footer-menu">
-
-              <a href="#" class="scrollToTop"><i class="ion-android-arrow-up"></i></a>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-3 col-sm-4  col-xs-12">
-
-            <div class="footer-menu">
-
-            </div>
-    
-        </div>
-
-    </div>
     
     <div class="row">
 
@@ -193,11 +156,9 @@
 </footer>
 
 
-
     <!--========== Scripts ==========-->
 
     
-
     <!-- Replaced jQuery-git with googleapis 3.2.1 jquery for exact stable build ref, cached, and reliability CE -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -207,44 +168,29 @@
     <script src="plugins/lazyload/lazyload.js"></script>
 
 
-
     <script>
 
       lazyload();
 
 
-
       $(document).ready(function(){
 
-  
 
+      //Hamburger menu icon
 
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
 
-//Hamburger menu icon
+          $(this).toggleClass('open');});
 
-  $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+          var cur = 2019; var year = new Date(); 
 
-    $(this).toggleClass('open');});
+          if(cur == year.getFullYear()) year = year.getFullYear(); else year = cur + ' - ' + year.getFullYear(); 
 
-
-
-
-
-
-
-var cur = 2019; var year = new Date(); 
-
-if(cur == year.getFullYear()) year = year.getFullYear(); else year = cur + ' - ' + year.getFullYear(); 
-
-document.getElementById('copyright').innerHTML = "&copy; " + year + " cpp-ctrl-alt-defeat";
-
-
+          document.getElementById('copyright').innerHTML = "&copy; " + year + " cpp-ctrl-alt-defeat";
 
 });
 
     </script>
-
-
 
   </body>
 
