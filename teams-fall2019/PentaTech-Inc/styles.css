@@ -60,10 +60,18 @@ img {
 	text-align: center;
 }
 
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	width: 150px;
+}
+
 #home {
 	height: 30ch;
 	vertical-align: middle;
 	margin-top: 20%;
+	margin-bottom: 30px;
 }
 
 .topnav {
@@ -108,6 +116,3 @@ img {
 .topnav a.active:hover {
 	color: #fff;
 }
-
-
-
