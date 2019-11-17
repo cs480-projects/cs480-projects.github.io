@@ -1,0 +1,11 @@
+.background {
+    background: url(binary-image.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+body { 
+    color: white;
+}
+
