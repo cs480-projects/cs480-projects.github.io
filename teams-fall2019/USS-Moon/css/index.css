@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .background {
     background: url(../images/binary-image.jpg) fixed;
     background-size: cover;
