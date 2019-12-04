@@ -30,24 +30,65 @@ header li {
 }
 
 section {
-    font-family: "Baskerville";
-    font-size: x-large;
-    color: white;
+	display: flex;
     height: 100vh;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left-side;
 
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    color: white;
+}
+
+.gallery-highlight{
+	width: 80%;
+	height: 50%;
+}
+
+.room-gallery{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.room-description{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.room-preview{
+	display: flex;
+	width: 80%;
+}
+
+.room-preview img{
+	height: 100px;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+img.room-active{
+	opacity: 1;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 #hero .profile-img {
-    width: 450px;
+    width: 300px;
+    border-radius: 50%; 
 }
 
 footer {
@@ -76,7 +117,7 @@ header a {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-      ), url('https://i.redd.it/0r2qspv2jwv11.jpg');
+      ), url('https://www.edchoice.org/wp-content/uploads/2017/03/WSJ-Response-HEADER.jpg');
 }
 
 #about {
