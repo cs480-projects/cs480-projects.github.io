@@ -1,0 +1,11 @@
+@font-face
+{
+    font-family: 'Cabin';
+    src: url(fonts/Cabin-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: 'Cabin SemiBold';
+    src: url(fonts/Cabin-SemiBold.ttf);
+}

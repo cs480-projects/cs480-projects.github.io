@@ -1,0 +1,19 @@
+/*
+ * CSS Variables for common attributes.
+ */
+:root
+{
+    --main-fonts: 'Cabin', sans-serif;
+    --general-border-radius: 10px;
+}
+
+h1
+{
+    font-family: var(--main-fonts);
+}
+
+.image-lg
+{
+    width: 75vw;
+    border-radius: var(--general-border-radius);
+}
