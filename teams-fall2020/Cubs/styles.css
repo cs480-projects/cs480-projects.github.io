@@ -10,10 +10,22 @@
 h1
 {
     font-family: var(--main-fonts);
+    text-align: center;
+    color: lightblue;
 }
 
 .image-lg
 {
     width: 75vw;
     border-radius: var(--general-border-radius);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TeamMembers
+{
+	text-align: center;
+	font-family: var(--main-fonts);
+	color: #C888D5;
 }
