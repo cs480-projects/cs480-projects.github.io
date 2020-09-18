@@ -1,0 +1,15 @@
+html {
+    background-image: url(../image/Space-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: white;
+}
