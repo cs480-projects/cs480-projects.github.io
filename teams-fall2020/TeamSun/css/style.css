@@ -77,11 +77,11 @@ a:hover{
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 2em;
   display: grid;
-  grid-template-columns: repeat(5, 20vmin);
-  gird-template-rows: repeat(1, 20vmin);
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
   align-content: center;
   justify-content: space-around;
   letter-spacing: 2px;
+
 }
 
 .grid-person {
