@@ -1,0 +1,91 @@
+/*
+website colors
+#41B3A3
+#C38D9E
+#E8A87C
+#85DCB
+#E27D60
+
+*/
+body{
+    background-size: cover;
+    background-image:url(../images/mountain.jpg);
+}
+
+.title-intro{
+    font-weight:bold;
+    text-align: center;
+    margin-left:auto;
+    margin-right:right;
+}
+
+.meet-the-team{
+    text-align: center;
+}
+
+.NuclearNodeIntro{
+    width: 500px;
+    height: 500px;
+    background-color:#E8A87C;
+    opacity: .9;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid black;
+    border-radius:15px;
+
+}
+
+
+.BackEnd{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.FrontEnd{
+    text-align:center;
+    text-decoration: underline;
+    padding-top:.5em;
+}
+
+.team-member-backend{
+    width: 500px;
+    height:auto;
+    background-color: #C3859E;
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom: .5em;
+    border:10px solid black;
+    border-radius: 15px;
+}
+
+.team-member-frontend{
+    width: auto;
+    height:auto;
+    background-color: #E27D60;
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right:auto;
+    border:10px solid black;
+    border-radius:15px;
+}
+
+.team-member-pic{
+    margin-bottom: auto;
+    margin-top:auto;
+    
+}
+.team-member-contact li{
+    display:inline-block;
+    font-size: 64px;
+    color:black;  
+    padding-right:16px;
+}
+
+.team-member-contact li a{
+    color:black;
+}
+
