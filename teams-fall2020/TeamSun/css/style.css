@@ -95,7 +95,7 @@ a:hover{
   width: auto;
   max-height: 350px;
   max-width: 200px;
-
+  border: 6px solid white;
 }
 
 .grid-person h5 {
