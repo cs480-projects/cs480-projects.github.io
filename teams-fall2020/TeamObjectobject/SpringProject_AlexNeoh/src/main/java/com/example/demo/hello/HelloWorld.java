@@ -9,6 +9,6 @@ public class HelloWorld {
 	
 	@RequestMapping(value="/", method= RequestMethod.GET )
 	public String hello() {
-		return "Hello World";
+		return "Hello World, I'm Alex";
 	}
 }
