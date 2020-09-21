@@ -61,11 +61,11 @@ body{
     background-color: #C3859E;
     text-align: center;
     margin-top: auto;
-    margin-left: auto;
-    margin-right:auto;
-    padding-bottom: .5em;
+    margin-left: 200px;
+    margin-right:200px;
     border:10px solid black;
     border-radius: 15px;
+    display: inline-block;
 }
 
 .team-member-frontend{
@@ -78,12 +78,23 @@ body{
     margin-right:auto;
     border:10px solid black;
     border-radius:15px;
+    display: inline-block;
 }
+
+
 
 .team-member-pic{
     margin-bottom: auto;
     margin-top:auto;
     
+}
+
+.team-member-pic img{
+    margin-top:auto;
+    margin-bottom:auto;
+    max-height: 50%;
+    max-width:100%;
+    border-radius: 50%;
 }
 .team-member-contact li{
     display:inline-block;
