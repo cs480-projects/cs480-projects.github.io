@@ -37,8 +37,8 @@ body{
 }
 
 .logo{
-    width:100px;
-    height: 100px;
+    width:100%;
+    height: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -96,3 +96,11 @@ body{
     color:black;
 }
 
+h1 {
+    font-family: helvectica, sans-serif;
+    background: rgba(255,255,255,0.5);
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px white;
+    display: inline-block;
+}
