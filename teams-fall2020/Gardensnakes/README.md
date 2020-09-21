@@ -1,2 +1,0 @@
-# Gardensnakes-
-Gardensnakes pages repository
