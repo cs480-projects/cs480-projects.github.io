@@ -37,10 +37,9 @@ body{
 }
 
 .logo{
-    width:200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width:100px;
+    height: 100px;
+    text-align: center;
 }
     
 .BackEnd{
@@ -68,8 +67,8 @@ body{
 }
 
 .team-member-frontend{
-    width: 200px;
-    height:200px;
+    width: 500px;
+    height:auto;
     background-color: #ADD8E6;
     text-align: center;
     margin-top: auto;
@@ -80,6 +79,8 @@ body{
 }
 
 .team-member-pic{
+    width:200px;
+    height: 200px;
     margin-bottom: auto;
     margin-top:auto;
     
