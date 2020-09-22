@@ -15,6 +15,7 @@ p {
 
 
 .button {
+    min-width: 80px;
     background-color: #4CAF50; /* Green */
     border: none;
     border-radius: 3em;
@@ -22,7 +23,6 @@ p {
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
-    display: inline-flex;
     font-size: 12px;
     margin: 2px 1px;
     transition-duration: 0.4s;
@@ -106,7 +106,7 @@ p {
 }
 
 .header li a:hover {
-    color: #fda500;
+    color: #4CAF50;
 }
 
 
