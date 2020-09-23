@@ -29,3 +29,10 @@ h1
 	font-family: var(--main-fonts);
 	color: #C888D5;
 }
+
+body{
+  	margin: 0;
+  	padding: 0;
+  	background-image: linear-gradient(#FFFFFF, #D8E9F3);
+  	min-height: 100vh;
+}
