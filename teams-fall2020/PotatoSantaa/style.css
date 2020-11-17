@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 20px;
+    display: block;
+    color: black;
+}
+
+p {
+    font-size: 15px;  
+    display: block;  
+}
+
+
+.button {
+    min-width: 80px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 3em;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: not-allowed;
+}
+
+.button1 {
+    background-color: white; 
+    color: grey; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.loginButton {
+    background-color: white; 
+    color: grey; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .loginButton:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+ .signupButton {
+    background-color: white; 
+    color: grey; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .signupButton:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    display: grid;
+
+    grid-template: 50px 1fr 1fr 100px/ repeat(3, 1fr);
+
+    gap: 10px;
+
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+.container div {
+    padding: 10px;
+    border: 1px ;
+    color: grey;   
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    cursor: pointer;
+}
+
+.header li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header a,li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #24252A;
+    text-decoration: none; 
+}
+
+.header li a:hover {
+    color: #4CAF50;
+}
+
+
+.logo {
+    /* background-color: #fda500; */
+    border-radius: 50%;
+}
+
+.content-large {
+    border: 10px;
+    padding: 5px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-small {
+    border: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+    border-radius: 1px;
+}
+
+.footer {
+    grid-column: 1 / span 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}

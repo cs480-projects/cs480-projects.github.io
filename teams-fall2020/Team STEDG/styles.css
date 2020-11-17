@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+  background-color: black;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  padding: 0;
+  list-style: none;
+}
+
+.navlist{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.navbar{
+  width: 96%;
+  margin: 0 auto;
+}
+
+.logo{
+  padding: 5px 0;
+  float: left;
+  width: 100px;
+  height: 81px;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+nav a:hover{
+  color: #fff;
+
+}
+
+nav a:before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: darkgreen;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+.home-div {
+  font-weight: 400;
+  background: linear-gradient(to bottom, transparent, transparent, transparent
+	 	,rgba(0,0,0)), url("assets/forest_L.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-icon {
+  display: block;
+  height: 400px;
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.git-icon{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  padding-bottom: 15px;
+  transition: all ease-in-out 250ms;
+}
+
+
+.team-name-text{
+  text-align: center;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2em;
+}
+
+.home-div h1 {
+  padding-top: 20px;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+}
+
+.webapp-button{
+  display: flex;
+  margin:auto;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #4CAF50; 
+  color: white; 
+  border: 2px solid #4CAF50;
+}
+
+.webapp-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.team-div{
+	padding-top: 50px;
+	height: 500px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(5, 20vw);
+    align-content: center;
+    justify-content: space-around;
+    letter-spacing: 2px;
+}
+
+.team-div p{
+	color: white;
+	padding: 10px;
+}
+
+.bio-grid{
+	width: 250px;
+	margin: 20px;
+}
+
+.bio-grid h5{
+	margin-top: 0.5px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.bio-grid p{
+	font-size: 13pt;
+}
+
+.profile-icon{
+	-webkit-border-radius: 20%;
+  height: auto; 
+  width: auto; 
+  min-height: 220px; 
+  max-width: 200px;
+  border: 6px solid white;
+}
+
+.personal-git-icon{
+	height: 65px;
+	margin-right: 5px;
+}
+
+.linkedin-icon{
+	height: 65px;
+	margin-left: 5px;
+}

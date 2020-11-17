@@ -1,0 +1,117 @@
+html {
+  background-image: url(../image/Space-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all ease-in-out 250ms;
+}
+
+a:hover{
+  color: rgb(80, 80, 80);
+}
+
+.flex-container {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  flex-direction: row;
+  height: 45px;
+  align-items: center;
+  margin-top: -5px;
+  margin-left: -8px;
+}
+
+.container-item1 {
+  margin-left: 20px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.container-item {
+  margin-left: 20px;
+  color: white;
+}
+
+.home-block {
+  height: 500px;
+  margin: 0.5px -8px 0 -8px;
+  background-color: rgb(255, 255, 255, 0);
+  text-align: center;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2em;
+}
+
+.home-block img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 350px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-block h1 {
+  margin-top: -5px;
+  letter-spacing: 5px;
+}
+
+#team-grid {
+  height: 500px;
+  margin: 0 -8px 0 -8px;
+  background-color: rgb(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: repeat(5, 20vw);
+  align-content: center;
+  justify-content: space-around;
+  letter-spacing: 2px;
+
+}
+
+.grid-person {
+  width: 250px;
+  margin: 20px;
+}
+
+.grid-person img {
+  -webkit-border-radius: 20%;
+  height: auto;
+  width: auto;
+  max-height: 350px;
+  max-width: 200px;
+  border: 6px solid white;
+}
+
+.grid-person h5 {
+  margin-top: 0.5px;
+  margin-bottom: 0
+}
+
+.grid-person a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.grid-person p {
+  font-size: 13pt;
+}
+
+.subtitle {
+  color: white;
+}

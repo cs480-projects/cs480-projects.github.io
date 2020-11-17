@@ -1,0 +1,171 @@
+body {
+	background-color: #e3f2fd;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.h1 {
+	color: black;
+	padding: 20px;
+}
+
+nav {
+	background-color: SteelBlue;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+.project {
+	width: 500px;
+	background: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	margin: auto;
+	color: white;
+	padding: 30px;
+}
+
+.project h1 {
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.project h5 {
+	font-size: 25px;
+	font-weight: 75;
+	padding: 20px;
+}
+
+.project p {
+	font-size: 15px;
+	font-weight: 50;
+}
+
+.project li {
+	list-style: none;
+	display: inline-block;
+	margin: 8px;
+}
+
+.project li a {
+	color: white;
+	text-decoration: none;
+	font-size: 50px;
+}
+
+.team {
+	width: 1080px;
+	background: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 0%;
+	color: white;
+	padding: 30px;
+	padding-bottom: 0px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.team h1 {
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.team-members {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.member {
+	height: 500px;
+	width: 350px;
+	padding: 20px;
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 0%;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+}
+
+.member h5 {
+	font-size: 25px;
+	font-weight: 100;
+}
+
+.member p {
+	text-align: center;
+	height: 120px;
+	font-weight: 75;
+	padding: 20px;
+}
+
+.member li {
+	display: inline-block;
+	margin: 6px;
+	list-style: none;
+}
+
+.member li a {
+	display: inline-block;
+	list-style: none;
+	margin: 8px;
+	color: white;
+	text-decoration: none;
+	font-size: 60px;
+}
+
+.member-img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	border: 2px solid white;
+}
+
+.contact {
+	width: 600px;
+	background: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+	color: white;
+	padding: 30px;
+}
+
+.contact h1 {
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.contact h5 {
+	font-size: 25px;
+	font-weight: 75;
+	padding: 20px;
+}
+
+.contact form input {
+	margin-bottom: 2%;
+	align-content: center;
+} 
+
+.contact form textarea {
+	margin-bottom: 2%;
+	align-content: center;
+} 
+
+.contact form button {
+	margin: 1%;
+	align-content: center;
+	background-color: SteelBlue !important;
+} 
