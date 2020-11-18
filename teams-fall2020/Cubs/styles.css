@@ -9,10 +9,11 @@
     --description-font-size: 15px;
     
     /* Colors */
-    --background-color:rgb(205, 255, 249);
+    --background-color: linear-gradient(rgb(174, 202, 255), rgb(205, 255, 249));
     --navbar-background-color: white;
     --box-text-color: white;
-    --box-background-color: rgb(5, 171, 236);
+    --box-base-color: rgba(100, 148, 237, 0.445);
+    --box-background-color: radial-gradient(circle at 0, rgb(0, 140, 255), rgb(0, 162, 255));
     --profile-item-background-color: white;
 
     /* General Styling */
@@ -104,13 +105,33 @@ body
 /* Team Member Box */
 .box
 {
+    text-shadow: 1px 1px rgb(0, 119, 167);
+    position: relative;
     min-width: 40%;
     width: 48%;
     border-radius: var(--general-border-radius);
     padding: var(--general-padding);
-    background: var(--box-background-color);
     font-family: var(--main-font);
     color: var(--box-text-color);
+    background: var(--box-base-color);
+    overflow: hidden;
+}
+
+.blur-background
+{
+    width: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--general-border-radius);
+    background-size: cover;
+    background: var(--box-background-color);
+    filter: blur(100px);
+    overflow: hidden;
 }
 
 .image-profile
