@@ -4,6 +4,7 @@ html {
   background-size: cover;
   padding: 0px;
   margin: 0px;
+  height: 100vh;
 }
 
 body {
@@ -44,7 +45,7 @@ a:hover{
 }
 
 .home-block {
-  height: 500px;
+  height: 350px;
   margin: 0.5px -8px 0 -8px;
   background-color: rgb(255, 255, 255, 0);
   text-align: center;
@@ -65,7 +66,6 @@ a:hover{
 }
 
 .home-block h1 {
-  margin-top: -5px;
   letter-spacing: 5px;
 }
 
@@ -82,7 +82,7 @@ a:hover{
   align-content: center;
   justify-content: space-around;
   letter-spacing: 2px;
-  width: 100%;
+  width: 100vw;
 }
 
 .grid-person {
