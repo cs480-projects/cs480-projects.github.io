@@ -1,17 +1,153 @@
 <!DOCTYPE html>
 <html>
-<body>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
 
-<h1>Welcome to MCJAG's Page :)</h1>
-<h2>Michelle Lam </h2>
-<p>M as the start of MCJAG </p>
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
 
-<h2>Joseph Jeon </h2>
-<p>I AM J</p>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Website</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Slides</a>
+  </div>
+</div>
 
-<h2>Andy Vu</h2>
-<p>the A in MCJAG</p>
-<a href="https://www.linkedin.com/in/andy-vu-84a735150/">LinkedIn</a>
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="assets/pic1.jpg" alt="pic" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <footer class="w3-container w3-teal">
+      <p>Modal footer</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>TEAM MCJAG</h2>
+<a href="http://daytodayplanner.com/#/login">WEBSITE</a>
+<h2></h2>
+<a href="https://docs.google.com/presentation/d/1UfcZv5cADY6O6os56wYLp-B1dXIViTiVjrbO6fdNZYQ/edit?usp=sharing">SLIDES</a>
+
+<div class="w3-row"><br>
+
+<div class="w3-third">
+  <img src="assets/Michelle.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Michelle Lam</h3>
+  <p>Frontend/Full Stack Developer
+    <br>michellemlam@cpp.edu</p>
+</div>
+
+<div class="w3-third">
+  <img src="assets/Claire.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Claire Wong</h3>
+  <p>Backend Developer
+    <br>ccwong@cpp.edu</p>
+</div>
+
+<div class="w3-third">
+  <img src="assets/Joe.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Joseph Jeon</h3>
+  <p>Backend Developer
+    <br>jongbaejeon@cpp.edu</p>
+</div>
+<div class="w3-row"><br>
+<div class="w3-half">
+  <img src="assets/Gina.jpg" alt="Boss" style="width:30%" class="w3-circle w3-hover-opacity">
+  <h3>Gina Martinez</h3>
+  <p>Frontend Developer
+    <br>ginamartinez@cpp.edu</p>
+</div>
+
+<div class="w3-half">
+  <img src="assets/Gina.jpg" alt="Boss" style="width:30%" class="w3-circle w3-hover-opacity">
+  <h3>Andy Vu</h3>
+  <p>.
+    <br>andyvu@cpp.edu</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Our Website</h2>
+<p>We built dayToday Alert Planner to help people stay on top of their busy lives by having a dedicated website that notifies you of all the important things you have going on in your life. Whether it be for personal or professional use, our website is extremely easy to use with its intuitive design. Give our website a try and help us make your life easier!</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="assets/p1.jpg" alt="Snow" style="width:457px;height:300px;">
+  <div class="w3-container">
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="assets/p2.jpg" alt="Lights" style="width:457px;height:300px;">
+  <div class="w3-container">
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="assets/p3.jpg" alt="Mountains" style="width:457px;height:300px;">
+  <div class="w3-container">
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
