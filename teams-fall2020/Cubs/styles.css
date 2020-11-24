@@ -3,29 +3,219 @@
  */
 :root
 {
-    --main-fonts: 'Cabin', sans-serif;
+    /* Fonts */
+    --main-font: 'Cabin', sans-serif;
+    --heading-font-size: 25px;
+    --description-font-size: 15px;
+    
+    /* Colors */
+    --background-color: linear-gradient(rgb(174, 202, 255), rgb(205, 255, 249));
+    --navbar-background-color: white;
+    --box-text-color: white;
+    --box-base-color: rgba(100, 148, 237, 0.445);
+    --box-background-color: radial-gradient(circle at 0, rgb(0, 140, 255), rgb(0, 162, 255));
+    --profile-item-background-color: white;
+
+    /* General Styling */
     --general-border-radius: 10px;
+    --general-padding: 5px;
+    --general-box-width: 85%;
+    --profile-image-size: 150px;
 }
 
-h1
+/* Flex Classes */
+.flex-col
 {
-    font-family: var(--main-fonts);
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-grow
+{
+    flex-grow: 1;
+}
+
+.flex-wrap
+{
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+}
+
+.flex-center
+{
+    align-items: center;
+}
+
+.flex-vgap-small
+{
+    gap: 2vh;
+}
+
+.flex-hgap-small
+{
+    gap: 1vw;
+}
+
+/* Component Classes */
+body
+{
+    background: var(--background-color);
+  	margin: 0;
+  	padding: 0;
+  	min-height: 100vh;
+}
+
+/* General Styling Classes */
+.width-full
+{
+    width: 100%;
+}
+
+.width-qt
+{
+    width: 25%;
+}
+
+.width-lg
+{
+    width: var(--general-box-width);
+}
+
+.text-header
+{
+    font-size: var(--heading-font-size);
+}
+
+.text-description
+{
+    font-size: var(--description-font-size);
+}
+
+.text-center
+{
     text-align: center;
-    color: lightblue;
 }
 
-.image-lg
+/* Team Member Box */
+.box
 {
-    width: 75vw;
+    text-shadow: 1px 1px rgb(0, 119, 167);
+    position: relative;
+    min-width: 40%;
+    width: 48%;
     border-radius: var(--general-border-radius);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: var(--general-padding);
+    font-family: var(--main-font);
+    color: var(--box-text-color);
+    background: var(--box-base-color);
+    overflow: hidden;
 }
 
-.TeamMembers
+.blur-background
 {
-	text-align: center;
-	font-family: var(--main-fonts);
-	color: #C888D5;
+    width: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--general-border-radius);
+    background-size: cover;
+    background: var(--box-background-color);
+    filter: blur(100px);
+    overflow: hidden;
+}
+
+.image-profile
+{
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    border-radius: var(--general-border-radius);
+}
+
+.team-member-description
+{
+    flex-grow: 1;
+}
+
+.connection-list
+{
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.connection-list a
+{
+    display: block;
+    width: min-content;
+    height: min-content;
+    padding: var(--general-padding);
+    border-radius: var(--general-border-radius);
+    background: var(--profile-item-background-color);
+}
+
+.connection-list img
+{
+    object-fit: contain;
+    height: 35px;
+    width: 35px;
+    transition: all 500ms;
+}
+
+.connection-list img:hover
+{
+    transition: all 500ms;
+    height: 50px;
+    width: 50px;
+    border-radius: var(--general-border-radius);
+}
+
+.banner
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    width: var(--general-box-width);
+    border-radius: var(--general-border-radius);
+    padding: var(--general-padding);
+    background: var(--navbar-background-color);
+    font-family: var(--main-font);
+    font-size: 4vh;
+}
+
+/* Navbar */
+#navbar > img
+{
+    height: 10vh;
+    border-radius: var(--general-border-radius);
+}
+
+/* compucompare Banner */
+#compucompare-banner
+{
+    height: 10vh;
+}
+
+#compucompare-logo
+{
+    max-width: 50%;
+}
+
+#compucompare-logo img
+{
+    max-height: 5vh;
+    max-width: 100%;
+    border-radius: var(--general-border-radius);
 }

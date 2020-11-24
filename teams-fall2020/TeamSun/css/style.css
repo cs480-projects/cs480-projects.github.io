@@ -1,9 +1,10 @@
 html {
-  background-image: url(../image/Space-Background.jpg);
+  background-color: #cacbcc;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px;
   margin: 0px;
+  height: 100vh;
 }
 
 body {
@@ -23,7 +24,7 @@ a:hover{
 
 .flex-container {
   display: flex;
-  background-color: rgb(0, 0, 0);
+  background-color: #0d3103;
   flex-direction: row;
   height: 45px;
   align-items: center;
@@ -44,13 +45,14 @@ a:hover{
 }
 
 .home-block {
-  height: 500px;
+  height: 350px;
   margin: 0.5px -8px 0 -8px;
   background-color: rgb(255, 255, 255, 0);
   text-align: center;
   color: white;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: sans-serif;
   font-size: 2em;
+  padding: 50px;
 }
 
 .home-block img {
@@ -64,7 +66,6 @@ a:hover{
 }
 
 .home-block h1 {
-  margin-top: -5px;
   letter-spacing: 5px;
 }
 
@@ -74,14 +75,14 @@ a:hover{
   background-color: rgb(0, 0, 0, 0.4);
   text-align: center;
   color: white;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: sans-serif;
   font-size: 2em;
   display: grid;
   grid-template-columns: repeat(5, 20vw);
   align-content: center;
   justify-content: space-around;
   letter-spacing: 2px;
-
+  width: 100vw;
 }
 
 .grid-person {
