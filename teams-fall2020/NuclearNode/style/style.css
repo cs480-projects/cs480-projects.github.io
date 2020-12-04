@@ -115,16 +115,3 @@ h1 {
     box-shadow: 0 0 5px white;
     display: inline-block;
 }
-h2 {
-    font-family: helvectica, sans-serif;
-    background: rgba(255,255,255,0.5);
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: 0 0 5px yellow;
-    display: inline-block;
-    font-weight:bold;
-    text-align: center;
-    margin-left: auto;
-    margin-right: right;
-    text-decoration: none;
-}
