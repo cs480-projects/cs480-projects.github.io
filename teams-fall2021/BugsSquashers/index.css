@@ -1,0 +1,47 @@
+body {
+	background: #17C3B2;
+	font-family: Garamond, Helvetica;
+}
+
+#container
+{
+	background: #FEF9EF;
+}
+
+#header
+{
+	color: #227C9D;
+	text-align:center;
+
+}
+
+#team{
+	text-align:center;
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%
+}
+#footer
+{
+	background: #CFBAE1;
+	color: #fff;
+	text-align: right;
+	padding: 5px;
+}
