@@ -1,4 +1,0 @@
-# Index page
-@app.route('/')
-def hello():
-  return "Hello Welcome to the Randevu Home page!"
