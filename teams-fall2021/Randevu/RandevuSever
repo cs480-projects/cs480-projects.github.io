@@ -10,8 +10,6 @@ app = Flask(
 # Joseph Index page
 
 @app.route('/RandevuServer')
-def hello():
+def RandevuServer():
   return "Welcome To Randevu"
-  
-  
 app.run(host = "0.0.0.0")
