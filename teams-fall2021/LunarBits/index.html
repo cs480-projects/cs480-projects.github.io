@@ -2,6 +2,32 @@
 <html>
 <head>
 	<title>Lunar Bits</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html{
+                height: 100%;
+            }
+            body,h1 {
+                font-family: Helvetica;
+                background-color: #221c1c;
+                color: #FFFFFF;
+            }
+            h1 {
+                font-size: 64px;
+				text-align:center;
+            }
+			.cards{
+				background-color: #6763c8;
+				border-radius: 20px;
+  				padding: 20px;
+  				width: 200px;
+  				height: 100px;
+				margin: 20px;
+				display:inline-block;
+				text-align:center;
+			}
+        </style>
 </head>
 <body>
 	<script>
@@ -15,7 +41,28 @@
 	
 	<p>Current time is: <span id="time"></span></p>
 	
-	<h1>Team Lunar Bits!</h1>
-	<p>Our team consists of Emily Villalba, Rachel Goodrich, Neha Jayan, FengRu Yang, and Nathan Goodrich.</p>
+	<h1>Lunar Bits</h1>
+	<div align="center">
+		<div class="cards">
+			<h3>Emily Villalba</h3>
+			<p>Front-end</p>
+		</div>
+		<div class="cards">
+			<h3>Rachel Goodrich</h3>
+			<p>Front-end</p>
+		</div>
+		<div class="cards">
+			<h3>Nathan Goodrich</h3>
+			<p>Front-end</p>
+		</div>
+		<div class="cards">
+			<h3>Neha Jayan</h3>
+			<p>Back-end</p>
+		</div>
+		<div class="cards">
+			<h3>FengRu Yang</h3>
+			<p>Back-end</p>
+		</div>
+	</div>
 </body>
 </html>
