@@ -34,11 +34,13 @@
 	function updateTime()
 	{
 	var d = new Date();
+	document.getElementById("date").innerHTML = d.toLocaleDateString();
 	document.getElementById("time").innerHTML = d.toLocaleTimeString();
 	}
 	setInterval(updateTime, 1000);
 	</script>
 	
+	<p>Today is: <span id="date"></span></p>
 	<p>Current time is: <span id="time"></span></p>
 	
 	<h1>Lunar Bits</h1>
