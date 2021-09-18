@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lunar Bits</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html{
+                height: 100%;
+            }
+            body,h1 {
+                font-family: Helvetica;
+                background-color: #221c1c;
+                color: #FFFFFF;
+            }
+            h1 {
+                font-size: 64px;
+				text-align:center;
+            }
+			.cards{
+				background-color: #6763c8;
+				border-radius: 20px;
+  				padding: 20px;
+  				width: 200px;
+  				height: 100px;
+				margin: 20px;
+				display:inline-block;
+				text-align:center;
+			}
+        </style>
+</head>
+<body>
+	<script>
+	function updateTime()
+	{
+	var d = new Date();
+		
+	document.getElementById("date").innerHTML = d.toLocaleDateString();
+	document.getElementById("time").innerHTML = d.toLocaleTimeString();
+	}
+	setInterval(updateTime, 1000);
+	</script>
+	
+	<p>Today is: <span id="date"></span></p>
+	<p>Current time is: <span id="time"></span></p>
+	
+	<h1>Lunar Bits</h1>
+	<div align="center">
+		<div class="cards">
+			<h3>Emily Villalba</h3>
+			<p>Front-end</p>
+		</div>
+		<div class="cards">
+			<h3>Rachel Goodrich</h3>
+			<p>Front-end</p>
+		</div>
+		<div class="cards">
+			<h3>Nathan Goodrich</h3>
+			<p>Front-end</p>
+		</div>
+		<div class="cards">
+			<h3>Neha Jayan</h3>
+			<p>Back-end</p>
+		</div>
+		<div class="cards">
+			<h3>FengRu Yang</h3>
+			<p>Back-end</p>
+		</div>
+	</div>
+</body>
+</html>
