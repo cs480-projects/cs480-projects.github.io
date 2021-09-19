@@ -4,22 +4,72 @@
     <title>Randevu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+body {
+  font-family: 'Times New Roman', serif;
+}
+/* Start style for buttons */
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Green */
+.purple {
+    color: purple;
+}
+
+.purple:hover {
+    background-color: #8E44AD;
+    color: white;
+}
+
+/* Orange */
+.orange {
+    color: orange;
+}
+
+.orange:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/* Red */
+.red {
+  color: red;
+}
+
+.red:hover {
+  background: #f44336;
+  color: white;
+}
+/* End style for buttons */
+</style>
+
 </head>
+
 <body>
     <div class="w3-top">
-    	<a href="#team" class="w3-button w3-hover-black">Team</a>
-        <a href="https://docs.google.com/presentation/d/17oZ9BR46CeZPjsHQZ-6-ICGkKlc7jNrIsn5igo28AoE/edit" class="w3-button w3-hover-black">Slides</a>
-        <a href="https://github.com/orgs/Paradigm-Shifters/dashboard" class="w3-button w3-hover-black">Github</a>
+    	<button class="btn red"><a href="#team" class="w3-button w3-hover-black">Team</a></button>
+        <button class="btn purple"><a href="https://docs.google.com/presentation/d/17oZ9BR46CeZPjsHQZ-6-ICGkKlc7jNrIsn5igo28AoE/edit" class="w3-button w3-hover-black">Slides</a></button>
+        <button class="btn orange"><a href="https://github.com/orgs/Paradigm-Shifters/dashboard" class="w3-button w3-hover-black">Github</a></button>
+        
     </div>
     <div class="w3-display-container w3-animate-opacity">
         <img src="https://images.squarespace-cdn.com/content/v1/55d64111e4b0a862eed6a419/1524007829841-21C3C49BS8T0YQGZ3X7I/new-year-travel.jpg" style="width:100%;min-height=300;max-height:500px;">
         <div class="w3-container w3-display-left w3-text-black">  
-            <h1>Randevu</h1>
+            <h1 style="color:white;">Randevu</h1>
         </div>
     </div>
     <div class="w3-center" id = "team">
-        <h2>Members</h2>
-        <p>Jason Lin, Dany Flores, Joseph Lytle, Stefano Terenzi, Kuldeep Singh </p>
+        <h2 style="color:blue;">Members</h2>
+        <p style="background-color:powderblue;color:purple;">Jason Lin, Dany Flores, Joseph Lytle, Stefano Terenzi, Kuldeep Singh </p>
  
     </div>
 </body>
