@@ -1,3 +1,21 @@
+body {
+  background: transparent;
+}
+
+.body-container {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+div.screenshot {
+  background: #555;
+  border-radius: 0.5rem;
+}
+
+.screenshot svg {
+  width: 100%;
+}
+
 .header-blue {
   background: linear-gradient(135deg, #172a74, #21a9af);
   background-color: #184e8e;
@@ -156,7 +174,7 @@
   }
 }
 
-.header-blue .hero h1 {
+h1 {
   color: #fff;
   font-size: 40px;
   margin-top: 0;
