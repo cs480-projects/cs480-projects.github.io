@@ -1,0 +1,55 @@
+.backgroundimg {
+
+  background-image: url(../images/foodbackground.jpg);
+  height: 500px;
+}
+
+
+:root {
+  --mainWhite: #ec1919;
+  --mainDark: #0c0c0c;
+  --mainRed: #e71d1d;
+}
+body {
+  background: rgb(30, 88, 7);
+  color: var(--mainDark);
+}
+.redBtn {
+  border-color: var(--mainRed);
+  color: var(--mainRed);
+  background: transparent;
+}
+.redText {
+  color: var(--mainRed);
+}
+.redBtn:hover {
+  background: var(--mainRed);
+  color: var(--mainDark);
+}
+.form-control {
+  border-color: var(--mainRed);
+}
+.feedback {
+  display: none;
+}
+.weather-card {
+  display: none;
+  resize: both;
+  overflow: auto;
+}
+.loader {
+  margin: 0 auto;
+  display: none;
+  width: 30%;
+
+}
+.card p {
+  font-size: 0.01rem;
+
+}
+.showItem {
+  display: block;
+}
+.capitalize {
+  text-transform: capitalize;
+}
