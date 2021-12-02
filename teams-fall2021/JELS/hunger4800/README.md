@@ -2,7 +2,7 @@ The link of the hunger app: https://hunger4800.herokuapp.com/
 
 The link to JESL github: https://github.com/JELSCS/food-tinder
 
-The link of google slides:
+The link of google slides: https://docs.google.com/presentation/d/15wdST8QVKIhECJBHxYzC12dnpt7Tqfa7AWGu364H9H0/edit?usp=sharing 
 
 Hunger app helps users to find the nearest restaurant based on what they want. 
 Users can search for cafe, restaurant, or bar. Users can choose what meal they want, breakfast, lunch, or dinner. Hunger app will show users nearest locations to eat based on what they search for. Users can search for any city in any country.
