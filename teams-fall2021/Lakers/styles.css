@@ -1,0 +1,48 @@
+﻿body {
+    background-color: #b7c1c3;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+.content {
+    text-align: center;
+}
+
+    .content div {
+        display: inline-block;
+    }
+
+.link-button {
+    position: absolute;
+    width: inherit;
+    bottom: 10px;
+    left: 6px;
+    padding: 15px 6px;
+    border-radius: 20px;
+    background-color: #d993ce;
+    font-weight: bold;
+    text-decoration: none;
+}
+    .link-button:hover {
+        background-color: deepskyblue;
+    }
+
+.link-block {
+    position: relative;
+    width: 120px;
+    max-width: 200px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
