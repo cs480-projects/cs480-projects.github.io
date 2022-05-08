@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font: 12pt 'Poppins', sans-serif;
+    font: 14pt 'Poppins', sans-serif;
     color: #131315;
     overflow-x: hidden;
 }
@@ -14,12 +14,23 @@ h1::first-letter {
     text-decoration: underline;
 }
 
+a {
+    background: linear-gradient(0deg, #DBB590 40%, #ffffff 0%);
+    color: #131315;
+    text-decoration: none;
+}
+
+a:hover {
+    background: none;
+    color: #131315;
+}
+
 header {
     background-image: url('images/header-image.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     margin-bottom: 50px;
 }
 
@@ -27,6 +38,7 @@ header #title {
     background-color: #ffffffcc;
     width: 50%;
     padding: 20px;
+    border-radius: 5px;
 }
 
 header h1, h2 {
@@ -65,6 +77,11 @@ content .ic .fa {
     font-size: 45pt;
 }
 
+#intro {
+    width: 100%;
+    height: 100vh;
+}
+
 .team {
     padding: 10px;
 }
@@ -76,4 +93,5 @@ content .ic .fa {
 .consumer h3 {
     background-color: #E9E9E7cc;
     padding: 10px 15px;
+    border-radius: 5px;
 }
