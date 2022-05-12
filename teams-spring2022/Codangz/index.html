@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Codangz</title>
-</head>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        #wrapper, img{
+          width: 100%;
+        }
+        h2 {
+          text-align: center;
+        }
+        .center {
+          text-align: center;
+        }
+        #wrapper .btn {
+          top: 50%
+          left: 50%;
+          background-color: #555;
+          color: white;
+          font-size: 30px;
+          padding: 12px 24px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        #wrapper .btn:hover {
+          background-color: black;
+        }
+    </style>
+</head>
 <body>
 
-  <h1>Codangz</h1>
-  <p>The development of a student based calendar.</p>
-
-  <h2>Team Members</h2>
-  <ul>
-	<li>Derek Hoang</li>
-	<li>Ricardo Garcia</li>
-    <li>Thongsavik Sirivong</li>
-    <li>Gaia Dennison</li>
-  </ul>
+    <div class="topnav">
+        <a class="active">Codangz</a>
+        <a class="active" href="https://github.com/codangz/CS4800-Project">Git</a>
+        <a class="active" href="http://ec2-52-42-14-76.us-west-2.compute.amazonaws.com/">Website</a>
+        <a class="active" href="https://docs.google.com/presentation/d/1WF8_eMQAMsaqkK_E6yBv9ytE6_e_HyLIuiHO_XJKWyE/edit#slide=id.p">Google Slides</a>
+    </div>
+    <div id="wrapper">
+        <img src="https://www.onecalendar.nl/images/onecalendar.jpg">
+    </div>
+    <div style="background-color:#333;color:white;padding:20px;">
+        <h2>Team Members</h2>
+        <div class="center">
+            <span>Derek Hoang,<span>
+            <span>Thongsavik Sirivong,</span>
+            <span>Gaia Dennison</span>
+        </div>
+  </div>
 
 </body>
 </html>
