@@ -1,15 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Beeroscopes</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	<h1>Team Beeroscopes Members</h1>
-	<div>Kaye Reeves</div>
-	<div>Brian Zeng</div>
-	<div>Kylan Parayao</div>
-	<div>Thomas Pickering</div>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+  </div>
+</div>
+
+<!-- Modal -->
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>THE BEEROSCOPE TEAM</h2>
+<p>Meet the team - our coders:</p>
+
+<div class="w3-row"><br>
+<div class="w3-quarter">
+  <h3>Thomas Pickering</h3>
+  <p>Full Stack Engineer</p>
+  <p>Amateur Game Developer</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>Kaye</h3>
+  <p></p>
+</div>
+
+<div class="w3-quarter">
+  <h3>Kylan</h3>
+  <p></p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>The Beeroscope App</h2>
+<p>Found at <a href="https://beeroscope.herokuapp.com/">beeroscope.herokuapp.com</a> Our business model (slides) can be found here: <a href="https://docs.google.com/presentation/d/1MEFplaSiDUykXJY7Inse4zU_hQ-r__Ph4wlVmL6mSbk/edit?usp=sharing">Business Slides</a> The Beeroscope app is a beer data aggregate site that lets you get your personalized horoscope along with its recommended beer. It also allows for advanced search using filters and tags to aid users in finding a beer that further fits their desires. Check it out today!</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images/snow.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Daily Horoscope!</h3>
+  <h4>Get your fortune with your recommended beer.</h4>
+  <p>Reports are generated everyday.</p>
+  <p>Sagittarius, Pisces, doesn't matter, you can get your reading.</p>
+  <p>Simple User Interface makes it easy!</p>
+  <p>Visit today!</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images/lights.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Beer Search</h3>
+  <h4>Find what you want.</h4>
+  <p>Search for the beer you crave on our search page! Link found on the landing page.</p>
+  <p>You can choose what the table displays for efficient searching.</p>
+  <p>Furthermore, you can use multiple tag filters to really curate your searches!</p>
+  <p>Link to search page: <a href="https://beeroscope.herokuapp.com/search">Beer Search</a></p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="images/mountains.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Beer Report</h3>
+  <h4>The most detailed report you could need on a specific beer.</h4>
+  <p>Foudn something you like? Click on it on the beer search table to receive a detailed report</p>
+  <p>This report will give you crucial information such as volume, pH, malts, and other ingredients</p>
+  <p>Perfect for the newcomer looking for something to try out or the beer enthusiast to find food pairings for their brew!</p>
+  <p>Compare and contrast different beers to find what fits you!</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+
+<script>
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
 </html>
