@@ -1,3 +1,17 @@
+/* Name: Kyle Tam
+ * Team: Snack Overflow
+ * Professor Yu Sun
+ * Date: 10/6/2022
+ */
+
+/* Can be run with the URL http://localhost:8080/customMessage
+   This will print the default message "Hello World" 
+   alongside the number of characters in the message through a byte array.
+   The message can be changed to something else by adjusting the URL to
+   http://localhost:8080/customMessage?content=[TEXT_HERE], like 
+   http://localhost:8080/customMessage?content=Kyle
+*/
+
 package com.example.testservice.FirstHTTPAPI;
 
 import java.io.ByteArrayInputStream;
@@ -17,7 +31,7 @@ import org.apache.commons.io.output.TeeOutputStream;
 
 public class IOCommonsController 
 {
-	private static final String template = "Welcome to TutorialsPoint. Simply Easy Learning.";
+	private static final String template = "Hello World.";
 	private static final String error = "Something went wrong.";
 
 	public static void main(String[] args) 
@@ -51,6 +65,5 @@ public class IOCommonsController
 		teeInputStream.read(new byte[template.length()]);
 		teeInputStream.close();
 		return outputStream1.toString() + " |  Size of byte array: " + outputStream1.size();
-		
 	}
 }
