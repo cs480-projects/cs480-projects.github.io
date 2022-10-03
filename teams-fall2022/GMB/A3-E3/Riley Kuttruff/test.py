@@ -40,3 +40,6 @@ def next():
 			"id": item['id']
 		}
 	)
+
+
+app.run(host="0.0.0.0")
