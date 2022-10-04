@@ -4894,6 +4894,10 @@ fieldset:disabled .btn {
   width: 100%;
 }
 
+.card-img-container {
+  min-height: 374.52px;
+}
+
 .card-img,
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
