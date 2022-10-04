@@ -19,5 +19,6 @@ def name_page():
 
 if __name__ == '__main__':
 	app.run(port=8080)
-
+ 
+print("Hello World")
 #ngrok http 127.0.0.1:8080 --host-header="127.0.0.1:8080"
