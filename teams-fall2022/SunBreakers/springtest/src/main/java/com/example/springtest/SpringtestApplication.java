@@ -25,4 +25,10 @@ public class SpringtestApplication {
 	{
 		return String.format("Welcome future SunBreaker, %s!", name);
 	}
+	
+	//Tyler Kloss
+	@GetMapping("/howdy")
+	public String howdy(@RequestParam(value = "name", defaultValue = "Partner") String name) {
+		return String.format("Howdy %s!", name);
+	}
 }
