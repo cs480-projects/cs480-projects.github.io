@@ -15,9 +15,16 @@ public class DemoApplication {
 	private static final String POSTS_API_URL = "https://jsonplaceholder.typicode.com/posts";
 
 	public static void main(String[] args) throws IOException, InterruptedException {
+
+	
+		Ordering<String> byLengthOrdering = new Ordering<String>() {
+			public int compare(String left, String right) {
+			  return Ints.compare(left.length(), right.length());
+			}
+		  };
 		//SpringApplication.run(DemoApplication.class, args);
 
-		HttpClient client = HttpClient.newHttpClient();
+		/*HttpClient client = HttpClient.newHttpClient();
 		HttpRequest request = HttpRequest.newBuilder()
 				.GET()
 				.header("accept", "appplication/json")
@@ -27,4 +34,5 @@ public class DemoApplication {
 		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 		System.out.println(response.body());
 	}
+	*/
 }
