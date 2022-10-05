@@ -18,4 +18,11 @@ public class SpringtestApplication {
 	 public String hi(@RequestParam(value = "name", defaultValue = "a good day!!!") String name) {
 	 	return String.format("Haveeeeee %s!", name);
 	 }
+	
+	//Noe Rivera
+	@GetMapping("/aboutus")
+	public String aboutus(@RequestParam(value = "name", defaultValue = "get to know our team!") String name) 
+	{
+		return String.format("Welcome future SunBreaker, %s!", name);
+	}
 }
