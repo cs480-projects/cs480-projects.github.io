@@ -84,6 +84,14 @@ li {
     width: 18vw;
     padding: 10px 0;
 }
+.AboutUs {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--gray);
+    width: 70vw;
+    padding: 10px 0;
+}
 
 .project-tile {
     text-align: center;
@@ -139,7 +147,11 @@ li {
     background-color: var(--black);
     color: var(--red);
 }
-
+#About {
+    height: 100vh;
+    background-color: var(--black);
+    color: var(--red);
+}
 #navbar {
     position: fixed;
     height: 5%;
