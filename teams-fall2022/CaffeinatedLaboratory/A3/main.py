@@ -1,6 +1,6 @@
-from flask import *
+from flask import Flask,request
 import json, time
-
+import datetime
 app = Flask(__name__)
 
 
@@ -15,6 +15,13 @@ def name_page():
 	name_query = str(request.args.get('name'))  # /name/?name=SOMENAME
 	data_set = {'Page': 'Welcome',
              f'Message': f'Hello {name_query}!', 'Timestamp': time.time()}
+	return json.dumps(data_set)
+@app.route('/timezone', methods=['GET'])
+def timezone():
+	now = datetime.datetime.now()
+	local = now.astimezone()
+	timezone = local.tzinfo
+	data_set = {'Server Time Zone':timezone}
 	return json.dumps(data_set)
 
 if __name__ == '__main__':
