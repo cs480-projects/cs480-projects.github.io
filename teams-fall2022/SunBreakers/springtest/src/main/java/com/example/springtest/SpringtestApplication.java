@@ -13,9 +13,9 @@ public class SpringtestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringtestApplication.class, args);
 	}
-	
-	@GetMapping("/howdy")
-	public String howdy(@RequestParam(value = "name", defaultValue = "Partner") String name) {
-	return String.format("Howdy %s!", name);
-	}
+	//Duc Thanh Nguyen
+	 @GetMapping("/hi")
+	 public String hi(@RequestParam(value = "name", defaultValue = "a good day!!!") String name) {
+	 	return String.format("Haveeeeee %s!", name);
+	 }
 }
