@@ -15,6 +15,10 @@ def bry():
 def marco():
     return "Welcome! This is DeMarco's page!"
 
+@app.route('/steven')
+def steven():
+    return "Welcome! This is Steven's page!"
+
 @app.route('/hello')
 def hello():
     return 'Hello world!'
