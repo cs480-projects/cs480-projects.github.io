@@ -1,1 +1,0 @@
-9999999999{"name": "scipy", "version": "1.9.1", "summary": "SciPy: Scientific Library for Python", "platform": "Windows", "requires_dist": ["numpy (<1.25.0,>=1.18.5)"], "requires_python": ">=3.8,<3.12", "files": [], "_cache_version": "1.0.0"}
