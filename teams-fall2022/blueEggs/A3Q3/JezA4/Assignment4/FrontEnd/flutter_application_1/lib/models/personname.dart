@@ -8,7 +8,9 @@ class PersonName{
 
   /// assigned the name from the site by translating json to this
   factory PersonName.fromJson(Map<String, dynamic> json){
-    firstName : json['firstName'];
-    lastName : json['lastName'];
+    return PersonName(
+      firstName : json['firstName'],
+      lastName : json['lastName'],
+    );
   }
 }

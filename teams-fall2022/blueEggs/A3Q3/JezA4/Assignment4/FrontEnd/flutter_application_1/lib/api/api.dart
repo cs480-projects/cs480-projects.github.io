@@ -6,9 +6,9 @@ import '../models/personname.dart';
 import 'package:http/http.dart' as http;
 
 
-class Provider_Demo with ChangeNotifier{
+class ProviderDemo with ChangeNotifier{
 
-  Provider_Demo(){
+  ProviderDemo(){
     fetchTasks();
   }
 
@@ -22,7 +22,7 @@ class Provider_Demo with ChangeNotifier{
     const url = 'http://127.0.0.1:8000/views/';
     final response = await http.get(Uri.parse(url)); //Network request
 
-    if(response == 200) { /// if response is success
+    if(response.statusCode == 200) { /// if response is success
       var data = json.decode(response.body); /// convert network data to dart type
 
       _myList = data.map<PersonName>((json)=> PersonName.fromJson(json)).toList();
