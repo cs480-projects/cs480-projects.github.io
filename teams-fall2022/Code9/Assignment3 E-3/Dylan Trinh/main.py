@@ -1,4 +1,5 @@
 from flask import Flask
+import requests
 
 app = Flask(__name__)
 
@@ -14,6 +15,11 @@ def bry():
 @app.route('/marco')
 def marco():
     return "Welcome! This is DeMarco's page!"
+
+@app.route('/requestsdemo')
+def reqdemo():
+    r=requests.get('https://google.com')
+    return("Get request to google.com returned: " + str(r.status_code))
 
 @app.route('/steven')
 def steven():

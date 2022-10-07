@@ -1,0 +1,11 @@
+Age,Spectacle Prescription,Astigmatism,Tear Production Rate, Recommended Lenses
+Young,Myope,No,Reduced,No
+Presbyopic,Myope,No,Normal,No
+Prepresbyopic,Myope,No,Reduced,No
+Prepresbyopic,Myope,No,Normal,Yes
+Presbyopic,Myope,Yes,Normal,Yes
+Young,Myope,Yes,Normal,Yes
+Young,Hypermetrope,No,Reduced,No
+Prepresbyopic,Myope,Yes,Reduced,No
+Presbyopic,Hypermetrope,No,Reduced,No
+Young,Myope,Yes,Reduced,Yes
