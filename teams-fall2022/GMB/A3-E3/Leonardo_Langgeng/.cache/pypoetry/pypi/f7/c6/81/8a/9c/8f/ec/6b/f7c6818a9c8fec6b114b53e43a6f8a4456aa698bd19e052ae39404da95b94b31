@@ -1,0 +1,1 @@
+9999999999{"name": "kiwisolver", "version": "1.4.4", "summary": "A fast implementation of the Cassowary constraint solver", "platform": null, "requires_dist": ["typing-extensions ; python_version < \"3.8\""], "requires_python": ">=3.7", "files": [], "_cache_version": "1.0.0"}
