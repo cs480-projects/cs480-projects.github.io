@@ -16,7 +16,7 @@ def hello_guest(guest):
     return 'Hello ' + guest + 'welcome to this new page!'
 
 @app.route('/index')
-def index():
+def web_controller_index():
     return render_template('index.html')
 
 app.run(host='0.0.0.0')
