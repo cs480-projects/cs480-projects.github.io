@@ -9,5 +9,5 @@ def getData(request):
             'lastName' : 'Salinas'
         },
     ]
-    return JsonResponse("Hello There!")
+    return JsonResponse(data, safe = False)
 
