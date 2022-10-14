@@ -37,10 +37,14 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-Corey Nambu
-Dylan Lim
-Jason Jones
-Jezreel Salinas
+Corey Nambu  
+[Github](https://github.com/KoiNip)
+Dylan Lim  
+[Github](https://github.com/DeadShinigamiXV)
+Jason Jones  
+[Github](https://github.com/jasojone)
+Jezreel Salinas  
+[Github](https://github.com/jsalinas1)
 
 ## Version History
 * 0.2
