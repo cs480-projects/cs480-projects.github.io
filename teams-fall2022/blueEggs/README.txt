@@ -51,7 +51,6 @@ Jezreel Salinas
 ## License
 
 
-
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
