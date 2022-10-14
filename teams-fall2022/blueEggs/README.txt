@@ -1,9 +1,4 @@
-Blue Eggs
-
-
-
-Creating a Universal Package Tracker
-# Shippment Tracker 3000
+# Creating a Universal Package Tracker
 
 Simple overview of use/purpose.
 
@@ -48,7 +43,9 @@ Jason Jones
 Jezreel Salinas
 
 ## Version History
-
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
 
 
 ## License
