@@ -1,38 +1,20 @@
-package edu.cpp.CS4800_A4_ChinLee;
-import java.io.IOException;
+package A6;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+public class Calculator
+{
+    public int add(int a , int b){
+return  a +b;
+}
+public static void main (String[] args)
+{
+Calculator c =new Calculator();
+int res = c.add(20,15);
+System.out.println(res);
+if (res ==40){
+    System.out.println("Correcrt!");
 
-import java.io.IOException;
-
-public class Calculator {
-    
-    public int add(int a, int b) {
-   	return a+b;
-       }
-
-    /*
-     * public static void main(String[] args) {
-     * 
-     * Document doc; try {
-     * 
-     * //get all images doc = Jsoup.connect("http://yahoo.com").get(); Elements
-     * images = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]"); for (Element image :
-     * images) {
-     * 
-     * System.out.println("\nsrc : " + image.attr("src"));
-     * System.out.println("height : " + image.attr("height"));
-     * System.out.println("width : " + image.attr("width"));
-     * System.out.println("alt : " + image.attr("alt"));
-     * 
-     * }
-     * 
-     * } catch (IOException e) { e.printStackTrace(); }
-     * 
-     * }
-     */
-
+}else{
+    throw new RuntimeException("Incorrect");
+}
+}
 }
