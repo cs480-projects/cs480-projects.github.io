@@ -3,9 +3,9 @@ import numpy as np
 
 class TestPredict(TestCase):
     @staticmethod
-    def test_succeeding():
+    def test_pass():
         np.testing.assert_almost_equal(1, 0.9999999999999)
 
     @staticmethod
-    def test_failing():
+    def test_fail():
         np.testing.assert_equal([4,5], [4,6])
