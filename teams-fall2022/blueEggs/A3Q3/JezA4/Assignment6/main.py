@@ -14,4 +14,10 @@ ut.testSub(a,b, -2)
 ut.testMul(a,b, 8)
 ut.testDiv(a,b, 0.5)
 
+try:
+    ut.testAddFail(a,b,6)
+except:
+    print('For failed method test')
+
+
 print('Success')
