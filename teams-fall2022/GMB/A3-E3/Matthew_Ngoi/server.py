@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://mfngoi:wGfna56m1cxs2Sag@cluster0.ltgs7ps.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://mfngoi:UUkHZnMzVW6x9jIo@cluster0.ltgs7ps.mongodb.net/?retryWrites=true&w=majority")
 db = client.queues
 
 @app.route("/")
