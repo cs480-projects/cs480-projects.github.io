@@ -28,16 +28,13 @@ def main():
 
 if __name__ == "__main__":
     main()
-#  output of a successful run
+#  output of a successful run with two different types of failures
 # The youngest person is ('Liam', 1)
 # The average age is 19.33
 # The mean age derived mathematically is 19.33 the statistics mean function succeeded
-# Traceback (most recent call last):
-#   File "c:\Users\Jason\OneDrive\Documents\GitHub\cs480-projects.github.io\teams-fall2022\blueEggs\jjones_a6\main.py", line 19, in <module>
-#     main()
-#   File "c:\Users\Jason\OneDrive\Documents\GitHub\cs480-projects.github.io\teams-fall2022\blueEggs\jjones_a6\main.py", line 13, in main
-#     unit_testing_functions.check_average(name_and_age_tuple, 30)
-#   File "c:\Users\Jason\OneDrive\Documents\GitHub\cs480-projects.github.io\teams-fall2022\blueEggs\jjones_a6\unit_test.py", line 14, in check_average
-#     raise Exception("pythons statistics mean calculation has failed. The average is,", expected_average)
-# Exception: ('pythons statistics mean calculation has failed. The average is,', 19.33)
-# PS C:\Users\Jason\OneDrive\Documents\GitHub\cs480-projects.github.io>
+# Failed
+# The average age is 19.33
+# The mean age derived from stats is success!
+# The average age is 19.33
+# Failed again
+# Here are the people who's age is above the average [('Jack', 20), ('Lev', 22), ('Winny', 20), ('Jason', 36), ('Krystal', 37)]
