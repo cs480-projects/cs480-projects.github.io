@@ -58,17 +58,22 @@ section {
     align-items: center;
 }
 
-li {
+.nav-link {
     display: inline;
     font-size: 20px;
     margin-right: 20px;
 }
 
 .title {
-    text-align: center;
-    border-radius: 5px;
+    width: 30%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
     background-color: var(--red);
-    padding: 50px 100px;
+    /* padding: 50px 100px; */
 }
 
 .team-members {
@@ -78,18 +83,10 @@ li {
 
 .member {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 4px;
     text-align: center;
     background-color: var(--gray);
     width: 18vw;
-    padding: 10px 0;
-}
-.AboutUs {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    text-align: center;
-    background-color: var(--gray);
-    width: 70vw;
     padding: 10px 0;
 }
 
@@ -104,10 +101,10 @@ li {
 }
 
 .container {
+    border-radius: 4px;
     font-size: 20px;
     background-color: #333333;
     margin: 10px 20px;
-    padding: 10px 0;
 }
 
 .container:hover {
@@ -116,42 +113,83 @@ li {
 
 .button {
     display: block;
+    padding: 10px 0;
     color: var(--red);
 }
 
+.button:hover {
+    color: var(--black);
+}
+
+.row {
+    display: flex;
+}
+
 .github {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: var(--red);
     margin-top: 15px;
-    padding: 25px 50px;
+    margin-right: 25px;
+}
+
+.github:last-of-type {
+    margin-right: 0;
 }
 
 .github-link {
+    display: block;
     color: var(--black);
     font-size: 28px;
+    font-weight: bold;
+    padding: 25px 50px;
 }
 
 .github-link:hover {
-    color: white;
+    border-radius: 4px;
+    background-color: white;
+    color: var(--black);
+}
+
+.about-text {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background-color: var(--gray);
+    color: var(--red);
+    padding: 15px;
+}
+
+.about-list {
+    padding: 25px;
+}
+
+.about-item {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.about-item:last-of-type {
+    margin-bottom: 0;
 }
 
 #welcome-section {
     height: 100vh;
     background-image: url("https://files.nc.gov/osbm/budget%20-%20iStock_000041295790_Large.jpg?VersionId=cUoo.GYt_s8QOQlldayC56bzmM1XHmyK");
-    background-color: var(--red);
+    background-color: var(--black);
     color: var(--black);
 }
 
+#about {
+    height: 60vh;
+    background-color: var(--black);
+    color: var(--red);
+}
+
 #team {
-    height: 100vh;
+    height: 60vh;
     background-color: var(--black);
     color: var(--red);
 }
-#About {
-    height: 100vh;
-    background-color: var(--black);
-    color: var(--red);
-}
+
 #navbar {
     position: fixed;
     height: 5%;
