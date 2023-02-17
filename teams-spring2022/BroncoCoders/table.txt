@@ -1,6 +1,0 @@
-<tr>
-                    <td valign="center"><a href="BroncoCoders/index.html">Bronco Coders</a></td>
-                    <td valign="center">Robert Engle</td>
-                    <td valign="center">Rock climbing, video games, car meets.</td>
-                    <td valign="center">I've been recently travelling and wish to do it a lot more!</td>
-                </tr>

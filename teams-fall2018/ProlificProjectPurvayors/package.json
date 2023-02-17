@@ -1,8 +1,0 @@
-{
-	"name": "mysqlApplication",
-	"version": "1.0.0",
-	"dependencies": {
-		"express": "^4.13.4",
-		"mysql": "^2.10.2"
-	}
-}
