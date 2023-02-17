@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<!-- saved from url=(0014)about:internet -->
+<!-- To allow scripts when run locally -->
+<html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8"><!-- Must be up here-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Must be up here-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Must be up here--><!-- Mobile Specific Meta-->
+  <meta name="description" content="cpp-ctrl-alt-defeat Website">
+  <meta name="author" content="cpp-ctrl-alt-defeat">
+  <meta name="theme-color" content="#ED1C24"/>
+
+
+
+  <title>Ctrl-Alt-Defeat</title>
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" /><!-- Favicon -->
+
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css"><!-- Bootstrap 3.3.7 css being used --><!-- Bootstrap 4 not compatible with IE 9 -->
+
+  <link rel="stylesheet" href="plugins/animate-css/animate.css"><!-- animate.css -->
+
+  <link rel="manifest" href="js/manifest.json" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov:400italic">
+
+  <!-- ===========Main Stylesheet=========== -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+</head>
+
+
+
+<body id="body">
+
+
+
+<!-- Header Start -->
+
+<header class="navigation">
+
+  <!-- Nav Start -->
+
+				<nav class="navbar navbar-static-top">
+
+					<div class="container">
+
+						<div class="navbar-header"><!-- Logo and hamburger button -->
+
+							<a class="navbar-brand" href="index.html">
+
+                <div class="logo" alt="Logo"></div><!-- logo  -->
+
+              </a>
+
+              <!-- Hamburger btn, id links shapes, class links placement -->
+
+              <div id="nav-icon3" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#iq-navbar-collapse-1">
+
+                  <span></span><!-- Hamburger Line -->
+
+                  <span></span><!-- Hamburger Line -->
+
+                  <span></span><!-- Hamburger Line -->
+
+                  <span></span><!-- Hamburger Line 2nd middle for X -->
+
+              </div>
+
+            </div><!-- navbar-header -->
+
+            
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+
+						<div class="collapse navbar-collapse" id="iq-navbar-collapse-1">
+
+							<ul class="nav navbar-nav navbar-right">
+
+                <li><a href="http://www.broncomaps.com/">BroncoMaps</a></li>
+
+								<li><a href="Ctrl-Alt-DefeatPage.html">About Us</a></li>
+
+                <li><a href="https://github.com/cpp-ctrl-alt-defeat/campus_map">Github</a></li>
+
+                <li><a href="http://bit.ly/ctrlaltdefeat">Presentation</a></li>
+
+							</ul>
+
+						</div><!-- /.navbar-collapse -->
+
+					</div><!-- /.container-fluid -->
+
+        </nav>
+
+</header><!-- header close -->
+
+
+
+<!-- coverpic Start -->
+
+<section class="lazyload coverpic" data-src="images/cppmap.svg" data-srcset="images/cppmap.svg 480w, images/cppmap.svg 640w, images/cppmap.svg 1024w">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="block"><!-- need to shrink text at 548px -->
+
+					<h1 class="animated fadeInUp">ctrl-alt-defeat<br>BroncoMaps</h1>
+
+					<p class="animated fadeInUp">A Multi-Talented Team of CPP Students<br>We are working to realize a light and intuative interactive campus map</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+
+<!-- footer Start -->
+
+<footer class="footer">
+
+	<div class="container">
+    
+    <div class="row">
+
+			<div class="col-md-12">
+
+        <!-- Javascript to get current year for copyright CE -->
+
+        <p class="copyright" id ="copyright">&copy; 2018 IQ Corporation</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>
+
+
+    <!--========== Scripts ==========-->
+
+    
+    <!-- Replaced jQuery-git with googleapis 3.2.1 jquery for exact stable build ref, cached, and reliability CE -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>    <!-- Bootstrap 3.3.7 -->
+
+    <script src="plugins/lazyload/lazyload.js"></script>
+
+
+    <script>
+
+      lazyload();
+
+
+      $(document).ready(function(){
+
+
+      //Hamburger menu icon
+
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+
+          $(this).toggleClass('open');});
+
+          var cur = 2019; var year = new Date(); 
+
+          if(cur == year.getFullYear()) year = year.getFullYear(); else year = cur + ' - ' + year.getFullYear(); 
+
+          document.getElementById('copyright').innerHTML = "&copy; " + year + " cpp-ctrl-alt-defeat";
+
+});
+
+    </script>
+
+  </body>
+
+  </html>

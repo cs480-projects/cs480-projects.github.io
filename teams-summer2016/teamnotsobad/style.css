@@ -1,0 +1,76 @@
+body {
+
+    background-image: url("http://i.imgur.com/PXzIsJx.jpg");
+    background-size:cover;
+    background-color: #cccccc;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#container
+{
+}
+
+#header
+{
+    padding: 10px;
+}
+
+#header h2
+{
+    color: #ffffff;
+    margin: 0;
+}
+
+#header h3
+{
+    color: #ffffff;
+    margin: 0;
+}
+
+#content
+{
+    clear: left;
+    padding: 10px;
+}
+
+#content h2
+{
+    color: #FFFFFF;
+    font-size: 160%;
+    margin: 0 0 .5em;
+}
+
+#footer
+{
+    //background: #5cabc8;
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+}
+
+#footer a
+{
+    color: #cc0000;
+}
+
+table, td
+{
+    border: 1px solid #C0C0C0;
+}
+
+.auto-style1 {
+    color: #808080;
+}
+.auto-style2 {
+    color: #FFFFFF;
+    background-color: #FFAB61;
+}
+.auto-style3 {
+    background-color: #FFAB61;
+}
+.auto-style4 {
+    font-weight: bold;
+    background-color: #9DEDF3;
+}

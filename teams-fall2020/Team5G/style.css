@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.head h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: DarkGoldenRod
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person{
+    height: 200px;
+    width: 200px;
+    background: rgba(0, 0, 100, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    color: black;
+    margin-bottom: 1%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.person h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 100;

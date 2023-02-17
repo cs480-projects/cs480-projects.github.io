@@ -1,0 +1,165 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)), url(notebook.jpg);
+	height: 100vh;
+	backgroumd-size: cover;
+	background-position: center;
+}
+
+
+.logo img
+{
+	position: absolute;
+	top: 100px;
+	right: 890px;
+	width: 150px;
+	float: left;
+}
+
+body
+{
+	font-family: monospace; 
+}
+
+.row
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.notenetwork
+{
+	position: absolute;
+	width: 1850px;
+	margin-center: 0;
+	margin-top: 0;
+}
+
+h1
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	margin-top: 275px;
+}
+
+.button
+{
+	position: absolute;
+	top: 400px;
+	margin:down: 10px;
+	margin-left: 730px;
+
+	
+}
+
+.btn
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+	
+}
+
+.btn:hover
+{
+	background-color: darkorange;
+	transition: all 0.5s ease
+}
+
+.team-section img
+{
+	border-radius: 50%
+}
+
+h2
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.ps 
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.ps a img
+{
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+.ps a:hover > img
+{
+	filter: none;
+}
+	
+
+.names
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+h3
+{
+	color: black;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.insp
+{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 25px;
+}
+	
+.btn2
+{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+	
+}
+	
+.btn2:hover
+{
+	background-color: darkorange;
+	transition: all 0.5s ease
+}
+
+
+
+
+

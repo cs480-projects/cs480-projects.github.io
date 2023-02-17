@@ -1,0 +1,15 @@
+h1 {
+    color: green;
+    outline: 5px solid greenyellow;
+    text-shadow: -2px 0 black;
+    text-align: center;
+}
+
+#content {
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}

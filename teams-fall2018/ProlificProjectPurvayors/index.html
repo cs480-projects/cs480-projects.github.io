@@ -1,0 +1,229 @@
+<html>
+<head>
+<title> Prolific Project Purvayors </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv ="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="icon" type="image/vnd.microsoft.icon"
+     href="favicon.ico" />
+<style>
+#about {padding-top:50px;height:300px;color: #fff; background-color: black; border: 1px solid grey}
+#contact {padding-top:50px;height:100%;color: #fff; background-color: black; border: 1px solid grey}
+#demo {padding-top:50px;height:100%;color: #fff; background-color: black; border: 1px solid grey}
+body {
+      position: relative; 
+	  background-image: linear-gradient(grey, black);
+  }
+h1{
+	color:white;
+}
+p{
+	color: white;
+}
+#contain {
+    list-style-type: none;
+    margin: 0;
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    Left: 0;
+    width: 100%;
+
+    padding: 0;
+}
+#myNavbar{
+	
+    display: inline-block;
+    vertical-align: top;
+	background-color: grey;
+	border: 1px solid grey;
+	
+    width: 100%;
+    left: 0;
+	padding-top: 5px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+#header {
+    text-align: center;
+	background-color:black;
+	border: 1px solid grey
+	
+}
+#wrapper {
+    width: 64em;
+    max-width: calc(100% - 4em);
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+	background-color:grey;
+	
+}
+
+.active {
+	background-color: black;
+	float:right;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+
+}
+.ul.list-inline:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+img.resize {
+  max-width:70%;
+  max-height:70%;
+}
+.button1 {
+    background-color: #555555;
+	border-radius: 10px;
+	color: white;
+	border: none;
+
+}
+.button1:hover {
+	background-color: grey;
+}
+icon {
+	width: 5px;
+	height: 5px;
+}
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px; 
+	text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+</style>
+</head>
+<body >
+ <div id = "wrapper" >
+	<nav class="navbar" >
+		<div class="container-fluid" >
+				<div  id="myNavbar" div class="container rounded"   >
+					<ul class="list-inline">
+					  <li><a href="#contact" class="active">Contact</a></li>
+					  <li><a href="#demo" class="active">Demo</a></li>
+					  <li><a href="#about" class="active">About</a></li>
+					  <li><a href="#links" class="active">Screenshot</a></li>
+
+					</ul>
+				</div>	
+		</div>
+	</nav>
+		<!--HEADER -->
+		<div class="container rounded"  header id="header" class="alt" >
+			<span class="logo" ><img class="resize" src="logo.png" alt=""></span>
+			<h1>Prolific Project Purvayors</h1>
+			<p>Bronco Events is a tool used by students to find when clubs are meeting. The good part is: everything is automatic. No need to sign up.</p>
+			<div  id="linkBar">
+				<ul class="list-inline">
+					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+					<button type="submit" class = "button1"  onclick="location.href = 'https://github.com/ProlificProjectPurveyors';"><i class="fab fa-git"></i>  GitHub</button>
+					<button type="submit" class = "button1"  onclick="location.href = 'http://www.broncoevents.com.s3-website-us-east-1.amazonaws.com';">Bronco Events</button>
+					<button type="submit" class = "button1"  onclick="location.href = 'https://www.cpp.edu';">Cal Poly Pomona</button>
+					<button type="submit" class = "button1"  onclick="location.href = 'https://docs.google.com/presentation/d/1V9Ck5wiPMVB6oPDhxqFZEL1lQC92ypuLwC4n0Jg3v50/edit#slide=id.g46149713cf_0_65';">Demo</button>
+				</ul>
+			</div>	
+		</div>
+		<div id="about" div class="container rounded" class="container-fluid">
+		  <h1>About</h1>
+		  <p>Bronco Events was created by Camron Fortenbery, (Richard) Matt Musquiz, Justin (Yeram) Hwang and Diego Bautista to make it easier for people to find what events are happening around campus without needing to sign up for E-mail newsletters. All events are easily searchable and information is displayed in a simple manner. </p>
+		</div>
+		<div id="contact" div class="container rounded" class="container-fluid">
+			<h1>Contact</h1>
+			<div class="row">
+				<div class="column" style="background-color:#aaa;">
+					<p><b>Camron Fortenbery:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:camronfortenbery@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i></a>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/"<i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href=""><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+				<div class="column" style="background-color:#bbb;">
+					<p><b>(Richard) Matt Musquiz:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:matthewmusquiz@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/"<i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href=""><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column" style="background-color:#ccc;">
+					<p><b>Justin (Yeram) Hwang:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:yeramy96@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i></a>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/" target="_blank"><i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href="https://github.com/yeramy"><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+				<div class="column" style="background-color:#ddd;">
+					<p><b>Diego Bautista:</b></p>
+					<img src="Blank-profile.png" height="30%"><br>
+					<a href="mailto:BautistaGDiego@gmail.com?Subject=" target="_top"><i class="fas fa-envelope-square" style="font-size: 30px"></i></a>
+					<a href="https://www.linkedin.com/in/yeram-hwang-165aba16b/"<i class="fab fa-linkedin" style="font-size: 30px"></i></a>
+					<a href=""><i class="fab fa-git-square" style="font-size: 30px"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

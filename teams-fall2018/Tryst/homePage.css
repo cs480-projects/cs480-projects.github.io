@@ -1,0 +1,25 @@
+.center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.middle {
+    text-align: center;
+    width: 100vw; 
+}
+
+.dyed{
+    color: #755b82;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 
+                 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+h1{
+    /*font-size: 4.9vw;*/
+    font-size: 7.8vh;
+}
+
+.padding {
+  padding: 10px;
+}

@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mt-fixed {
+  margin-top: 39px;
+}
+
+.navbar {
+  background: #131313
+}
+
+.gamefax-section, .team-section {
+  border-top: 5px solid #f3293a;
+}
+
+body {
+  padding-top: 54px;
+  border-left: 10px solid #131313;
+  border-right: 10px solid #131313; 
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card {
+  background-color: #292929;
+  border: 2px solid #292929;
+  color: white;
+}
+
+.team-info {
+  height: 160px;
+}
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.btn {
+  background: #363636;
+}
+
+.btn-lg {
+  background: #292929;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  background-color: #131313;
+
+}
+
+.footer-copyright > a {
+  color: #ffffff;
+}
+
+.modal-content {
+  border: 0 none;
+  background: transparent;
+  transform:scale(2.0);
+}

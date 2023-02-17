@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DevSpecs Team</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="devstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand logoBG" href="#" id="home"><img class="brand-image" src="images/DevSpecsLogo.png" id="devSpecLogo"></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li id="prodlist" class="navItem"><a href="#" id="products">Products</a></li>
+              <li id="devlist" class="navItem"><a href="#" id="developers">Developers</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+            <img src="images/panoramaoverlay.jpg" class="leadImage">
+            <div class="jumbotron dark" id="mainContent">
+                <h2><img class="brand-image" src="images/DevSpecsLogo.png"></h2>
+                Despite all of the advances we have made in social media and communications technology, there are still places in our lives
+                where it is easy for us to feel disconnected.
+                We at DevSpecs believe that the classroom should not be one of those places.
+                Another belief of ours is that video games have the power to connect people in a fun and productive way.
+                Our primary mission is to take advantage of the pervasiveness of video games, and use it to build stronger communities in schools.
+            </div>
+        </div>
+
+    </body>
+    <script>
+        $('#home').click(function(e){
+            e.preventDefault();
+            $('#prodlist').attr('class', "navItem");
+            $('#devlist').attr('class', "navItem");
+            $('#mainContent').html(`
+                <h2><img class="brand-image" src="images/DevSpecsLogo.png"></h2>
+
+                Despite all of the advances we have made in social media and communications technology, there are still places in our lives
+                where it is easy for us to feel disconnected.
+                We at DevSpecs believe that the classroom should not be one of those places.
+                Another belief of ours is that video games have the power to connect people in a fun and productive way.
+                Our primary mission is to take advantage of the pervasiveness of video games, and use it to build stronger communities in schools.
+            `);
+
+            return false;
+        })
+        $('#products').click(function(e){
+            e.preventDefault();
+            $('#prodlist').attr('class', "active");
+            $('#devlist').attr('class', "navItem");
+            $('#mainContent').html(`
+            <h3>Our newest game-changing experience: </h3>
+            <a href="https://unigamer.net" style="font-size:3em;"><img src="images/miniUG.png" id="UGLogo">UniGamer</a>
+            <h2>UniGamer links:</h2>
+            <ul>
+                <li>See our presentation: <a href="https://goo.gl/wdBahJ">Presenting UniGamer</a></li>
+                <li>See <a href="https://Unigamer.net"> UniGamer.net</a></li>
+                <li>See the <a href="https://github.com/DevSpecs/UniGamer/wiki">UniGamer wiki</a></li>
+            </ul>
+            `);
+            return false;
+        });
+        $('#developers').click(function(e){
+            e.preventDefault();
+            $('#devlist').attr('class', "active");
+            $('#prodlist').attr('class', "navItem");
+            $('#mainContent').html(`
+            <h2>Developers:</h2>
+            <ul>
+                <li>Eli Selkin</li>
+                <li>Jerry Roh</li>
+                <li>Justin Ordonez</li>
+                <li>Ryan Waer</li>
+                <!-- put yourselves here -->
+            </ul>
+            `);
+            return false;
+        })
+
+    </script>
+</html>

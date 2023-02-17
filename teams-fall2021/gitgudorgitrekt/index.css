@@ -1,0 +1,67 @@
+body {
+	background: #F5F6F3;
+	font-family: "Lucida Sans"; 
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-image: linear-gradient(#eeeedc, #cadddc);
+}
+
+#container {
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 25px;
+	background: #DDDDDD;
+	background-image: url("mesh.png");
+}
+
+#header {
+	color: #000000;
+	font-family: "Lucida Console";
+	text-align: center;
+}
+
+h1 {
+	color: green;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	font-size: 45px;
+}
+
+
+h2 {
+	color: white;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	font-size: 30px;
+}
+
+img {
+	display: block;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#page-container{
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 25px;
+}
+
+#footer {
+	background: #DCCF35;
+	position: absolute;
+	bottom: 0;
+	width:  100%;
+	height:  25px;
+}

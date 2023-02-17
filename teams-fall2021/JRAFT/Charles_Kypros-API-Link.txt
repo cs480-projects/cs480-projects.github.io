@@ -1,0 +1,1 @@
+https://firestore.googleapis.com/v1/projects/declutter-live/databases/(default)/documents/items

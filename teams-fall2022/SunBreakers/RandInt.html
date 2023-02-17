@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <button onclick="document.getElementById('num').innerHTML = getRndInteger(0,10)">Get a random number 0-9.</button>
+  <p id="num"></p>
+  <script>
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Register Form</title>
+  <link rel="stylesheet" href="css/listing.css">
+</head>
+<body>
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html#hero">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+<main>
+
+       
+ <form name = "form1" action ="" method="post">
+    
+
+
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="name" placeholder="John Doe"></td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" placeholder="fakeemail@gmail.com"></td>
+   </tr>
+
+   <tr>
+    <td>Price :</td>
+    <td><input type="number" name="price" min="0" step="500" value="500000"></td>
+   </tr>
+
+   <tr>
+    <td>Number of Rooms :</td>
+    <td><input type="number" name="rooms" min="0" max="20" ></td>
+    </tr>
+    
+    <tr>  
+      <td><input type="file" name="House Pictures" accept="image/*" id="hPics"></td>
+      </tr>
+      
+    <td><button onclick="window.location.href = 'https://bronco-5.github.io/OneSubmit/LeaserWebpage/LeaserIndex.html?+placeholder%3D=1';">save data</button></td>  
+  
+    </tr>
+  </table>
+ </form>
+
+ <script type ="text/javascript">
+    function aa(){
+        var xmlhttp;
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","insert.php?nm="+document.getElementById("name").value+"&em="+document.getElementById("email").value+"&inc="+document.getElementById("income").value,false);
+        xmlhttp.send(null);
+    }
+ 
+ 
+ 
+ </script>
+
+</main>
+
+
+</body> 
+<!--<script src = "js/main.js"></script>-->
+
+
+</html>

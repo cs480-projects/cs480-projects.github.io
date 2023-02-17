@@ -1,0 +1,141 @@
+/*body {*/
+/*margin: 20px;*/
+/*}*/
+
+#gitIcon{
+    position: absolute;
+
+    font-size: 150px;
+    top:25%;
+    right:20%;
+}
+
+#mitchellIcon{
+    position: absolute;
+    top:10%;
+    right:20%;
+
+
+}
+
+
+#slidesIcon{
+    position: absolute;
+    top:60%;
+    right:20%;
+
+}
+
+
+#jumboTop {
+    padding: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.delete_button {
+    float:right;
+    cursor: pointer;
+}
+
+.plus_button{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.minus_button{
+    cursor: pointer;
+}
+
+.icon_times{
+    float:right;
+    cursor: pointer;
+}
+.icon_red {
+    color : red;
+}
+
+.icon_removeList{
+    position : absolute;
+    top: 50px;
+    right: 10%;
+}
+
+.icon_removeChecked{
+    position : absolute;
+    cursor: pointer;
+    top: 100px;
+    right: 10%;
+}
+
+.inviteUserButton{
+    color: #df6589;
+    color: #2fa8ec;
+    padding-left : 10%;
+    position : absolute;
+    cursor: pointer;
+}
+
+.splitCostButton {
+    position : absolute;
+    cursor: pointer;
+}
+
+#splitCost{
+    font-size : 2em;
+}
+
+#list_name {
+    text-align: center;
+    color: #df6589;
+    color: #2fa8ec;
+    font-family: 'Raleway', Arial, sans-serif;
+
+
+}
+
+.col-md-12 {
+    background-color : #303030;
+}
+
+body {
+    background-color: #333 ;
+
+}
+
+#menuButton{
+    color: white;
+    font-size: 40px;
+    padding-left: 10%;
+    padding-top: 50px;
+    position: absolute;
+}
+
+
+.input--isao {
+    font-size: 3.0vh;
+
+}
+
+.modal-content {
+    color: #afb3b8;
+}
+
+.input--akira {
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+    text-align:center;
+    font-size: 20px;
+
+}
+
+.sidebar {
+    font-size: 12px;
+    left: 50px;
+}
+#newListContainer {
+
+}
+

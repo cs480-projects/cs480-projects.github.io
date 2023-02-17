@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://c2.staticflickr.com/4/3924/19273196175_5e183e2101_h.jpg");
+    background-position: right top;
+    font-family: Tahoma, Helvetica;
+}
+
+h2 {
+    color: #fff;
+    margin: 0;
+	font-size: 44px;
+	text-shadow: 4px 4px #222;
+	text-align: center;
+}
+
+.logo {
+	width: 150px;
+	float: left;
+	margin-right: 20px;
+}
+
+h3 {
+    color: #fff;
+    margin: 0;
+	font-size: 24px;
+	text-shadow: 2px 2px #222;
+	text-align: center;
+
+}
+
+.pic {
+	width: 100%;
+}
+h4 {
+	color: #fff;
+	font-size: 20px;
+}
+
+#content {
+    clear: left;
+    padding: 25px;
+    background-color: #000;
+    opacity: 0.75;
+	margin: 20px 70px 20px 70px;
+}
+
+#multimedia {
+    clear: left;
+    padding: 25px;
+    background-color: #000;
+	margin: 20px 70px 20px 70px;
+}
+
+p {
+	color: #fff;
+	font-size: 18px;
+}
+
+.credit {
+	font-size: 12px;
+	text-align: center;
+}
+
+a {
+	color: #fff;
+}
+
+@media only screen and (max-width: 980px) {
+	#content {
+		margin: 5px;
+		padding: 5px;
+	}
+	
+	#multimedia {
+		margin: 5px;
+		padding: 5px;
+	}
+}
+}
+

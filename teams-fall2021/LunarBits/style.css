@@ -1,0 +1,427 @@
+@font-face {
+  font-family: Poppins; src: url('Poppins.ttf');
+}
+
+@font-face {
+  font-family: PoppinsLight; src: url('PoppinsLight.ttf');
+}
+
+a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    font-size: 64px;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+}
+a:hover, a:active {
+   background-color: none;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: Poppins;
+  background-color: #221c1c;
+  color: #FFFFFF;
+  background-image: url('https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+	font-weight: 800;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+h1 {
+  font-size: 64px;
+  text-align:left;
+  font-family: 'Poppins';
+  margin: 5;
+  padding-top:0;
+}
+
+h2 {
+  font-size: 32px;
+  text-align:center;
+  font-family: 'Poppins';
+  padding-top:0;
+}
+h2.headertekst {
+  text-align: center;
+}
+
+h3 {
+  font-size: 64px;
+  text-align:center;
+  font-family: 'Poppins';
+  margin: 5;
+  padding-top:0;
+}
+p{
+  font-size: 12px;
+  margin: 8;
+  padding-top:0;
+}
+.container {
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  padding: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+header {
+  background: #B19cd9;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-right: 0px;
+  position: relative;
+}
+
+.pic{
+  padding-top: 4px;
+  padding-left: 120px;
+}
+
+.imgfull {
+    width: 100%;
+    height: auto;
+}
+
+
+.logo:hover {
+  color: #000;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+  /* background-color: #333; */
+  font-family: 'Poppins';
+  color: #FFFFFF;
+  text-align:center;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 10px;
+  list-style-type: none;
+  position: relative;
+}
+
+nav a {
+  list-style-type: none;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.separator {
+  color: #FFFFFF;
+  font-family: 'PoppinsLight';
+  padding: 0px
+}
+
+.button1 {background-color: #B19cd9;}
+
+.button {
+  font-family: Poppins;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  /*padding: 20px;*/
+  width: 450px;
+  height: 48px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Add a background color on hover */
+.button:hover {
+  background-color: rgb(143, 122, 182);
+}
+
+.hyperlink:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type="text"]{
+  font-family: PoppinsLight;
+  font-size: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 450px
+}
+
+input[type=submit] {
+  font-family: Poppins;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  /*padding: 20px;*/
+  width: 450px;
+  height: 48;
+  background-color: #B19cd9;
+}
+
+input[type=password] {
+  font-family: PoppinsLight;
+  font-size: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 450px
+}
+
+input[type=submit]:hover {
+  background-color: rgb(144, 121, 187);
+  display: none;
+}
+
+
+#hideform {display:block;}
+
+.footer {
+  font-family: PoppinsLight;
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+
+
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.containerB {
+  position: relative;
+  padding-bottom: 20px;
+  width: 50%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+
+}
+
+/* Make the image responsive */
+.containerB img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.container2 {
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  padding: 20px;
+  font-size: 10px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.containerB .btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.buttonAb {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 17.5%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Clear floats */
+.container3::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.container3 {
+  height: 180px;
+  border-radius: 3%;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-position: center;
+  background-size: cover;
+  text-shadow: 2px 2px black;
+
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}

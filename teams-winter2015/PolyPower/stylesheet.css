@@ -1,0 +1,126 @@
+body {
+  overflow-x: hidden;
+  background: url(header-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/*fade in effect below*/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+   opacity:0;  /* make things invisible upon start */
+   -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+   -moz-animation:fadeIn ease-in 1;
+   animation:fadeIn ease-in 1;
+
+   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+   -moz-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+
+   -webkit-animation-duration:1s;
+   -moz-animation-duration:1s;
+   animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+/*---make a basic box ---*/
+.box{
+  text-align: center;
+  border: none;
+  background: url(transparent-bg.png) repeat;
+  position: absolute;
+  top: 277px;
+  height: 225px;
+  width: 100%;
+  z-index: 0;
+}
+
+.intro-lead-in {
+  margin-bottom: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+  font-style: strong;
+  line-height:40px;
+}
+
+.intro-heading {
+  margin-bottom: 50px;
+  text-transform: lowercase;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.intro-names {
+  margin-bottom: 25px;
+  text-transform: lowercase;
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fed136;
+}
+
+.buttons-external-links {
+  text-align: center;
+  border: none;
+  position: absolute;
+  top: 570px;
+  width: 100%;
+  z-index: 0;
+}
+
+.top-left-logo {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  font-size: 20px;
+  color: #fed136;
+  border: none;
+  position: absolute;
+  float: right;
+}
+
+.top-left-logo table
+{
+    text-align: right;
+}
+
+.top-left-logo td
+{
+    padding: 15px;
+}

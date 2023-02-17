@@ -1,0 +1,135 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+	display: flex;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left-side;
+
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white;
+}
+
+.gallery-highlight{
+	width: 80%;
+	height: 50%;
+}
+
+.room-gallery{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.room-description{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.room-preview{
+	display: flex;
+	width: 80%;
+}
+
+.room-preview img{
+	height: 100px;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+img.room-active{
+	opacity: 1;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%; 
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('https://www.edchoice.org/wp-content/uploads/2017/03/WSJ-Response-HEADER.jpg');
+}
+
+#about {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('https://images.adsttc.com/media/images/58af/5073/e58e/ce4c/d100/0284/large_jpg/6am_HDM_unit-view.jpg?1487884399');
+}
+
+#contact {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('https://www.edchoice.org/wp-content/uploads/2017/03/WSJ-Response-HEADER.jpg');
+}

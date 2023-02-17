@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Perls of the C</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
+
+<style>
+  html, body, h1, h2, h3, h4, h5, h6 {  font-family: "Krub", cursive, sans-serif;}
+  html {  box-sizing: border-box;}
+  *, *:before, *:after {  box-sizing: inherit;}
+  .column {  float: left;  width: 20.0%;  margin-bottom: 16px;  padding: 0 8px;}
+  @media screen and (max-width: 650px) {  .column {    width: 100%;    display: block;  }}
+  .card {  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+  .container {  padding: 0 14px;}
+  .container::after, .row::after {  content: "";  clear: both;  display: table;}
+  .title {  color: grey;}
+  .button {  border: none;  outline: 0;  display: inline-block;  padding: 8px;  color: white;  background-color: #000;  text-align: center;  cursor: pointer;  width: 100%;}
+  .button:hover {  background-color: #555;}
+</style>
+
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="heading.jpg" alt="Me" width="1000" height="200">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-white w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Perls Of the C</h1>
+    <h5 class="w3-hide-large" style="white-space: -space:nowrap">Perls of the C</h5>
+  </div>
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="http://build-a-meal.net/" class="w3-bar-item w3-button">Website</a>
+    <a href="https://docs.google.com/presentation/d/1SBZZecVrY_-O-H-K_cmJPoxcK0OpRYp3T7yOG6uavaY/edit?usp=sharing" class="w3-bar-item w3-button">Presentation</a>
+    <a href="https://github.com/PerlsOfTheC/BuildAMeal" class="w3-bar-item w3-button">Github</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+  <div class="w3-bar w3-light-grey">
+    <a href="http://build-a-meal.net/" class="w3-bar-item w3-button">Presentation</a>
+    <a href="https://docs.google.com/presentation/d/1SBZZecVrY_-O-H-K_cmJPoxcK0OpRYp3T7yOG6uavaY/edit?usp=sharing" class="w3-bar-item w3-button">Website</a>
+    <a href="https://github.com/PerlsOfTheC/BuildAMeal" class="w3-bar-item w3-button">Github</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:40px;margin-right:40px">
+  <!-- BuildAMeal -->
+  <div class="w3-content w3-padding-large w3-margin-top">
+      <h1 class="w3-xxxlarge"><b>Build-A-Meal</b> <a href="http://build-a-meal.net/"><img border="0" alt="Link" src="CircularLogo.jpg" width="50" height="50"></a></h1>
+      <hr style="width:294px;border:3px solid #ace600" class="w3-round">
+      <p style = "font-size: 18px;"> Build-A-Meal is a webservice used to generate a list of recipes that include the user’s list of ingredients, taking into account personal preferences.</p>
+      <p><a href="http://build-a-meal.net/">Visit our Website!</a></p>
+      <br>
+      <h2><b>Preview: </b></h2>
+      <img src = "screenshot.png" style = "height: 100%; width: 100%">
+      <br><br>
+      <table width = "100%">
+        <tr>
+          <td width = "50%">
+            <h5><b>Step 1:</b> Choose or enter your ingredients.</h5>
+          </td>
+          <td width = "50%">
+            <h5><b>Step 2:</b> Click 'Find me recipes!' and start cooking! </h5>
+          </td>
+        </tr>
+        <tr>
+          <td width = "45%">
+            <img src = "demoPart1.gif" style = "height: 25%; width: 100%">
+          </td>
+          <td width = "45%">
+            <img src = "demoPart2.gif" style = "height: 25%; width: 100%">
+          </td>
+        </tr>
+      </table>
+
+      <table width = "100%">
+        <tr>
+          <tr>
+            <h5><b>Video:</b></h5>
+          </tr>
+          <td width = "33%"> </td>
+          <td width = "33%">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kBS2U7tYOjw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </td> <td width = "33%">
+          </td>
+        </tr>
+    </table>
+
+  </div>
+
+    <!-- Our mission -->
+    <A NAME="mission"></A>
+    <div class="w3-content w3-padding-large w3-margin-top" id="mission">
+        <h1 class="w3-xxlarge"><b>Mission</b></h1>
+        <hr style="width:125px;border:3px solid grey" class="w3-round">
+        <p style = "font-size: 18px;"> Our mission is to provide a fast and easy-to-use webservice. We can facilitate all of our users' recipe needs with a user-friendly enviornment.
+          <div> <img src="foodSamples.png" alt="Meet the Team!" style="width:100%"></div>
+        </p>
+    </div>
+
+    <!-- Team (Portfolio) -->
+    <div class="w3-content w3-padding-large w3-margin-top" id="team">
+        <h1 class="w3-xxlarge"><b>Our Team     <a href="http://build-a-meal.net/"><img border="0" alt="Link" src="CircularLogo.jpg" width="50" height="50"></a></b></h1>
+        <hr style="width:200px;border:3px solid grey" class="w3-round">
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="member-photos/jacob.jpg" style="width:100%">
+              <div class="container">
+                <h4>Jacob <br>Amavizca</h4>
+                <p class="title"> Front-End<br>Developer</p>
+                <p><button class="button"><a href="mailto:jeamavizca@cpp.edu" style="text-decoration:none;">Contact</a></button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="member-photos/leslie.png" style="width:100%">
+              <div class="container">
+                <h4>Leslie<br>Covarrubias</h4>
+                <p class="title">Back-End<br>Developer</p>
+                <p><button class="button"><a href="mailto:lesliec1@cpp.edu" style="text-decoration:none;">Contact</a></button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="member-photos/walter.jpg" style="width:100%">
+              <div class="container">
+                <h4>Walter <br>Niederer</h4>
+                <p class="title">Back-End<br>Developer</p>
+                <p><button class="button"><a href="mailto:wpniederer@gmail.com" style="text-decoration:none;">Contact</a></button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+          <div class="card">
+            <img src="member-photos/amanda.jpg" style="width:100%">
+            <div class="container">
+              <h4>Amanda <br>Kwok</h4>
+              <p class="title">Front-End<br>Developer</p>
+              <p><button class="button"><a href="mailto:awkwok@cpp.edu" style="text-decoration:none;">Contact</a></button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="member-photos/petre.png" style="width:100%">
+            <div class="container">
+              <h4>Petre <br>Quintua</h4>
+              <p class="title">Back-End<br>Developer</p>
+              <p><button class="button"><a href="mailto:pmquintua@cpp.edu" style="text-decoration:none;">Contact</a></button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Contact -->
+    <div class="w3-content w3-padding-large w3-margin-top" id="contact">
+        <h1 class="w3-xxlarge"><b>Contact</b></h1>
+        <hr style="width:130px;border:3px solid grey" class="w3-round">
+        <p> <img src="email.png" style="width:25px;height:25px;"> Email: <a href="mailto:info@build-a-meal.net">info@build-a-meal.net</a> </p>
+        <p> <img src="CircularLogo.jpg" style="width:25px;height:25px;"> Website: <a href="http://build-a-meal.net/">Visit Build-A-Meal!</a></p>
+        <p> <img src="github.png" style="width:25px;height:25px;"> GitHub: <a href="https://github.com/PerlsOfTheC/BuildAMeal">See us in action!</a> </p>
+        <p> <img src="slides.png" style="width:25px;height:25px;">Google Slides: <a href="https://goo.gl/dT2pkH">See our presentation!</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+</body>
+</html>
