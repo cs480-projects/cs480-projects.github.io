@@ -1,0 +1,9 @@
+.about {
+    background-image: url(https://www.osfhealthcare.org/blog/wp-content/uploads/2020/08/public-restroom-765x310.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
