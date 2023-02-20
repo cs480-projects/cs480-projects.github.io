@@ -1,0 +1,13 @@
+body {
+    background-color: #a9a9a9;
+    font-family: monospace, Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
