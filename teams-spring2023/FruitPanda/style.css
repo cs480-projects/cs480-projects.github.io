@@ -1,8 +1,9 @@
-h1 {
+#header {
     color: green;
     outline: 5px solid greenyellow;
     text-shadow: -2px 0 black;
     text-align: center;
+    
 }
 
 #content {
