@@ -20,4 +20,9 @@ public class TsaBackendController {
     public String seth() {
         return "Did I do A3 right?";
     }
+
+    @RequestMapping("/joshua")
+    public String joshua() {
+        return "It would be hilarious if I messed up Seth's commit";
+    }
 }
