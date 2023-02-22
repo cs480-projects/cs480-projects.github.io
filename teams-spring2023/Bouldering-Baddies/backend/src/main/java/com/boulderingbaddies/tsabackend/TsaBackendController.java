@@ -13,6 +13,11 @@ public class TsaBackendController {
 
     @RequestMapping("/goodbye")
     public String goodbye() {
-        return "Goodbye from Buldering Baddies";
+        return "Goodbye from Bouldering Baddies";
+    }
+
+    @RequestMapping("/seth")
+    public String seth() {
+        return "Did I do A3 right?";
     }
 }
