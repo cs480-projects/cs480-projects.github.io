@@ -3,12 +3,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 
 public class WebController {
-
     public static void main(String[] args) {
-
         Document doc;
         try {
             // need http protocol
@@ -30,7 +30,6 @@ public class WebController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        
     }
-
 }
