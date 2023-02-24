@@ -6,6 +6,9 @@ import org.jsoup.select.Elements;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import com.google.common.base.Objects;
+import com.google.common.base.MoreObjects;
+
 import java.io.IOException;
 
 public class WebController {
@@ -46,6 +49,20 @@ public class WebController {
         jsonString = gson.toJson(student);
         //convert object back to json string
         System.out.println(jsonString);
+
+        //Google Guava Example
+        User user1 = new User("Raymar", "Lagos", "rumor", "filipinoDancer<3");	
+        User user2 = new User("Abhi", null, "abhinav", "neelam123");	
+
+        System.out.println(user1.equals(user2));
+        System.out.println(user1.hashCode());	
+        System.out.println(MoreObjects.toStringHelper(user1).add("Name", user1.getFirstName() + " " + user1.getLastName())
+        .add("Username", user1.getUsername())
+        .add("Password", user1.getPassword()).toString());
+
+        System.out.println(MoreObjects.toStringHelper(user2).add("Name", user2.getFirstName() + " " + user2.getLastName())
+        .add("Username", user2.getUsername())
+        .add("Password", user2.getPassword()).toString());
     }
     
     // created for json example
