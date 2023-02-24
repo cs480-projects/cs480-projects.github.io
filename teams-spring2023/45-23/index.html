@@ -1,11 +1,74 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>45/23</title>
+		<title>45/23 Website Test</title>
+			<link href="homepage.css" rel="stylesheet" />
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />
+			<script src="homepage.js" type="application/javascript"></script>
 	</head>
-	<body>
+	<header class="container-fluid"><h1 style="color:black">Welcome to 45/23's project website.</h1></header>
+	
+	<nav class="container-fluid">
+		<ul class="nav navbar-inverse navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://docs.google.com/presentation/d/1w4zduVTPVF6S8-GZsxOas36NkyHhUKqIYS2X2cDXl-Y/edit#slide=id.p">The Google Slide Video</a></li>
+			<li><a href="https://480HTML.christianbadoy1.repl.co">Test Website</a></li>
+		</ul>
+	</nav>
+	<div class="container-fluid">
+	
+	<body id="background" onload="onLoad()">
+		<p text-align: center><h2 class="title">Members: Christian Badoy, Tatsiana Uryeva </h2></p>
+		<p>
+			<p><audio controls autoplay loop preload="auto" id="bgm">
+				<source src="Assets/Ele-Wh-APHO.mp3" type="audio/mp3">
+			</audio></p>
+			<button onclick="setNoVolume()" type="button">Turn Off Music</button>
+			<button onclick="setHalfVolume()" type="button">Set Volume to 20%</button>
+			<button onclick="setFullVolume()" type="button">Set Volume to 100%</button></p>
+	
+			<p><button onclick="setCurTime()" type="button">Reset Music</button></p>
+			
 
-		<h1>sup</h1>
-		<p>loading...</p>
+		<footer class="container-fluid">A Random Website. No copyright 2023.</footer>
+	<p id="timestamp"></p>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-1">
+                <p id="badge"></p>
+            </div>
+        </div>
+    </div>
 
-	</body>
+	</body></div>
+	<script>
+		var vid = document.getElementById("bgm");
+		vid.volume = 0.5;
+
+function setNoVolume() { 
+	    vid.volume = 0.0;
+} 
+	  
+function setHalfVolume() { 
+	    vid.volume = 0.2;
+} 
+	  
+function setFullVolume() { 
+	    vid.volume = 1.0;
+} 
+
+function setCurTime() { 
+    vid.currentTime=0;
+}
+	</script>
+	<style>
+		div.a {
+			text-align: center;
+		}
+		body {
+			font-family: 'Courier New', Courier, monospace;
+		}
+	</style>
 </html>
