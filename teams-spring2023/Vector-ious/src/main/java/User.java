@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.common.base.Objects;
 
 public class User {
@@ -5,6 +8,7 @@ public class User {
     private String lastName;
     private String username;
     private String password;
+    private List<Post> userPosts = new ArrayList<Post>();
 
     public User(String firstName, String lastName, String username, String password) {
         this.firstName = firstName;
@@ -65,4 +69,9 @@ public class User {
     public String getPassword() {
         return this.password;
     }   
+
+    public void createPost(String userMessage, Room userRoomListing) {
+        Post newPost = new Post(userMessage, userRoomListing);
+        this.userPosts.add(newPost);
+    }
 }
