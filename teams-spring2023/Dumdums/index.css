@@ -51,3 +51,28 @@ p {
     font-size: 35px;
     margin-left: 10px;
 }
+#first {
+    display: none;
+}
+
+.site-btns {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.site-btns button:hover {
+    background-image: linear-gradient(#d3e496, #2fe977);
+    color: white;
+}
+
+.site-btns button {
+    border-radius: 15px;
+    font-style: bold;
+    background-color: rgba(242, 232, 232, 0.5);
+    font-size: 30px;
+}
