@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100 px;
+}
+
+
+  
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .button1 {
+    background-color: #4681f4; 
+    color: black; 
+  }
+  
+  .button1:hover {
+    background-color: #55c2da;
+  }
+
+
+  .rowNames {
+    display: flex;
+  }
+  
+  .columnNames
+  {
+    flex: 33.33%;
+    padding: 5px;
+  }

@@ -1,0 +1,155 @@
+* {
+    /* padding: 0;
+    margin: 0; */
+}
+.drawing-utensils-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+}
+
+
+#can {
+    /* height: 50%;
+    width: 75%;
+     */
+    
+
+}
+#draw{
+    width:50px;
+    height:50px;
+}
+
+#black {
+    width: 50px;
+    height: 50px;
+}
+
+#white {
+    width: 50px;
+    height: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    background-color: #2196F3;
+    padding: 1em;
+    /* flex: 1;
+    min-width: 0; */
+    
+    
+}
+
+.flex-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    font-size: 1em;
+    text-align: center;
+
+    
+}
+
+#left-item {
+    /* flex: 1   10 1; */
+}
+
+#top-right-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+#kanji-jlpt-level-row {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    
+
+}
+
+#grade-level-stroke-count-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+#flex-item-right {
+    min-width: 0px;
+    flex-wrap: wrap;
+    font-size: 1em; 
+    max-width: 450px;
+}
+
+#flex-item-right-top-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+#flex-item-right-bottom-row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: start;
+    gap: 39px   
+    
+    
+}
+
+#button1, #button2 , #button3, #button4, #button5, #button6, #button7, #button8, #button9, #button10 {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 48.2px;
+    height: 60.8px;
+    text-align: center;
+}
+
+#clr {
+    width: 5em;
+    height: 2.5em;
+    font-size: 1.5em;
+}
+
+#middle-grid-item {
+    justify-content: space-between;
+
+}
+
+#kanji-image {
+    font-size: 50px;
+}
+
+.image-border {
+    border: 5px solid black;
+    
+    
+    
+}
+
+#meanings-paragraph {
+    /* max-width: 100%; */
+    text-align: left;
+}
+
+#kunyomi-paragraph {
+    text-align: left;
+}
+
+#onyomi-paragraph {
+    text-align: left;
+}
+
+#more-information-paragraph {
+    text-align: left;
+}
