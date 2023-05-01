@@ -196,3 +196,13 @@ body::before {
   padding: 5px;
   border-radius: 30px;
 }
+
+a {
+  color: #8eb0e8;
+}
+a:visited {
+  color: #8eb0e8;
+}
+a:hover, a:active {
+  color: #6a81aa;
+}
