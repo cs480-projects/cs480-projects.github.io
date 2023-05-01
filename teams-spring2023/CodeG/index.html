@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <style>
+        .slider {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .slider img.slick-current {
+            opacity: 1;
+        }
+
+        .slider .prev,
+        .slider .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 30px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 1);
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .slider .prev {
+            left: 10px;
+        }
+
+        .slider .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="menu-bar">
+
+            <div class="team-logo">
+              <a href="http://syncschedule.com/"> 
+                  <img src="Images/calendar.png" title="SyncSchedule" alt="SyncSchedule" style="width: 40px;">
+              </a>
+            </div>
+            <div class="team-name">
+              CodeG
+            </div>
+            <div class="github">
+              <a href="https://github.com/CS4800-Code-G/Calendar">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" style="width: 40px">
+              </a>
+            </div>
+            <div class="slides">
+              <a href="https://docs.google.com/presentation/d/1qKZ8Y8EFegnkLmNsvwsiq6YC0ju8S_QmyMmZYQ9OXlM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style="width: 38px">
+                  <img src="Images/slides.png" title="Slides" alt="Slides">
+                </a>
+            </div>
+      </div>
+    <div class="meet-team">
+        <p>Meet the Team</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="Images/korok.jpg" alt="Allan" style="width: 100%" height ="302px" >
+                <div class="container">
+                    <h2>Allan Chan</h2>
+                    <p class="title">Shoutout to my friends for making this semester enjoyable.</p>
+                    <p class="social-icons">
+                    <a href="https://github.com/achan8200" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" style="width: 40px;">
+                    </a>
+                </p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="column">
+            <div class="card">
+                <img src="Images/kims.png" alt="Andrew" style="width: 100%">
+                <div class="container">
+                    <h2>Andrew Kim</h2>
+                    <p class="title">I like to make things. So I make things.</p>
+                    <p class="social-icons">
+                    <a href="https://github.com/andrew001347" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" style="width: 40px;">
+                    </a>
+                </p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="column">
+            <div class="card">
+                <img src="Images/j.jpg" alt="Jared" style="width: 100%">
+                <div class="container">
+                    <h2>Jared Molina</h2>
+                    <p class="title">Thanks Cal Poly Pomona for 4 great years!</p>
+                    <p class="social-icons">
+                    <a href="https://github.com/jredmolina" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" style="width: 40px;">
+                    </a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="presenting">
+        <p>CodeG is proud to present</p>
+      </div>
+      <div class="name-drop">
+        <a href="http://syncschedule.com/"><p>SyncSchedule</p></a>
+      </div>
+
+    <div class="slider">
+        <img src="Images/signin.jpg" alt="Image 1">
+        <img src="Images/demo1.png" alt="Image 2">
+        <img src="Images/create-event.png" alt="Image 3">
+        <img src="Images/events.jpg" alt="Image 4">
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<div class="prev">&#10094;</div>',
+                nextArrow: '<div class="next">&#10095;</div>'
+            });
+        });
+    </script>
+</body>
+</html>
