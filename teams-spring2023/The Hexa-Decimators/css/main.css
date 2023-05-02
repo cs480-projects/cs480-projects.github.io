@@ -59,9 +59,6 @@ body {
 .name {
   color: #fff;
 }
-.name {
-  color: #fff;
-}
 .v5_11 {
   width: 124px;
   height: 124px;
@@ -90,7 +87,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 78px;
-  left: 450px;
+  left: 32.5px;
   border-radius: 50%;
   box-shadow: 0px 0px 84px rgba(0, 0, 0, 0.23076923191547394);
 }
@@ -284,7 +281,19 @@ body {
   width: 219px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 309px;
+  top: 305px;
+  left: 129px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v5_295 {
+  width: 219px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 330px;
   left: 129px;
   font-family: Inter;
   font-weight: Regular;
