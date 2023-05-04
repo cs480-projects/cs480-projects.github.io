@@ -9,11 +9,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #000;
+  background-color: #cbd5e0;
 }
 
 header {
-  background-color: #007aff;
+  background-color: #3182ce;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@ main {
 .Contributors {
   margin-bottom: 40px;
   text-align: center;
-  background-color: #000;
+  background-color: #cbd5e0;
 }
 
 .Contributors h2 {
@@ -62,7 +62,7 @@ main {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #000;
 }
 
 .Contributors ul {
@@ -76,7 +76,7 @@ main {
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 10px;
-  color: #fff;
+  color: #000;
 }
 
 .buttons {
@@ -85,7 +85,7 @@ main {
 }
 
 button {
-  background-color: #007aff;
+  background-color: #3182ce;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -103,7 +103,6 @@ button:hover {
 }
 
 .logo img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -121,25 +120,45 @@ a:hover {
     text-align: center;
     margin-top: 20px;
   }
-  
+
   .team h1 {
     font-size: 24px;
   }
-  
+
   .team p {
     font-size: 14px;
   }
-  
+
   .Contributors h2 {
     font-size: 20px;
   }
-  
+
   .Contributors li {
     font-size: 14px;
   }
-  
+
   button {
     font-size: 14px;
     padding: 8px 16px;
   }
+}
+
+h2 {
+  text-align: center;
+}
+
+img:hover {
+  -webkit-transform: scale(3);
+  transform: scale(3);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row img {
+  width: 50%;
+  height: auto;
 }
