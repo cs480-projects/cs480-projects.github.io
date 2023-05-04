@@ -4,13 +4,72 @@
     <title>
         Happy Coders
     </title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .inline {
+            display: inline;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .screenshot {
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .link-button {
+            background-color: SkyBlue;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
 </head>
   <body>
-    <h1 style="color: SkyBlue">An App to Plan Out Your Entire Day!</h1>
-    <p></p>
-    <p>&ensp;Current Team Members:</p>
-    <p>&emsp;Mohammed Ibrahim,</p>
-    <p>&emsp;Justin Rebollar,</p>
-    <p>&emsp;Jesus Romo</p>
+    <div class="centered">
+        <h1 style="color: SkyBlue">An App to Plan Out Your Entire Day!</h1>
+    </div>
+    <div class="centered">
+        <p class="inline">Created by: Mohammed Ibrahim,</p>
+        <p class="inline">Justin Rebollar,</p>
+        <p class="inline">Jesus Romo</p>
+    </div>
+
+    <!-- Project Name -->
+    <h2>Project Name: NOTI</h2>
+
+    <!-- Project Logo -->
+    <div class="centered">
+        <h3>Project Logo:</h3>
+        <img src="dummy_logo.png" alt="Project Logo" class="logo">
+    </div>
+
+    <!-- Project Screenshots -->
+    <div class="centered">
+        <h3>Project Screenshots:</h3>
+        <img src="dummy_screenshot1.png" alt="Project Screenshot 1" class="screenshot">
+        <img src="dummy_screenshot2.png" alt="Project Screenshot 2" class="screenshot">
+    </div>
+
+    <!-- Project Links -->
+    <h3>Project Links:</h3>
+    <p><a href="<deployed project link here>" class="link-button">Deployed Project</a></p>
+    <p><a href="<github repo link here>" class="link-button">GitHub Repo</a></p>
+    <p><a href="<slides link here>" class="link-button">Presentation Slides</a></p>
+    <p><a href="<video link here>" class="link-button">YouTube Video Demo</a></p>
   </body>
 </html>
