@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2e6d9;
+    color: #333;
+}
+.project img {
+    width: auto; /* or set a fixed height instead */
+    height:300px;
+
+}
+
+header {
+    background-color: lightsalmon;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.team-member h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.project {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #f2d8c8;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.project h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-buttons a {
+    display: inline-block;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: lightsalmon;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.project-buttons a:hover {
+    background-color: #4e3b2a;
+}
