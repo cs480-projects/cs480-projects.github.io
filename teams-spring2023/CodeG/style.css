@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Assistant");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html {
+  background-color: #f5f5f5;
+}
+
+.team-name {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  left: 10px;
+}
+.project {
+    margin-right: 20px;
+    background-color: white;
+    width: max-content;
+    height: 40px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+  float: left;
+  width: 300px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.container {
+  padding: 0 16px;
+  font-family: "Poppins";
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+    font-size: medium;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  .github {
+    background-color: white;
+    width: fit-content;
+    height: 41px;
+    padding: 5px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.slides {
+  background-color: white;
+  width: fit-content;
+  height: 38px;
+  padding: 7px;
+  border-radius: 30px;
+}
+
+
+.slides img {
+  width: 38px;
+}  
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.menu-bar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 10 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  background-color: #8eb0e8;
+}
+
+
+
+
+.meet-team {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 80px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  color: #8eb0e8
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 385px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-color: #d1e2f7;
+  z-index: -5;
+}
+
+
+.presenting {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  color: #8eb0e8
+}
+
+.name-drop {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  color: #8eb0e8
+}
+
+
+.team-logo {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  width: max-content;
+  height: 40px;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+a {
+  color: #8eb0e8;
+}
+a:visited {
+  color: #8eb0e8;
+}
+a:hover, a:active {
+  color: #6a81aa;
+}

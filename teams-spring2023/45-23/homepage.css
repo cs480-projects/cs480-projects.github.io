@@ -1,0 +1,110 @@
+header, footer {
+	background-color: rgba(255,255,255,.5);
+	
+	color: black;
+	padding: 1px;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-radius:25px;
+	animation-name: slidein;
+	opacity: 0.9;
+	outline-color: grey;
+}
+
+aside {
+	padding-top: 10px;
+	font-weight: 200;
+}
+
+aside h2 {
+	color: darkorchid;
+}
+
+.title {
+	background-color:rgba(255,255,255,.5);
+	color:darkblue;
+	padding: 10px 0;
+	border: dashed;
+	border-color: black;
+	border-radius: 25px;
+	vertical-align: middle;
+}
+
+#background {
+	background-color:#fae7d0;
+	background-image: url("Assets/Potato.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+
+	text-align: center;
+}
+
+#hourslater {
+	color:gray;
+	opacity:0.5;
+}
+
+
+body {
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+#border1 {
+	border-style: double;
+	border-color: palegreen;
+	border-radius: 25px;
+	border-width: 10px;
+	padding: 1px;
+	background-color: rgba(250,231,208,0.5);
+	font: bold;
+	text-shadow: 1px 1px gray;
+	text-align: center;
+}
+
+nav {
+    background-color: #222;
+	opacity: 0.7;
+	border-radius: 18px;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul:hover {
+	background-color: #222;
+}
+
+ul {
+	color: lightgreen;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+}
+
+.nav navbar-inverse navbar-nav {
+	background-color: mediumpurple;
+	vertical-align: middle;
+}
+
+img{
+	height: 100%;
+	width: 100%;
+}
+
+a:link {
+	color: mediumpurple;
+}
+a:visited {
+	color: aquamarine;
+}
+a:hover {
+	color: hotpink;
+}
+
+li {
+	color: springgreen;
+	text-shadow: 1px lightgray;
+}

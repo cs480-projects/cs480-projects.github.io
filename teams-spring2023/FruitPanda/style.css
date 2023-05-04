@@ -1,8 +1,9 @@
-h1 {
+#header {
     color: green;
     outline: 5px solid greenyellow;
     text-shadow: -2px 0 black;
     text-align: center;
+    
 }
 
 #content {
@@ -13,3 +14,58 @@ h1 {
 body {
     background-color: white;
 }
+
+#btn
+{
+text-align: center;
+display: inline-block;
+outline: none;
+cursor: pointer;
+font-size: 14px;
+line-height: 1;
+border-radius: 500px;
+transition-property: background-color,border-color,color,box-shadow,filter;
+transition-duration: .3s;
+border: 1px solid transparent;
+letter-spacing: 2px;
+min-width: 160px;
+text-transform: uppercase;
+white-space: normal;
+font-weight: 700;
+text-align: center;
+padding: 16px 14px 18px;
+color: #616467;
+box-shadow: inset 0 0 0 2px #616467;
+background-color: transparent;
+height: 48px;
+}
+
+#btn:hover{
+    color: #fff;
+    background-color: #616467;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #btnContent
+  {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+
+  #logo
+  {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }

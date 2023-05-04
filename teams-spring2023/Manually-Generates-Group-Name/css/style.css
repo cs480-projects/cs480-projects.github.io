@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #cbd5e0;
+}
+
+header {
+  background-color: #3182ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.team h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.team p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contributors {
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: #cbd5e0;
+}
+
+.Contributors h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.Contributors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Contributors li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #000;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #0064c4;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #007aff;
+}
+
+@media (max-width: 768px) {
+  .team {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .team h1 {
+    font-size: 24px;
+  }
+
+  .team p {
+    font-size: 14px;
+  }
+
+  .Contributors h2 {
+    font-size: 20px;
+  }
+
+  .Contributors li {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+img:hover {
+  -webkit-transform: scale(3);
+  transform: scale(3);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row img {
+  width: 50%;
+  height: auto;
+}

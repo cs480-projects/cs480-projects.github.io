@@ -9,14 +9,37 @@
 <body>
     <div id="container">
         <div id="header">
+            <img id="logo" class="temporary Logo" src="tempLogo.png" style="width:80px;height:80px;">
             <h1>CPP MarketPlace</h1>
         </div>
 
         <div id="content">
-            <h2>Members</h2>
-            <h3> Grecia Alvarado </h3>
-            <h3> Yemi Okunubi </h3>
-            <h3> Eric Chen </h3>
+
+            <div id= "btnContent">
+                <button id="btn" onclick="window.open('http://ec2-18-119-160-45.us-east-2.compute.amazonaws.com','_blank')"><br>CPPMarketPlace</button>
+                <button id= "btn" onclick="window.open('https://github.com/FruitPanda-CS4800/CPP_MarketPlace','_blank')"><br>Code</button>
+                <button id= "btn" onclick="window.open('https://docs.google.com/presentation/d/1N84zeAe0buEKAJJplA5zN_xUYL6DZCVAUiCmQ1JO32c/edit?usp=sharing','_blank')"><br>Slides</button>
+            </div>
+
+            <h1>Members</h1>
+            <div class="row">
+                <div class="column">
+                    <h3> Grecia Alvarado </h3>
+                    <img class="userIcon" src="UserIcon.png" style="width:100px;height:100px;">
+                    <p> Fall '23 </p>
+                </div>
+                <div class="column">
+                    <h3> Yemi Okunubi </h3>
+                    <img class="userIcon" src="UserIcon.png" style="width:100px;height:100px;">
+                    <p> Spring '23 </p>
+                </div>
+                <div class="column">
+                    <h3> Eric Chen </h3>
+                    <img class="userIcon" src="UserIcon.png" style="width:100px;height:100px;">
+                    <p> Fall '23 </p>
+                </div>
+              </div>
+
 
         </div>
         <div id="footer">

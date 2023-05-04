@@ -2,12 +2,44 @@
 <html>
 <head>
 <title>Team Dumdums</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Tilt+Neon' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<h1 id="welcome">Napkin Sketch</h1>
-<p>Team Members: Jubemhae shane Cucal, Irfan Iqbal, Victor Phan</p>
-<p>Watt is up?</p>
-<p>We're making a app to help you make quick mock ups to show to others.</p>
-<p>No, we aren't actually lollipops.</p>
+<script src="index.js"></script>
+<h1 id="Team">Team Dumdums</h1>
+<img src="Images/PannikLogo.png">
+<p style="margin-bottom: 150px;"><u>Team Members</u>:</p>
+<div class="row">
+    <div class="col">
+        <a href="https://github.com/VictorTPhan" target="_blank"><img src="Images/Victor.png" class="teamImg"></a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/JubeMhae" target="_blank"><img src="Images/Jubemhae.png" class="teamImg"></a>
+    </div>
+    <div class="col">
+        <a href="https://github.com/irfan61802" target="_blank"><img src="Images/Irfan.png" class="teamImg"></a>
+    </div>
+</div>
+
+<p style="margin-top: -80px; margin-bottom: 180px;"><u>Pannik Screenshots</u>:</p>
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="Images/Screenshot 1.png" style="margin-bottom: 50px; width: 100%; height: 100%;">
+    <img id="first" class="mySlides" src="Images/Screenshot 2.png" style="margin-bottom: 50px; width: 100%; height: 100%;">
+    <img id="first" class="mySlides" src="Images/Screenshot 3.png" style="margin-bottom: 50px; width: 100%; height: 100%;">
+    <img id="first" class="mySlides" src="Images/Screenshot 4.png" style="margin-bottom: 50px; width: 100%; height: 100%;">
+    <img id="first" class="mySlides" src="Images/Screenshot 5.png" style="margin-bottom: 50px; width: 100%; height: 100%;">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div class="site-btns">
+    <button onclick="window.open('https://www.pannik.net/','_blank')"><i class="fa fa-desktop"></i><br>Website</button>
+    <button onclick="window.open('https://github.com/TheDumdums/napkin-app','_blank')"><i class="fa fa-folder-open"></i><br>Repo</button>
+    <button onclick="window.open('https://docs.google.com/presentation/d/1oUu0Y5go-K1e27mZ6UloTdqmfukf_EjMqUHefd_TgSw/edit?usp=sharing','_blank')"><i class="fa fa-file-powerpoint-o"></i><br>Slides</button>
+</div>
 </body>
 </html>

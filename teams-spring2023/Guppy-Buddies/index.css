@@ -56,3 +56,12 @@ h2 {
     border-top: 1px solid black;
     padding-top: 10px;
 }
+
+.card.project-info {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.spacer {
+    height: 40px;
+}

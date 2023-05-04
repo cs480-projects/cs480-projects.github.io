@@ -1,4 +1,78 @@
+html {
+    height:120%;
+    width: 100%;
+    background-image: linear-gradient(#49ff88,#ffa25a);
+    background-attachment: fixed;
+    font-family: 'Tilt Neon';
+}
+
 h1 {
-font-family: Impact, sans-serif;
-color: #CE5937;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    align-items: center;
+    min-height: 8vh;
+    border-radius: 50px;
+    font-size: 40px;
+    filter: drop-shadow(0px 0px 10px rgb(0,0,0,1));
+}
+
+img {
+    height: 800px;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamImg {
+    height: 200px;
+    width: 200px;
+}
+
+.teamImg:hover .image {
+    opacity: 0.5px;
+}
+
+.row {
+    text-align: center;
+}
+  
+.col {
+    height: 100px;
+    display: inline-block;
+    margin: 80px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-left: 10px;
+}
+#first {
+    display: none;
+}
+
+.site-btns {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.site-btns button:hover {
+    background-image: linear-gradient(#d3e496, #2fe977);
+    color: white;
+}
+
+.site-btns button {
+    border-radius: 15px;
+    font-style: bold;
+    background-color: rgba(242, 232, 232, 0.5);
+    font-size: 30px;
 }
