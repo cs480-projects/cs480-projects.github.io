@@ -1,0 +1,31 @@
+.branding-branding {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.branding-text {
+  color: rgba(18, 40, 33, 1);
+  font-size: 24px;
+  line-height: 36px;
+}
+.branding-icon {
+  width: 7px;
+  height: 7px;
+}
+.branding-text1 {
+  color: rgba(18, 40, 33, 1);
+  font-size: 18px;
+  font-family: Lato;
+  line-height: 27px;
+}
+@media(max-width: 991px) {
+  .branding-icon {
+    display: none;
+  }
+  .branding-text1 {
+    display: none;
+  }
+}
