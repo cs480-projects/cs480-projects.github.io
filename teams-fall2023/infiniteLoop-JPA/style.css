@@ -1,0 +1,19 @@
+
+.content {
+    height: 100vh;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rounded-edges {
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
