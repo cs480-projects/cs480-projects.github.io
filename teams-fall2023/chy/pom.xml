@@ -1,8 +1,8 @@
 <dependencies>
     <dependency>
-      <groupId>cljsjs</groupId>
-      <artifactId>react</artifactId>
-      <version>18.2.0-1</version>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>1.16.1</version>
     </dependency>
 </dependencies>
   
