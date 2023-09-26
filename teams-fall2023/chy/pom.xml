@@ -1,8 +1,8 @@
-<project>
+<dependencies>
     <dependency>
       <groupId>cljsjs</groupId>
       <artifactId>react</artifactId>
       <version>18.2.0-1</version>
     </dependency>
-</project>
+</dependencies>
   
