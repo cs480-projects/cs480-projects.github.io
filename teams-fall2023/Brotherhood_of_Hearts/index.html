@@ -1,1 +1,131 @@
-Hello from Brotherhood of Hearts :)
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <style>
+    
+    #stripOuter{
+        font-weight: 900;
+        color: #000000;
+        background-color: #ffffff;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    
+    #stripInner{
+        background-color: #4a80aa;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Poppins', sans-serif;  
+        color: #ffffff;
+        font-size: 150%;
+        border: 5px #000000 solid;
+
+        
+        padding: 15px;
+
+        margin-top: 30px;
+        margin-bottom: 20px; /* distance between each*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #stripInner2{
+        background-color: #ffffff;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Poppins', sans-serif;  
+        color: #4a80aa;
+        font-size: 150%;
+        border: 5px #000000 solid;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px; /* distance between each*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #stripHeading{
+        font-size: 350%;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Poppins', sans-serif; 
+        font-weight: 750;
+    }
+
+    .secTitle{
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .line{
+        border: 5px solid #4a80aa;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+
+</style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="../index.php" class="nav-branding">PG</a>
+        
+        <ul class="nav-menu">
+          
+  
+          <li class="nav-item">
+            <a href="../index.php" class="nav-link">Generator</a>
+            </li>
+  
+          <li class="nav-item">
+          <a href="main/about.html" class="nav-link">About</a>
+          </li>
+    
+        </ul>
+      
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+  
+      </nav>
+  </header>
+
+  <div style="max-width:auto" id="stripOuter">
+
+    <h1 id="stripHeading">About</h1>
+    <hr class="line">
+    
+    <div style="max-width:800px" id="stripInner2">
+        <p class="secTitle">Why<br></p>
+        <p style="color: #000000;">To create a simple, responsive, and effective portfolio site.</p>
+
+        <p class="secTitle">How<br></p>
+        <p  style="color: #000000;"> Using HTML, CSS, & PHP to create this site from scratch. Utlizing GitHUb and AWS for version control & deployment. </p>
+
+        <p class="secTitle">What<br></p>
+        <p  style="color: #000000;">A quick & simple way for students to share their info.</p>
+    </div> <!-- end of inner-->
+
+    <div style="max-width:800px" id="stripInner">
+        <h3>Members:</h3>
+        <p>Emil Hovsepians</p>
+        <p>Arabo Hovsepian</p>
+        <p>Behrad Mousavi</p>
+      </div> <!-- end of inner-->
+    
+  </div> <!-- end of outer-->
+
+
+<script src="script.js"></script>
+</body>
+</html>
