@@ -1,1 +1,306 @@
-Hello from Brotherhood of Hearts :)
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    
+    #stripOuter{
+        font-weight: 900;
+        color: #000000;
+        background-color: #ffffff;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    
+    #stripInner{
+        background-color: #4a80aa;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Poppins', sans-serif;  
+        color: #ffffff;
+        font-size: 150%;
+        border: 5px #000000 solid;
+
+        
+        padding: 15px;
+
+        margin-top: 30px;
+        margin-bottom: 20px; /* distance between each*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #stripInner2{
+        background-color: #ffffff;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Poppins', sans-serif;  
+        color: #4a80aa;
+        font-size: 150%;
+        border: 5px #000000 solid;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px; /* distance between each*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #stripHeading{
+        font-size: 350%;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Poppins', sans-serif; 
+        font-weight: 750;
+    }
+
+    .secTitle{
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .line{
+        border: 5px solid #4a80aa;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        background-color: #4a80aa;
+        border: 3px #ffffff solid;    
+        border-radius: 8px;    
+        color: white;
+        font-family: 'Poppins', sans-serif;   
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 4px 2px;
+        cursor: pointer;
+
+    }
+
+    .button:hover{
+        background-color: #ffffff;
+        color: #000000;
+        border: 3px #000000 solid;    
+        }
+
+
+
+/* Screenshot slideshow */
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="http://www.foliogenerator.com/" class="nav-branding">PG</a>
+        
+        <ul class="nav-menu">
+        
+        </ul>
+      
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+  
+      </nav>
+  </header>
+
+  <div style="max-width:auto" id="stripOuter">
+
+    <h1 id="stripHeading">Portfolio Generator</h1>
+    <hr class="line">
+
+    <br><br> 
+    <a href="http://www.foliogenerator.com/" class="button">Website</a>
+    <a href="https://github.com/CS-4800-Brotherhood-of-Hearts/PG_Portfolio_Generator.github.io" class="button">GitHub Repo</a>
+    <a href="#" class="button">Slides</a>
+ 
+
+    <div style="max-width:800px" id="stripInner2">
+        <p class="secTitle">Why<br></p>
+        <p style="color: #000000;">To create a simple, responsive, and effective portfolio site.</p>
+
+        <p class="secTitle">How<br></p>
+        <p  style="color: #000000;"> Using HTML, CSS, & PHP to create this site from scratch. Utlizing GitHUb and AWS for version control & deployment. </p>
+
+        <p class="secTitle">What<br></p>
+        <p  style="color: #000000;">A quick & simple way for students to share their info.</p>
+    </div> <!-- end of inner-->
+
+    <div style="max-width:800px" id="stripInner">
+        <h3>Brotherhood of Hearts</h3>
+        <p>Emil Hovsepians</p>
+        <p>Arabo Hovsepian</p>
+        <p>Behrad Mousavi</p>
+      </div> <!-- end of inner-->
+    
+      
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/Image1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/Image2.png" style="width:100%">
+        </div>
+        
+       
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+        </div>
+        
+
+
+
+
+
+
+
+
+  </div> <!-- end of outer-->
+
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+</html>
