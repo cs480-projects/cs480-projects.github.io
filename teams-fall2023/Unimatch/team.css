@@ -1,0 +1,206 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+}
+
+.project-logo {
+    max-width: 200px;
+    /* Adjust the size as needed */
+    height: auto;
+}
+
+section {
+    background-color: rgb(219, 219, 219);
+}
+
+.team-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: rgb(219, 219, 219);
+}
+
+.team-member {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 268px;
+}
+
+.contact-email {
+    color: #333;
+}
+
+.graduation-year {
+    margin: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.short-bio {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+.project-name h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #faa805;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.responsive-ss-section {
+    text-align: left;
+}
+
+.section-title {
+    color: #faa805;
+    font-size: 30px;
+    padding: 10px 30px;
+    background: black;
+    z-index: 3;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    background-color: #faa805;
+    padding: 20px;
+    font-weight: 900;
+}
+
+.project-url {
+    flex: 0 0 33%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.project-url:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: rgb(219, 219, 219);
+}
+/* 
+.desktop-screenshot,
+.mobile-screenshots {
+    flex: 1;
+    box-sizing: border-box;
+    gap: 20px;
+} */
+
+.desktop-screenshot img,
+.mobile-screenshots img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.arrow {
+    font-size: 50px;
+    margin: 0 20px;
+    color: #faa805;
+    z-index: 5;
+}
+
+.description-section {
+    background-color: #111;
+    color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.screenshots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.desktop-screenshot, .mobile-screenshots {
+    /* flex: 1; */
+    box-sizing: border-box;
+    gap: 20px;
+    /* position: relative; */
+    /* right: 0; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.mobile-screenshots {
+    flex: 0 0 40%;
+}
+
+/* Adjust styles for responsiveness */
+@media screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .team-members {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-description {
+        text-align: justify;
+    }
+
+    .desktop-screenshot img,
+    .mobile-screenshots img {
+        max-height: unset;
+        width: 100%;
+        border-radius: unset;
+        margin: 0;
+        padding: 0;
+    }
+}
