@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html>
+{%load static%}
 <head>
-<title>Big O Inc: CPP Finder Keeper</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico'%}">
+    <title>Bronco Finder Keeper</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00843D;
+            color: #FFB500;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .big-rectangle-image {
+            width: 100%; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio of the image */
+            display: block;
+            margin: 0 auto;
+        }
+        .small-rectangle-image {
+            width: 35%; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio of the image */
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .map-link {
+            display: block;
+            text-align: center;
+            background-color: #01426A;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .profile-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-info {
+            margin-right: 10px; 
+            color: white; 
+        }
+
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-
-<h1>Welcome to Big O Inc</h1>
-Now this is where the fun begins
-
+    {% load static %}
+    <div class="navbar">
+        <a href="/">Home Page</a>
+        <a href = "https://github.com/Big-O-Inc/ScheduleFinder" target="_blank">GitHub</a>
+        <a href ="./settings">Settings</a>
+        <a href = "https://www.cpp.edu/maps/" target = "_blank">Map</a>
+        <a href="./schedule">Schedule</a>
+        <a href="./login">Login</a>
+        <a href="./signup">Sign Up</a>
+        {% if user.is_authenticated %}
+            <div class="profile-container">
+                <span class="profile-info">{{ user.username }}</span>
+                <img class="profile-icon" src="{% static 'images/profile-icon.png' %}" alt="Profile Icon">
+            </div>
+        {% endif %}
+    </div>
+    <header>
+        <img class="small-rectangle-image" src="{% static 'images/bronco_logo.jpg' %}" alt="Campus Map">
+        <h1>Welcome to Bronco Finder Keeper</h1>
+        <p>Your Source for Course Planning & Interactive Campus Navigation</p>  
+    </header>
+    
+    <div class="container">
+        <h2>About Us</h2>
+        <p>
+            We are a web service specializing in creating an interactive campus map and course scheduler for Cal Poly Pomona. 
+            With Cal Poly being such a large campus, it is very difficult to navigate and understand the time management it 
+            takes to walk to certain classes on time. Our goal with this web service is to provide two things: 
+            a convient tool for students to plan out their course schedules and to simplify campus navigation, especially
+            for newer students, to make it easier to navigate between classes. 
+        </p>
+        <h2>Explore the Campus</h2>
+        <p>
+            Click the button below to access the interactive map of our university campus. Find your way around, discover key locations, and plan your route easily.
+        </p>
+        <a href="https://www.cpp.edu/maps/" class="map-link">Explore the Campus Map</a>
+        <p></p>
+        <img class="big-rectangle-image" src="{% static 'images/cppmap.png' %}" alt="Campus Map">
+    </div>
 </body>
 </html>
