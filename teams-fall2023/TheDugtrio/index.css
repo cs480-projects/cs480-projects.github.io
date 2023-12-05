@@ -2,14 +2,16 @@ body {
     margin: 0;
     padding: 0;
     background: url('public/homepage-bg.svg') center/cover no-repeat fixed;
-    
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #3D1800;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     padding: 20px;
+    margin: 20px 0 0;
 }
 
 #logo {
@@ -18,8 +20,9 @@ header {
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', serif;
+    font-family: 'Open Sans', sans-serif;
     color: #BF4A54;
+    margin: 20px auto;
 }
 
 .button-container {
@@ -32,7 +35,7 @@ h1, h2, h3 {
     padding: 10px 20px;
     background-color: #c14953;
     color: #fff;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-decoration: none;
     border: none;
@@ -42,7 +45,7 @@ h1, h2, h3 {
 
 .slideshow-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px 0;
     position: relative;
 }
 
@@ -65,5 +68,5 @@ img.slide-image {
     color: #fff;
     padding: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
 }

@@ -5,3 +5,9 @@ body {
     font-family: monospace;
     color: black;
 }
+
+.box {
+    text-align: center;
+    position: relative;
+    margin: 2rem;
+}

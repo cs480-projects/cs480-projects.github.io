@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+h2,
+h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.box {
+  border: 2px solid #333;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.team-member,
+.tech-stack,
+.screenshots {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-member h3,
+.tech-stack h3,
+.screenshots h3,
+.screenshots h4 {
+  margin-bottom: 10px;
+}
+
+.team-member p,
+.tech-stack p {
+  margin: 10px 0;
+}
+
+.team-member button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
