@@ -4,13 +4,14 @@ body {
     background: url('public/homepage-bg.svg') center/cover no-repeat fixed;
     font-family: 'Raleway', sans-serif;
     color: #3D1800;
-    text-align: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     padding: 20px;
-    margin: 20px auto 0;
+    margin: 20px 0 0;
 }
 
 #logo {
@@ -44,7 +45,7 @@ h1, h2, h3 {
 
 .slideshow-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px 0;
     position: relative;
 }
 
