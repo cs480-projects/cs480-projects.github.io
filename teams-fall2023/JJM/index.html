@@ -1,100 +1,91 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>TossMySalad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss My Salad</title>
     <style>
         body {
-            font-family: 'Viga', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: rgb(115, 223, 96);
+            background-color: #f4f4f4;
         }
 
-        #navbar {
-            background-color: white;
-            color: white;
-            padding: 10px;
+        header {
+            background-color: #4CAF50; /* Green */
+            color: #fff;
+            padding: 1em;
             text-align: center;
         }
 
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         #logo {
-            width: 200px; /* Adjust as needed */
+        	text-align: center;
+        	width: 200px;
             height: auto;
             margin-right: 10px;
         }
 
-        #title {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
             text-align: center;
-            margin-top: 50px;
-            font-size: 36px;
+        }
+
+        p {
+            line-height: 1.6;
             color: #333;
         }
 
-        #members {
+        footer {
             text-align: center;
-            margin-top: 20px;
-            font-size: 24px;
-            color: #555;    
+            padding: 1em;
+            background-color: #4CAF50;
+            color: #fff;
         }
-
-        #members ul {
-            list-style: none; /* Remove bullets from the list */
-            padding: 0; /* Remove default padding */
-        }
-
-        #members li {
-            margin-bottom: 10px; /* Adjust spacing between list items */
-        }
-
-        #links {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-}
-
-#links a:hover {
-    color: rgb(115, 223, 96);
-    text-decoration: none;
-}
-
     </style>
 </head>
 <body>
-    <div id="navbar">
-        <img id="logo" src="TossMySalad copy.png" alt="Logo">
-    </div>
 
-    <div id="title">
-        <h1>TossMySalad</h1>
-    </div>
+    <header>
+        <h1>Toss My Salad</h1>
+        <p>Recipe Helper For All Of Your Waiting Ingredients.</p>
+    </header>
 
-    <div id="members">
-        <p>Team JJM:</p>
-        <ul>
-            <li>James Avila</li>
-            <li>Joshua Reyes</li>
-            <li>Michael Yaskowitz</li>
-        </ul>
-    </div>
+    <section>
+        <img id="logo" src="TossMySalad copy.png" alt="Toss My Salad">
+        <h2>Introduction</h2>
+        <p>Welcome to Toss My Salad! Use this tool to find recipes for yourself to try at home. </p>
+		
+        <h2>About Us</h2>
+        <p>We are Team JJM. Created by James Avila, Joshua Reyes, and Michael Yaskowitz.
+        <h2>How It Works</h2>
+        <p>To begin, follow the link below and create an account. Once the account is created, you can use the search bar to input your ingredients to begin searching for recipes to try for yourself.</p>
 
-    <div id="links">
-        <p>Project: <a href="http://ec2-3-12-136-205.us-east-2.compute.amazonaws.com:8080/
-            ">http://ec2-3-12-136-205.us-east-2.compute.amazonaws.com:8080/
-        </a></p>
-        <p>GitHub: <a href="https://github.com/CS4800-01-JJM/TossMySalad">https://github.com/CS4800-01-JJM/TossMySalad</a></p>
-        <p>Presentation: <a href="https://docs.google.com/presentation/d/1u-_kVYAkcTZlP8Gm1WqTyT391yLMkjYgr0uR5XE1cEE/edit?usp=sharing
-            ">https://docs.google.com/presentation/d/1u-_kVYAkcTZlP8Gm1WqTyT391yLMkjYgr0uR5XE1cEE/edit?usp=sharing
-        </a></p>
-        
-    </div>
+        <h2>Our Application</h2>
+        <p>Below is a link to the application</p>
+        <a href="url">http://ec2-18-116-62-27.us-east-2.compute.amazonaws.com/</a>
+        <p>Below is a link to a demo video of the application</p>
+        <a href="url">http://youtu.be/Gou0CaN3SdQ</a>
+        <p>Below is a link to our github page</p>
+        <a href = "url">https://github.com/CS4800-01-JJM/TossMySalad</a>
+        <p>Below is a link to our Google Slides</p>
+        <a href="url">https://docs.google.com/presentation/d/1u-_kVYAkcTZlP8Gm1WqTyT391yLMkjYgr0uR5XE1cEE/edit?usp=sharing</a>
+    </section>
+
+    <footer>
+        <p>Find your next home recipe today!</p>
+    </footer>
+
 </body>
 </html>
