@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('public/homepage-bg.svg') center/cover no-repeat fixed;
+    font-family: 'Raleway', sans-serif;
+    color: #3D1800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 20px;
+    margin: 20px 0 0;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #BF4A54;
+    margin: 20px auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #c14953;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+img.slide-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Style adjustments for slide captions */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
