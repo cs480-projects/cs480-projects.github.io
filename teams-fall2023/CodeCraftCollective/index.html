@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CodeCraft Collective</title>
+    <meta charset="UTF-8">
+    <title>CodeCraftCollective</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .centered{
+            display: flex;
+            justify-content: center;
+        }
+
+        .centered a {
+            margin: 0 10px;
+        }
+
+        #slider {
+            overflow: hidden;
+            width: 500px;
+            margin: auto;
+        }
+
+        #slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
 </head>
 <body>
-	<h1>CodeCraft Collective</h1>
-	<a href="54.193.181.222">website</a>
-	<a href="https://docs.google.com/presentation/d/1gOuk6xb4DLBtF-kVEJyBpkQI5srYKJwjMI8lHRzELK0/edit?usp=sharing">presentation</a>
+
+    <header>
+        <img src="logo.png" alt="Your Logo">
+    </header>
+
+    <section>
+        <h1>Team Name : CodeCraft Collective</h1>
+        <h2>Team Members : Jasper Obiacoro, Julian Cabrera, Abdiel Mendez</h2>
+        <h2>Project Name : QuickCardz</h2>
+        <div class="centered">
+	        <a href="http://54.193.181.222">Website</a>
+	        <a href="https://docs.google.com/presentation/d/1gOuk6xb4DLBtF-kVEJyBpkQI5srYKJwjMI8lHRzELK0/edit?usp=sharing">Presentation</a>
+            <a href="https://github.com/CodeCraftCollective/WebApp">Github</a>
+        </div>
+    </section>
+    
+<div id="slider">
+    <div id="slides">
+      <div class="slide"><img src="project1.png" alt="Photo 1"></div>
+      <div class="slide"><img src="project2.png" alt="Photo 2"></div>
+      <div class="slide"><img src="project3.png" alt="Photo 3"></div>
+      <div class="slide"><img src="project3.png" alt="Photo 4"></div>
+      <div class="slide"><img src="project3.png" alt="Photo 5"></div>
+      <div class="slide"><img src="project3.png" alt="Photo 6"></div>
+    </div>
+  </div>
+
+<script>
+    const slider = document.getElementById('slides');
+    let currentIndex = 0;
+      
+    function showSlide(index) {
+        const newPosition = -index * 100 + '%';
+        slider.style.transform = `translateX(${newPosition})`;
+    }
+      
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+        showSlide(currentIndex);
+    }
+      
+    setInterval(nextSlide, 3000);
+      
+    </script>
 </body>
-</html>
