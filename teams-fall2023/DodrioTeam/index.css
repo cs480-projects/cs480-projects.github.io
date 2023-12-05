@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: blanchedalmond;
     font-family: monospace;
     color: black;
@@ -9,10 +8,8 @@ body {
   
   .container {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin: 2rem;
   }
   
   .button {
@@ -34,6 +31,8 @@ body {
   
   img {
     width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   
   * {box-sizing:border-box}
@@ -41,4 +40,25 @@ body {
   .logo {
     width: 250px; /* Adjust this value as needed */
     height: auto;
+  }
+
+  sl-carousel {
+    width: 100%;
+    max-width: 750px; /* Set max-width for responsiveness */
+    margin: 0 auto; /* Center the carousel within the container */
+}
+
+  sl-carousel-item {
+    width: 100%; /* Ensure each item takes up the full width */
+    height: auto; /* Allow the height to adjust based on the content */
+  }
+
+  /* Add these styles for navigation arrows */
+  sl-carousel::part(navigation-button) {
+    font-size: 24px;
+    color: black;
+  }
+
+  sl-carousel::part(navigation-button):hover {
+    color: white;
   }
