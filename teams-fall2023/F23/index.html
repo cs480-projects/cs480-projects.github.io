@@ -1,27 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>LookOut</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #5e97a1; /* Bluish-green color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        #logo img {
+            max-width: 100px; /* Adjusted logo size */
+            height: auto;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        .section h2 {
+            color: #3a6f81; /* Darker shade of bluish-green */
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        #screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        #screenshots img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px; /* Rounded corners for images */
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #5e97a1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #3a6f81;
+        }
+        footer {
+            background-color: #3a6f81;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>F23</h1>
-        <nav>
-            <ul>
-                <h2>Team Members</h2>
-                <li>UyenNghi Nguyen</li>
-                <li>Gelila Chaka</li>
-                <li>Jeff Vazquez</li>
-                
-            </ul>
-        </nav>
+        <div id="logo">
+            <img src="img/2.png" alt="Project Logo">
+        </div>
+        <h1>LookOut</h1>
     </header>
+ 
+    <div id="team-members" class="section">
+        <h2>Team Members: UyenNghi Nguyen, Gelila Chaka, Jeff Vazquez</h2> 
+        <h2>Team Name: F23</h2>
+        <h2>Project Name: LookOut</h2>
+        
+    </div>
+
+    <div class="section">
+      <a href="http://www.cpplookout.com/map" class="button">View Deployed Project</a>
+      <a href="https://github.com/F23-CS4800/lookout" class="button">GitHub Repository</a>
+      <a href="https://docs.google.com/presentation/d/1hjVJi2kxehn7TCXsGILaKeq9SUavwNRTgZlSM4SbqwY/edit?usp=sharing" class="button">Presentation Slides</a>
+  </div>
+   
+    <h2>Project Screenshots</h2>
+    <div id="screenshots" class="section">
+        
+        <img src="img/s1.png" alt="Screenshot 1">
+        <img src="img/s2.png" alt="Screenshot 2">
+       
+    </div>
+    <div id="screenshots" class="section">
+      <img src="img/s3.png" alt="Screenshot 3">
+      <img src="img/s4.png" alt="Screenshot 4">
+     
+      <!-- Add more images here -->
+  </div>
+   
+  <div id="screenshots" class="section">
+        
+    <img src="img/s5.png" alt="Screenshot 1">
+    <img src="img/s6.png" alt="Screenshot 2">
+   
+</div>
 
     
 
-    
+    <footer>
+        <p>&copy; 2023 F23 Team. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
-
