@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('images/ScheduleyLogo.png') center/cover no-repeat fixed;
+    background: url('public/homepage-bg.svg') center/cover no-repeat fixed;
     
     font-family: 'Arial', sans-serif;
     color: #3D1800;
