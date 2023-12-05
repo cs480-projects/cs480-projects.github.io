@@ -20,11 +20,19 @@
         #screenshots {
             margin: 20px 0;
         }
-        #screenshots img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px;
+        #screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
         }
+        
+        #screenshots img {
+            width: calc(33.333% - 20px); /* Adjusts to 3 images per row with spacing */
+            height: auto;
+        }
+        
         h2 {
             color: #333;
         }
@@ -54,12 +62,15 @@
     <!-- Project Screenshots -->
     <div id="screenshots">
         <h2>Project Screenshots</h2>
-        <img src="img/s1.png" alt="Screenshot 1">
-        <img src="img/s2.png" alt="Screenshot 2">
-        <img src="img/s3.png" alt="Screenshot 3">
-        <img src="img/s4.png" alt="Screenshot 4">
-        <img src="img/s5.png" alt="Screenshot 5">
-        <img src="img/s6.png" alt="Screenshot 6">
+        <div id="screenshots">
+            <img src="img/s1.png" alt="Screenshot 1">
+            <img src="img/s2.png" alt="Screenshot 2">
+            <img src="img/s3.png" alt="Screenshot 3">
+            <img src="img/s4.png" alt="Screenshot 4">
+            <img src="img/s5.png" alt="Screenshot 5">
+            <img src="img/s6.png" alt="Screenshot 6">
+        </div>
+        
         <!-- Add more images as needed -->
     </div>
 
