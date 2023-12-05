@@ -1,142 +1,146 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>LookOut</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        background-color: #f4f4f4;
-      }
-      #logo {
-        margin-top: 20px;
-      }
-      #logo img {
-        max-width: 200px;
-        height: auto;
-      }
-      header {
-        background-color: #f3f3f3;
-        padding: 20px;
-        text-align: center;
-      }
-
-      header h1 {
-        color: #333;
-        margin-bottom: 15px;
-      }
-
-      #team-members,
-      #project-name {
-        margin-bottom: 20px;
-      }
-
-      #team-members h2,
-      #project-name h2 {
-        color: #007bff;
-        margin-bottom: 10px;
-      }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      li {
-        color: #666;
-        margin-bottom: 5px;
-      }
-
-      #screenshots {
-        margin: 20px 0;
-      }
-      #screenshots {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px;
-      }
-
-      #screenshots img {
-        width: calc(
-          33.333% - 20px
-        ); 
-        height: auto;
-      }
-
-      h2 {
-        color: #333;
-      }
-      div {
-        background-color: white;
-        margin: 10px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      a {
-        color: #007bff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        #logo img {
+            max-width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+        header, .section {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        #screenshots img {
+            width: calc(33.333% - 20px);
+            height: auto;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            color: #666;
+            margin-bottom: 5px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#team-members">Team Members</a>
+        <a href="#project-name">Project Name</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#deployed-project">Deployed Project</a>
+        <a href="#github-repo">GitHub Repo</a>
+        <a href="#presentation-slides">Presentation Slides</a>
+    </nav>
 
     <div id="logo">
-      <img src="img/2.png" alt="Project Logo" />
+        <img src="img/2.png" alt="Project Logo" />
     </div>
+
     <header>
-      <h1>F23</h1>
-
-      <div id="team-members">
-        <h2>Team Members</h2>
-        <ul>
-          <li>UyenNghi Nguyen</li>
-          <li>Gelila Chaka</li>
-          <li>Jeff Vazquez</li>
-        </ul>
-      </div>
-
-      <div id="project-name">
-        <h2>Project Name: LookOut</h2>
-      </div>
+        <h1>F23</h1>
     </header>
 
-    <div id="screenshots">
-      <h2>Project Screenshots</h2>
-      <div id="screenshots">
+    <div id="team-members" class="section">
+        <h2>Team Members</h2>
+        <ul>
+            <li>UyenNghi Nguyen</li>
+            <li>Gelila Chaka</li>
+            <li>Jeff Vazquez</li>
+        </ul>
+    </div>
+
+    <div id="project-name" class="section">
+        <h2>Project Name: LookOut</h2>
+    </div>
+
+    <div id="screenshots" class="section">
+        <h2>Project Screenshots</h2>
         <img src="img/s1.png" alt="Screenshot 1" />
         <img src="img/s2.png" alt="Screenshot 2" />
         <img src="img/s3.png" alt="Screenshot 3" />
         <img src="img/s4.png" alt="Screenshot 4" />
         <img src="img/s5.png" alt="Screenshot 5" />
         <img src="img/s6.png" alt="Screenshot 6" />
-      </div>
-
     </div>
 
-    <div id="deployed-project">
-      <h2>Deployed Project</h2>
-      <a href="http://www.cpplookout.com/map">Link to Deployed Project</a>
+    <div id="deployed-project" class="section">
+        <h2>Deployed Project</h2>
+        <a href="http://www.cpplookout.com/map">Link to Deployed Project</a>
     </div>
 
-    <div id="github-repo">
-      <h2>GitHub Repository</h2>
-      <a href="https://github.com/F23-CS4800/lookout">Link to GitHub Repo</a>
+    <div id="github-repo" class="section">
+        <h2>GitHub Repository</h2>
+        <a href="https://github.com/F23-CS4800/lookout">Link to GitHub Repo</a>
     </div>
 
-    <div id="presentation-slides">
-      <h2>Presentation Slides</h2>
-      <a
-        href="https://docs.google.com/presentation/d/1hjVJi2kxehn7TCXsGILaKeq9SUavwNRTgZlSM4SbqwY/edit?usp=sharing"
-        >Link to Presentation Slides</a
-      >
+    <div id="presentation-slides" class="section">
+        <h2>Presentation Slides</h2>
+        <a href="https://docs.google.com/presentation/d/1hjVJi2kxehn7TCXsGILaKeq9SUavwNRTgZlSM4SbqwY/edit?usp=sharing">Link to Presentation Slides</a>
     </div>
-  </body>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 F23 Team. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
