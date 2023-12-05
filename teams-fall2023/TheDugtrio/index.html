@@ -1,4 +1,70 @@
-<center><h1 style="font-family: Montserrat">Hello!! We are The Dugtrio!</h1>
-<center><h3 style="font-family: Montserrat">Alison Fung, Erika Ledesma, and Cleo Yau</h1>
-<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/051.png" alt="The Pokemon Dugtrio">
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Scheduley!</title>
+</head>
+<body>
+
+    <h1>
+        <img id="logo" src="images/ScheduleyLogo.png" alt="Scheduley! Logo">
+    </h1>
+
+    <h1>Scheduley!</h1>
+    <h2>The Dugtrio :v</h2>
+    <h3>Alison Fung, Erika Ledesma, Cleo Yau</h3>
+
+    <div class="button-container">
+        <a href="https://scheduley.xyz/" class="button">Web App</a>
+        <a href="https://github.com/The-Dugtrio-CS4800/Scheduley" class="button">GitHub Repo</a>
+        <a href="https://docs.google.com/presentation/d/1kl0PLFyFIFEQ6OlaB3PcziFqmQkfdvKmjpzMOTcT4CI/edit?usp=sharing" class="button">Slides</a>
+        <a href="https://youtu.be/QOaRkSPZJbk" class="button">YouTube Demo</a>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="images/home.png" class="slide-image" alt="Home page">
+            <div class="caption">Home page</div>
+        </div>
+        <div class="mySlides">
+            <img src="images/CreateMeeting.png" class="slide-image" alt="Create new meeting">
+            <div class="caption">Create a new meeting</div>
+        </div>
+        <div class="mySlides">
+            <img src="images/amongus.png" class="slide-image" alt="Select schedule">
+            <div class="caption">Input availability</div>
+        </div>
+        <div class="mySlides">
+            <img src="images/email.png" class="slide-image" alt="Email example">
+            <div class="caption">Email service</div>
+        </div>
+        <div class="mySlides">
+            <img src="images/login.png" class="slide-image" alt="Email example">
+            <div class="caption">Login</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for the slideshow
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change slide every 5 seconds
+        }
+      </script>
+
+</body>
+</html>

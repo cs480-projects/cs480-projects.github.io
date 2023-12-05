@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    font-family: monospace;
+    color: black;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+    margin: 2rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  * {box-sizing:border-box}
+
+  .logo {
+    width: 250px; /* Adjust this value as needed */
+    height: auto;
+  }
+
+  sl-carousel {
+    width: 100%;
+    max-width: 750px; /* Set max-width for responsiveness */
+    margin: 0 auto; /* Center the carousel within the container */
+}
+
+  sl-carousel-item {
+    width: 100%; /* Ensure each item takes up the full width */
+    height: auto; /* Allow the height to adjust based on the content */
+  }
+
+  /* Add these styles for navigation arrows */
+  sl-carousel::part(navigation-button) {
+    font-size: 24px;
+    color: black;
+  }
+
+  sl-carousel::part(navigation-button):hover {
+    color: white;
+  }

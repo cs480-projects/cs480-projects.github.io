@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+p {
+    font-size: medium;    
+}
+
+#headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+
+#transitionImage {
+    width: 890px;
+    height: 500px;
+}
+
+.separator {
+    margin: 0 5px;
+}

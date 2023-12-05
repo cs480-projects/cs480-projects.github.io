@@ -1,1 +1,90 @@
-hey this is MangoTomorrow!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MangoTomorrow Group Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <img src="projectLogo.JPG" alt="" id="logo">
+        <h1>CPP Lifting Club Equipment Scheduler</h1>
+        <h2>By MangoTomorrow</h2>
+
+        <nav>
+            <ul>
+                <li><a href="https://github.com/MangoTomorrow/MangoTomorrow">Project Github</a></li>
+                <li><a href="http://18.144.107.141/">Deployed Project</a></li>
+                <li><a href="https://docs.google.com/presentation/d/1oxnV9HnvPtgSLZ0-pR5LsREAscmwdsFnjsnYzDtYg00/edit?usp=sharing">Presentation Slides</a></li>
+                <li><a href="https://youtu.be/ohigWi0MRGk">Youtube Video of Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="box">
+            <article>
+                <h2 onclick="toggleContent('about-us')">About Us</h2>
+
+                <div id="about-us" class="team-member">
+                    <h3>Brian Kang</h3>
+                    <p>Graduating Senior At CPP. <br>Aspiring to be a Fullstack Developer.</p>
+                    <p>See more of Brian's work at <button>Github</button> or <button>Personal Website</button>.</p>
+
+                    <h3>Anthony Shen</h3>
+                    <p>Fourth year at Cal Poly Pomona. 
+                        <br>Anticipated graduation: Spring 2024. 
+                        <br>Connect with me on <a href="https://www.linkedin.com/in/anthonyshen117/">LinkedIn</a></p>
+                </div>
+            </article>
+        </div>
+
+        <div class="box">
+            <article>
+                <h2 onclick="toggleContent('tech-stack')">Tech Stack</h2>
+
+                <div id="tech-stack" class="tech-stack">
+                    <h3>Frontend</h3>
+                    <p>React.js</p>
+                    <h3>Backend</h3>
+                    <p>Node.js, Firebase</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="box">
+            <article>
+                <h2 onclick="toggleContent('screenshots')">Screenshots</h2>
+
+                <div id="screenshots" class="screenshots">
+                    <h3>Login Page</h3>
+                    <img src="logIn.png" alt="" id="loginPage">
+
+                    <h3>Member View</h3>
+                    <h4>Main Menu</h4>
+                    <img src="memberPage.png" alt="" id="menu">
+                    <h4>Reservations</h4>
+                    <img src="reservation.png" alt="" id="resvationSelection">
+                    <img src="yourReservations.png" alt="" id="yourReservations">
+
+                    <h3>Admin View</h3>
+                    <h4>Equipment Reservation Monitoring</h4>
+                    <img src="equipmentTable.png" alt="" id="equipmentTable">
+                    <h4>Member Management</h4>
+                    <img src="memberTable.png" alt="" id="members">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        function toggleContent(sectionId) {
+            var content = document.getElementById(sectionId);
+            content.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
