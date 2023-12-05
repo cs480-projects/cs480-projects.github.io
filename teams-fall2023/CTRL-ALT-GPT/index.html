@@ -1,3 +1,84 @@
-This website was generated with love by GPT <333
-If you're wondering what GPT means, especially in AI:
-It stands for Generative Pre-trained Transformers.
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"
+    ></script>
+  </header>
+  <body>
+    <img src="./images/ctrlaltgptlogo-nobg.png" class="gptlogo" />
+    <img src="./images/billsplitter-logo.png" class="logo" />
+    <div class="items">
+      <sl-button href="https://gpt-billsplitter.com" target="_blank"
+        ><sl-icon name="link-45deg"></sl-icon> Website</sl-button
+      >
+      <sl-button
+        href="https://docs.google.com/presentation/d/1hfa8ZrgAjfqg3FH_iqa3T-53bak_dpToIasUK08dZFU/edit?usp=sharing"
+        target="_blank"
+        ><sl-icon name="file-earmark-slides"></sl-icon> Slides</sl-button
+      >
+      <sl-button
+        href="https://github.com/Ctrl-Alt-GPT/BillSplitter"
+        target="_blank"
+        ><sl-icon name="github"></sl-icon> Github</sl-button
+      >
+      <sl-button
+        href="./images/billsplitter-receipt-marked.png"
+        target="_blank"
+      >
+        <sl-icon name="link-45deg"></sl-icon> Sample Receipt
+      </sl-button>
+    </div>
+    <sl-carousel pagination navigation mouse-dragging loop>
+      <sl-carousel-item
+        ><img src="./images/billsplitter-1.png"
+      /></sl-carousel-item>
+      <sl-carousel-item
+        ><img src="./images/billsplitter-2.png"
+      /></sl-carousel-item>
+      <sl-carousel-item
+        ><img src="./images/billsplitter-3.png"
+      /></sl-carousel-item>
+    </sl-carousel>
+  </body>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gptlogo {
+      width: 7.5%;
+      max-width: 75px;
+      display: flex;
+      align-self: center;
+    }
+
+    .logo {
+      width: 30%;
+      max-width: 250px;
+      padding: 2%;
+      display: flex;
+      align-self: center;
+    }
+
+    .items {
+      display: flex;
+      align-self: center;
+    }
+
+    sl-carousel {
+      display: flex;
+      align-self: center;
+      width: 75%;
+      min-width: 750px;
+      margin: 2rem;
+    }
+  </style>
+</html>

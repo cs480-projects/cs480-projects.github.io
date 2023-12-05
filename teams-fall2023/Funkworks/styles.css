@@ -1,0 +1,45 @@
+html {
+  background-color: rgb(37, 138, 158);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+}
+
+button {
+  background-color: rgb(255, 162, 193);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 10px;
+  border-radius: 8px;
+}
+
+img {
+  display: flex;
+  padding: 15px 55px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 10px;
+}
