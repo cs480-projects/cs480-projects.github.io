@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('foodbackground.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
         }
 
         header {
-            background-color: #4CAF50; /* Green */
-            color: #fff;
+            background-color: #4CAF50;
             padding: 1em;
             text-align: center;
         }
@@ -22,13 +26,13 @@
             max-width: 800px;
             margin: 2em auto;
             padding: 1em;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-	    
+
         #logo {
-        	text-align: center;
-        	width: 1000px;
+            text-align: center;
+            width: 200px;
             height: auto;
             margin-right: 10px;
         }
@@ -52,7 +56,16 @@
             text-align: center;
             padding: 1em;
             background-color: #4CAF50;
+        }
+
+        .button {
+            background-color: #4CAF50;
             color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -69,19 +82,19 @@
         <p>Welcome to Toss My Salad! Use this tool to find recipes for yourself to try at home. </p>
 		
         <h2>About Us</h2>
-        <p>We are Team JJM. Created by James Avila, Joshua Reyes, and Michael Yaskowitz.
+        <p>We are Team JJM. Created by James Avila, Joshua Reyes, and Michael Yaskowitz.</p>
         <h2>How It Works</h2>
         <p>To begin, follow the link below and create an account. Once the account is created, you can use the search bar to input your ingredients to begin searching for recipes to try for yourself.</p>
 
         <h2>Our Application</h2>
         <p>Below is a link to the application</p>
-        <a href="url">http://ec2-18-116-62-27.us-east-2.compute.amazonaws.com/</a>
+        <a class="button" href="http://ec2-18-116-62-27.us-east-2.compute.amazonaws.com/" target="_blank">Visit Application</a>
         <p>Below is a link to a demo video of the application</p>
-        <a href="url">http://youtu.be/Gou0CaN3SdQ</a>
+        <a class="button" href="http://youtu.be/Gou0CaN3SdQ" target="_blank">Watch Demo Video</a>
         <p>Below is a link to our github page</p>
-        <a href = "url">https://github.com/CS4800-01-JJM/TossMySalad</a>
+        <a class="button" href="https://github.com/CS4800-01-JJM/TossMySalad" target="_blank">View on GitHub</a>
         <p>Below is a link to our Google Slides</p>
-        <a href="url">https://docs.google.com/presentation/d/1u-_kVYAkcTZlP8Gm1WqTyT391yLMkjYgr0uR5XE1cEE/edit?usp=sharing</a>
+        <a class="button" href="https://docs.google.com/presentation/d/1u-_kVYAkcTZlP8Gm1WqTyT391yLMkjYgr0uR5XE1cEE/edit?usp=sharing" target="_blank">View Google Slides</a>
     </section>
 
     <footer>
