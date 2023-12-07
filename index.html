@@ -1,11 +1,104 @@
-<!doctype html>
-<html>
-	<head>
-		<title>Our Funky HTML Page</title>
-		<meta name="description" content="Our first page">
-		<meta name="keywords" content="html tutorial template">
-	</head>
-	<body>
-		CodeMasters Page!
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project</title>
+  <style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+        text-align: center;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .logo {
+        max-width: 150px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    .project-name {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    .team-name {
+        font-style: italic;
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    .team-members {
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 20px;
+        background-color: #8c8c8c;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #a6a6a6;
+    }
+    .image-gallery {
+        padding: 20px;
+    }
+    .gallery-item {
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        max-width: 80%; /* Adjust the max-width as needed */
+    }
+    .gallery-item:hover {
+        transform: scale(1.03);
+    }
+    .gallery-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Project Logo" class="logo">
+  <div class="project-name">Event Planner</div>
+  <div class="team-name">Team: CodeMasters</div>
+  <div class="team-members">Brayden Tanji, Charles Trouilliere, Jie Lin</div>
+  <a href="   " class="button">Website</a>
+  <a href="https://github.com/CodemastersCS4800/CS4800_Project01" class="button">GitHub</a>
+  <a href="   " class="button">Presentation</a>
+  <a href="https://youtu.be/Q_m_Al8B7J8?si=nVo1LgYQKnX8w4pV" class="button">Video Demo</a> 
+</div>
+
+<div class="image-gallery">
+  <div class="gallery-item">
+    <img src="screenshot1.jpg" alt="Image 1" class="gallery-image">
+  </div>
+  <div class="gallery-item">
+    <img src="screenshot2.jpg" alt="Image 2" class="gallery-image">
+  </div>
+  <div class="gallery-item">
+    <img src="screenshot3.jpg" alt="Image 3" class="gallery-image">
+  </div>
+  <div class="gallery-item">
+    <img src="screenshot4.jpg" alt="Image 4" class="gallery-image">
+  </div>
+</div>
+
+</body>
 </html>
