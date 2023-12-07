@@ -1,5 +1,5 @@
 var imageIndex = 1;
-var images = ["loginscreen.png", "projectimage.png"];
+var images = ["loginscreen.png", "em.png", "lostpet.png"];
 var imageElement = document.getElementById("transitionImage");
 
 function transitionImage() {
