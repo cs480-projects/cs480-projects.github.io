@@ -66,7 +66,7 @@ pycparser==2.21
 pycups==2.0.1
 pyee==8.1.0
 PyGObject==3.42.1
-PyJWT==2.3.0
+PyJWT==2.4.0
 pymacaroons==0.13.0
 pymongo==4.2.0
 PyNaCl==1.5.0
