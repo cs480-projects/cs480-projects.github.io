@@ -1,5 +1,5 @@
 asgiref==3.5.2
-certifi==2022.9.24
+certifi==2022.12.7
 distlib==0.3.6
 Django==4.1.1
 django-cors-headers==3.13.0
