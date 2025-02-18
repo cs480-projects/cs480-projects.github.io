@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriByte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="location.href='/chatbot'">Chatbot</button>
+        <button onclick="location.href='/team'">Team Page</button>
+    </div>
+
+    <h1>Welcome to NutriByte</h1>
+
+    <!-- Meal Plan Generator and Recipe Search -->
+    <div class="meal-plan-section">
+        <button onclick="generateMealPlan()">Generate Meal Plan</button>
+        <div class="recipe-search">
+            <input type="text" id="recipe-query" placeholder="Search for recipes...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </div>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            At <strong>NutriByte</strong>, we aim to revolutionize meal planning and nutrition tracking by providing 
+            personalized, AI-driven solutions. Many people struggle with unhealthy eating habits due to 
+            one-size-fits-all meal plans, time-consuming manual tracking, and the high cost of healthy foods. 
+            Our platform offers smart meal planning, budget-friendly grocery integration, and AI-powered 
+            nutrient tracking, making it easier for users to make informed, healthier food choices effortlessly.
+        </p>
+    </section>
+    
+    <button onclick="fetchMessage()">Get Message</button>
+    <p id="message"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
