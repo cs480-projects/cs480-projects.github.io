@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,3 +44,75 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriByte Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .team-member {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        .team-member a {
+            text-decoration: none;
+            color: #0077b5;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>NutriByte Team</h1>
+    <p>Welcome to our CS4800 project page! Meet our team members below:</p>
+
+    <!-- Bryan Martinez Ramirez -->
+    <div class="team-member">
+        <h2>Bryan Martinez Ramirez</h2>
+        <img src="{{ url_for('static', filename='images/bryan_pic.jpeg') }}" alt="Bryan Martinez Ramirez">
+        <p><strong>Interests:</strong> Machine Learning, Quantum Computing</p>
+        <p><a href="https://www.linkedin.com/in/bmartirami/" target="_blank">LinkedIn Profile</a></p>
+    </div>
+
+    <div class="team-member">
+        <h2>Eduardo Castro Becerra</h2>
+        <img src="{{ url_for('static', filename='images/eduardo_pic.jpg') }}" alt="Eduardo Castro Becerra">
+        <p><strong>Interests:</strong> Embedded Systems, Robotics</p>
+        <p><a href="https://www.linkedin.com/in/ecastrobecerra/" target="_blank">LinkedIn Profile</a></p>
+    </div>
+
+     <!-- Template for Teammates -->
+    <div class="team-member">
+        <h2>DeeAna Phommavanh</h2>
+        <img src="{{ url_for('static', filename='images/Me.JPG') }}" alt="DeeAna Phommavanh">
+        <p><strong>Interests:</strong> Cybersecurity, Movies</p>
+        <p><a href="https://www.linkedin.com/in/diana-phommavanh" target="_blank">LinkedIn Profile</a></p>
+    </div>
+
+    <!-- Template for Teammates -->
+    <div class="team-member">
+        <h2>Your Name</h2>
+        <img src="{{ url_for('static', filename='images/your_photo.jpg') }}" alt="Your Name">
+        <p><strong>Interests:</strong> Your Interests Here</p>
+        <p><a href="your_linkedin_url" target="_blank">LinkedIn Profile</a></p>
+    </div>
+
+</body>
+</html>
+>>>>>>> 5a14692a (Added a new row in the index.html)
