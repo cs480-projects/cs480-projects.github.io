@@ -1,0 +1,92 @@
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Navigation bar styling */
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    padding: 8px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+/* About section */
+.about {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.project-link {
+    color: #47afff;
+  }
+
+/* Team section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 250px;
+    padding: 15px;
+    margin: 15px;
+    background: #e9e9e9;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+}
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
