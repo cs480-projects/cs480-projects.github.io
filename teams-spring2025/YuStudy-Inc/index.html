@@ -1,9 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>YuStudy Inc.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Slayer</title>
+    <style>
+        :root {
+            --green: #5CDCA0;
+            --white: #E8EEEC;
+            --black: #1D1D1D;
+        }
+        body {
+            background-color: var(--green);
+        }
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 4rem;
+            color: var(--black);
+        }
+        .team-container {
+            margin-left: 20px;
+        }
+        p {
+           font-size: 1.25rem;
+           color: var(--black);
+
+        }
+        .team {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--black);
+        }
+        .body-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        #names {
+            color: var(--white);
+        }
+        .link-container {
+            margin-left: 20px;
+        }
+        .link-title {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--black);
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        a {
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+    </style>
 </head>
 <body>
-	<h1>YuStudy Inc.</h1>
+    <div class="title-container">
+        <h1 class="title">Yu Study Inc.</h1>
+        <p>Landing Page for Yu Study Inc. new web application, "Quiz Slayer"</p>
+    </div>
+    <div class="team-container">
+        <h1 class="team">The Team</h1>
+    </div>
+    <div class="body-container">
+        <h1 id="names">Nicholas Amancio</h1>
+        <h1 id="names">Joshua Ho</h1>
+        <h1 id="names">Thomas Tejedor</h1>
+        <h1 id="names">Alvan Zhuang</h1>
+    </div>
+    <div class="link-container">
+        <h1 class="link-title">Links</h1>
+    </div>
+    <div class="links">
+        <a href="https://github.com/YuStudy-Inc">Github Org</a>
+        <a href="https://docs.google.com/presentation/d/1nuPX-vk20oGBGgVhghwEL7oQ1_6qnCj1F4RgWzsXISA/edit?usp=sharing">Slides for Presentation</a>
+    </div>
 </body>
 </html>
