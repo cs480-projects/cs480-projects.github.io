@@ -1,33 +1,120 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f4f6;
     margin: 0;
-    padding: 20px;
-}
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    background-color: #121212;
+    color: white;
     text-align: center;
 }
-.team-member {
-    background: #e5e7eb;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
+
+header.parallax {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 2em;
+    background-attachment: fixed;
+    transition: height 0.5s ease-in-out;
 }
+
+.scroll-hide {
+    height: 0;
+    overflow: hidden;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #1f1f1f);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    background-color: #1f1f1f;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.member img {
+    width: 300px;
+    height: 169px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
 .button {
     display: inline-block;
-    background: #3b82f6;
-    color: white;
     padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 10px;
+    transition: background-color 0.3s;
 }
+
 .button:hover {
-    background: #2563eb;
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 10px;
+    margin-top: 20px;
 }
