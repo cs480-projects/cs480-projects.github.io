@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefaf5;
+    background-image: url('https://www.transparenttextures.com/patterns/graph-paper.png');
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Header Styling */
+header {
+    background: linear-gradient(135deg, #FFDFDF, #C9E4FF);
+    padding: 30px;
+    border-bottom: 5px solid #A7C7E7;
+    border-radius: 0 0 20px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #5A7184;
+    font-weight: bold;
+}
+.goal {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 10px;
+    font-weight: 500;
+}
+/* Feature Cards Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual Feature Cards */
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 3px solid #f5f5f5;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Pastel Color Palette */
+.pastel-pink { background: #FFDFDF; border-color: #F8BBD0; }
+.pastel-blue { background: #C9E4FF; border-color: #A7C7E7; }
+.pastel-yellow { background: #FFF5C9; border-color: #FDD835; }
+
+/*Feature Number Styling */
+.feature-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pastel-pink .feature-number { background: #E57373; }
+.pastel-blue .feature-number { background: #64B5F6; }
+.pastel-yellow .feature-number { background: #FFD54F; color: #444; }
+
+/*Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #C9E4FF;
+    color: #5A7184;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 20px 20px 0 0;
+}
+
