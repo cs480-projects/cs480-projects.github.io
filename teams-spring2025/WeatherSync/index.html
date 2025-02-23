@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSync | Meet the Team</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff1493;
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 3px 3px 5px #000;
+        }
+        .intro {
+            background-color: #ff69b4;
+            color: white;
+            padding: 30px 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .student {
+            display: inline-block;
+            background-color: #ffd700;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .student:hover {
+            transform: scale(1.1);
+            background-color: #ff6347;
+        }
+        .student img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .student h2 {
+            font-size: 1.5em;
+            color: #2e8b57;
+        }
+        .student p {
+            font-size: 1.1em;
+            color: #800080;
+        }
+        footer {
+            background-color: #ff1493;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        .weather-sync {
+            font-weight: bold;
+            color: #ff8c00;
+            font-size: 1.8em;
+        }
+        .cool-effect {
+            animation: shake 0.3s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to WeatherSync!</h1>
+        <p class="weather-sync cool-effect">Meet the Team Who's Making It Happen!</p>
+    </header>
+
+    <div class="intro">
+        <p>WeatherSync is a revolutionary web app designed to help you plan your day with ease, syncing weather forecasts and activities based on your location.</p>
+        <p>Here are the incredible minds behind the project:</p>
+    </div>
+
+    <div class="students">
+        <!-- Student 1 -->
+        <div class="student">
+            <img src="https://via.placeholder.com/100" alt="Student 1">
+            <h2>Emily "The Code Queen"</h2>
+            <p>Frontend Specialist & Designer</p>
+        </div>
+
+        <!-- Student 2 -->
+        <div class="student">
+            <img src="https://via.placeholder.com/100" alt="Student 2">
+            <h2>Ryan "The Server Guru"</h2>
+            <p>Backend Developer</p>
+        </div>
+
+        <!-- Student 3 -->
+        <div class="student">
+            <img src="https://via.placeholder.com/100" alt="Student 3">
+            <h2>Amy "Data Diva"</h2>
+            <p>Data Analyst & Weather Wizard</p>
+        </div>
+
+        <!-- Student 4 -->
+        <div class="student">
+            <img src="https://via.placeholder.com/100" alt="Student 4">
+            <h2>Chris "The App King"</h2>
+            <p>Mobile App Developer</p>
+        </div>
+
+        <!-- Student 5 -->
+        <div class="student">
+            <img src="https://via.placeholder.com/100" alt="Student 5">
+            <h2>Jordan "The DevOps Ninja"</h2>
+            <p>Deployment & System Architecture</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WeatherSync - All rights reserved. Powered by retro vibes & modern tech!</p>
+    </footer>
+</body>
+</html>
