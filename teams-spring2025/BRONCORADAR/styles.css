@@ -15,6 +15,17 @@ h1, h2 {
     text-align: center;
 }
 
+#goals {
+    text-align: center;
+}
+
+#goals ul {
+    display: inline-block;
+    text-align: left;
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
