@@ -81,7 +81,8 @@ h1 {
 
 .pastel-pink .feature-number { background: #E57373; }
 .pastel-blue .feature-number { background: #64B5F6; }
-.pastel-yellow .feature-number { background: #FFD54F; color: #444; }
+.pastel-yellow .feature-number { background: #FFD54F; }
+.pastel-green .feature-number { background: #a9e482; }
 
 /*Footer */
 footer {
