@@ -84,6 +84,17 @@ h1 {
 .pastel-yellow .feature-number { background: #FFD54F; }
 .pastel-green .feature-number { background: #a9e482; }
 
+/* Member Names Styling */
+.member-names {
+    background-color: #C9E4FF; 
+    color: #5A7184; /* text */
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    border-top: 5px solid #A7C7E7;
+    border-bottom: 5px solid #A7C7E7;
+}
+
 /*Footer */
 footer {
     margin-top: 50px;
