@@ -1,0 +1,64 @@
+/* Ensure full height for html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Use flexbox for body to push footer to the bottom */
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+  
+  /* Header styling */
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  /* Main content takes available space */
+  main {
+    flex: 1;
+    padding: 2em;
+  }
+  
+  /* Section styling */
+  section {
+    margin-bottom: 2em;
+  }
+  
+  /* Footer styling */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Team member list styling */
+  .team-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .team-list li {
+    background: #e0e0e0;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  
+  /* Link styling */
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
