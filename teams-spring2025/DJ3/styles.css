@@ -7,6 +7,12 @@ body {
     text-align: center;
 }
 
+.header-content img {
+    width: 100px;  /* adjust as needed */
+    height: auto;  /* maintains aspect ratio */
+}
+
+
 header.parallax {
     background: url('banner.jpg') no-repeat center center/cover;
     height: 60vh;
