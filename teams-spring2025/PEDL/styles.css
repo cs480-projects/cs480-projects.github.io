@@ -66,6 +66,14 @@ nav a:hover {
     color: #47afff;
   }
 
+
+/* Logo section */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Team section */
 .team {
     display: flex;
