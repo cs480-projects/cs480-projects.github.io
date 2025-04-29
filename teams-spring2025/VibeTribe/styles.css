@@ -1,64 +1,91 @@
-/* Ensure full height for html and body */
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  /* Use flexbox for body to push footer to the bottom */
-  body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-  }
-  
-  /* Header styling */
-  header {
-    background: #4CAF50;
-    color: white;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  /* Main content takes available space */
-  main {
-    flex: 1;
-    padding: 2em;
-  }
-  
-  /* Section styling */
-  section {
-    margin-bottom: 2em;
-  }
-  
-  /* Footer styling */
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  /* Team member list styling */
-  .team-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .team-list li {
-    background: #e0e0e0;
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border-radius: 5px;
-  }
-  
-  /* Link styling */
-  a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #282d61;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Main Sections */
+.card {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #282d61;
+}
+
+ul.team-list, ul.feature-list, ul.link-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul.team-list a {
+  color: #5b68f2;
+  text-decoration: none;
+}
+
+ul.team-list a:hover {
+  text-decoration: underline;
+}
+
+/* Screenshots */
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.screenshot, .project-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
