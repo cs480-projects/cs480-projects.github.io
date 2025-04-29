@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>BitByBit Home Page</title>
     <style>
       body {
@@ -14,7 +17,8 @@
         text-align: center;
         padding: 20px;
       }
-      h1,h2 {
+      h1,
+      h2 {
         font-family: "DM Serif Display", serif;
         font-weight: 600;
         font-style: normal;
@@ -49,46 +53,383 @@
       .button-container a:hover {
         background-color: #0056b3;
       }
+      /* Image slider */
+      .slider {
+        position: relative;
+        max-width: 100%;
+        margin: 30px auto;
+      }
+      .slide {
+        display: none;
+        cursor: pointer;
+        width: 100%;
+        height: 300px; /* set a fixed height */
+        object-fit: cover; /* crop to fill without stretching */
+      }
+
+      .active-slide {
+        display: block;
+      }
+      .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        transition: 0.3s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .arrow:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .left-arrow {
+        left: 0;
+      }
+      .right-arrow {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .dots {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .dot {
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        margin: 0 4px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s;
+      }
+      .dot.active {
+        background-color: #007bff;
+      }
+      /* Fullscreen modal */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center; /* Center the image */
+      }
+      .modal img {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 80%;
+      }
+      .modal-close {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .modal-arrow {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 3px;
+        transform: translateY(-50%);
+      }
+      .modal-arrow:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .modal-prev {
+        left: 20px;
+      }
+      .modal-next {
+        right: 20px;
+      }
+      .modal-caption {
+        color: #ccc;
+        padding: 10px;
+        display: block;
+        width: 80%;
+        margin: auto;
+        font-size: 16px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1 style="color: #007bff">Team BitByBit</h1>
+      <h1
+        style="
+          color: #007bff;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        "
+      >
+        Team BitByBit
+      </h1>
       <h3>Presents</h3>
-      <br />
-      <h1 style="font-family: 'DM Sans';">BITMATCH</h1>
-      
+      <h1
+        style="
+          font-family: 'DM Sans';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer; /* Add a pointer cursor for visual feedback */
+        "
+        onclick="window.location.href='https://bitmatchapp.com';"
+      >
+        <img
+          src="img/logo.png"
+          alt="BitMatch Logo"
+          style="height: 30px; margin-right: 10px"
+        />
+        <span>BITMATCH</span>
+      </h1>
+
+      <div class="slider">
+        <span class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</span>
+        <div class="slide-wrapper">
+          <img
+            class="slide active-slide"
+            src="img/1HomeScreen.png"
+            onclick="openModal(this.src, 0)"
+            data-caption="BitMatch Home Screen"
+          />
+        </div>
+        <img
+          class="slide"
+          src="img/2HowItWorks.png"
+          onclick="openModal(this.src, 1)"
+          data-caption="How BitMatch Works Flow"
+        />
+        <img
+          class="slide"
+          src="img/3SignIn.png"
+          onclick="openModal(this.src, 2)"
+          data-caption="User Sign In Page"
+        />
+        <img
+          class="slide"
+          src="img/4Why.png"
+          onclick="openModal(this.src, 3)"
+          data-caption="Why Use BitMatch"
+        />
+        <img
+          class="slide"
+          src="img/5About.png"
+          onclick="openModal(this.src, 5)"
+          data-caption="About the BitMatch Platform"
+        />
+        <img
+          class="slide"
+          src="img/6Developers.png"
+          onclick="openModal(this.src, 6)"
+          data-caption="Meet the Developers"
+        />
+        <img
+          class="slide"
+          src="img/7Onboard.png"
+          onclick="openModal(this.src, 7)"
+          data-caption="User Onboarding Process"
+        />
+        <img
+          class="slide"
+          src="img/8HomePage.png"
+          onclick="openModal(this.src, 8)"
+          data-caption="Logged-In User Home Page"
+        />
+        <img
+          class="slide"
+          src="img/9ListPage.png"
+          onclick="openModal(this.src, 9)"
+          data-caption="Project Listing Page"
+        />
+        <img
+          class="slide"
+          src="img/10AddPage.png"
+          onclick="openModal(this.src, 10)"
+          data-caption="Add New Project Page"
+        />
+        <img
+          class="slide"
+          src="img/11Individual.png"
+          onclick="openModal(this.src, 11)"
+          data-caption="Individual Project Page"
+        />
+        <img
+          class="slide"
+          src="img/12Profile.png"
+          onclick="openModal(this.src, 12)"
+          data-caption="User Profile Page"
+        />
+        <img
+          class="slide"
+          src="img/13AIProjectRate.png"
+          onclick="openModal(this.src, 13)"
+          data-caption="AI-Powered Project Feedback Feature"
+        />
+        <img
+          class="slide"
+          src="img/14AIMatch.png"
+          onclick="openModal(this.src, 14)"
+          data-caption="AI-Powered Match Feature"
+        />
+
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+          <span class="dot" onclick="currentSlide(13)"></span>
+          <span class="dot" onclick="currentSlide(14)"></span>
+        </div>
+      </div>
+      <div class="modal" id="imgModal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" src="" />
+        <div id="modalCaption" class="modal-caption"></div>
+        <span class="modal-arrow modal-prev" onclick="changeModalSlide(-1)"
+          >&#10094;</span
+        >
+        <span class="modal-arrow modal-next" onclick="changeModalSlide(1)"
+          >&#10095;</span
+        >
+      </div>
+      <p style="font-size: 0.8rem">Click Image To Expand</p>
+
       <p>
-        <strong>BitMatch</strong> is a web application platform designed to bridge the gap
-        between innovators seeking project feedback and college students looking
-        for hands-on experience. Many innovators struggle to promote their
-        ideas, receive constructive input, and recruit talent, while students
-        face challenges in finding meaningful projects to build skills and
-        enhance their resumes.
+        <strong>BitMatch</strong> is a web application platform designed to
+        bridge the gap between innovators seeking project feedback and college
+        students looking for hands-on experience.
       </p>
 
       <h2><u> Group Members </u></h2>
       <ul>
-        <li>Larry La - Backend</li>
-        <li><a href="https://www.linkedin.com/in/william-garcia-946709297/" >William Garcia</a> - Backend</li>
-        <li><a href="https://www.linkedin.com/in/rebecca-l-smith-3075604/">Rebecca Smith</a> - Frontend/UI</li>
-        <li><a href="https://www.linkedin.com/in/luis-dominguez-9b11702b5">Luis Dominguez</a> - Frontend</li>
+        <li style="white-space: nowrap">
+          <a href="https://www.linkedin.com/in/lqla/">Larry La</a> - Project
+          Lead / Full-Stack
+        </li>
+        <li style="white-space: nowrap">
+          <a href="https://www.linkedin.com/in/rebecca-l-smith-3075604/"
+            >Rebecca Smith</a
+          >
+          - Frontend / UI
+        </li>
+        <li style="white-space: nowrap">
+          <a href="https://www.linkedin.com/in/luis-dominguez-9b11702b5"
+            >Luis Dominguez</a
+          >
+          - Frontend
+        </li>
+        <li style="white-space: nowrap">
+          <a href="https://www.linkedin.com/in/william-garcia-946709297/"
+            >William Garcia</a
+          >
+          - Backend
+        </li>
       </ul>
-      <br />
 
       <div class="button-container">
         <a href="https://github.com/CPP-BitByBit/BitMatch" target="_blank"
-          >GitHub Repo</a
+          >GitHub</a
         >
+        <a href="https://trello.com/b/Lg9rGPDZ" target="_blank">Trello</a>
         <a
           href="https://docs.google.com/presentation/d/1m4UPaVWVbRYjlsHYXmvTt817acjA2oNeDDQ2yQKvuSk/edit#slide=id.g32985290b32_0_1968"
           target="_blank"
-          >Presentation Slides</a
+          >Slides</a
         >
-        <a href="#" onclick="alert('Live Demo is a Work in Progress!')"
-          >Live Demo (WIP)</a
-        >
+        <a href="https://youtu.be/jLzSku2y47I" target="_blank">Youtube Demo</a>
+        <a href="https://bitmatchapp.com/" target="_blank">Live App</a>
       </div>
     </div>
+
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImg");
+      const modalCaption = document.getElementById("modalCaption");
+      let currentModalIndex = 0;
+
+      function showSlide(n) {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === n ? "block" : "none";
+          dots[i].classList.toggle("active", i === n);
+          slide.classList.toggle("active-slide", i === n);
+        });
+        slideIndex = n;
+      }
+
+      function changeSlide(n) {
+        slideIndex += n;
+        if (slideIndex >= slides.length) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        showSlide(slideIndex);
+      }
+
+      function currentSlide(n) {
+        showSlide(n);
+      }
+
+      function openModal(src, index) {
+        modalImg.src = src;
+        modalCaption.textContent = slides[index].dataset.caption;
+        modal.style.display = "block";
+        currentModalIndex = index;
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      function changeModalSlide(n) {
+        event.stopPropagation(); // Prevent click from closing the modal
+        currentModalIndex += n;
+        if (currentModalIndex >= slides.length) currentModalIndex = 0;
+        if (currentModalIndex < 0) currentModalIndex = slides.length - 1;
+        modalImg.src = slides[currentModalIndex].src;
+        modalCaption.textContent = slides[currentModalIndex].dataset.caption;
+      }
+
+      // Initialize
+      showSlide(slideIndex);
+
+      // Close modal if clicked outside the image or arrows
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+    </script>
   </body>
 </html>
