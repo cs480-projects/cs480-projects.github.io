@@ -50,16 +50,81 @@
         .btn:hover {
             background: #ff66ff;
         }
+        .screenshots {
+            margin-top: 30px;
+        }
+        .screenshot-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .screenshot {
+            width: 45%;
+            max-width: 400px;
+            margin-bottom: 15px;
+        }
+        .screenshot-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .screenshot-img:hover {
+            transform: scale(1.05);
+        }
+        .screenshot p {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #0ff;
+        }
+        @media (max-width: 768px) {
+            .screenshot {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="bytemare_logo.jpg" alt="Bytemare Logo" class="logo">
         <h1>Bytemare</h1>
-        <p>Software Engineering Team</p>
+        <h3>Team Members</h3>
+        <p>Alexander Matei, Omar Cruz, Jonathan Rodriguez, Edgar Ortiz</p>
+        <img src="tesseraLogo.svg" alt="Tessera Logo" class="logo">
+        <h2>Tessera</h2>
         <div class="buttons">
             <a href="https://github.com/Bytemare-CPP" class="btn" target="_blank">GitHub Organization</a>
             <a href="https://github.com/Bytemare-CPP/tessera" class="btn" target="_blank">Tessera Repository</a>
+            <a href="https://tesera.it.com/" class="btn" target="_blank">Tessera Deployment</a>
+            <a href="https://docs.google.com/presentation/d/18ofVYHSc1IgD90LLsubPbogPJeuV0R1kgj-AWeJujqU/edit?usp=sharing" class="btn" target="_blank">Presentation Slides</a>
+        </div>
+        
+        <div class="screenshots">
+            <h3>App Screenshots</h3>
+            <div class="screenshot-container">
+                <div class="screenshot">
+                    <img src="profile.png" alt="Profile Page" class="screenshot-img">
+                    <p>Profile Page</p>
+                </div>
+                <div class="screenshot">
+                    <img src="login.png" alt="Login Page" class="screenshot-img">
+                    <p>Login Page</p>
+                </div>
+                <div class="screenshot">
+                    <img src="landing.png" alt="Landing Page" class="screenshot-img">
+                    <p>Landing Page</p>
+                </div>
+                <div class="screenshot">
+                    <img src="connections.png" alt="Connections Page" class="screenshot-img">
+                    <p>Connections Page</p>
+                </div>
+                <div class="screenshot">
+                    <img src="vibe-matcher.png" alt="Vibe Matcher" class="screenshot-img">
+                    <p>Vibe Matcher</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

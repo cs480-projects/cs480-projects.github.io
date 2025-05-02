@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,64 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriByte</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-
-    <!-- Navigation Buttons -->
-    <div class="nav-buttons">
-        <button onclick="location.href='/chatbot'">Chatbot</button>
-        <button onclick="location.href='/team'">Team Page</button>
-    </div>
-
-    <h1>Welcome to NutriByte</h1>
-
-    <!-- Meal Plan Generator and Recipe Search -->
-    <div class="meal-plan-section">
-        <button onclick="generateMealPlan()">Generate Meal Plan</button>
-        <div class="recipe-search">
-            <input type="text" id="recipe-query" placeholder="Search for recipes...">
-            <button onclick="searchRecipes()">Search</button>
-        </div>
-    </div>
-
-    <section class="mission">
-        <h2>Our Mission</h2>
-        <p>
-            At <strong>NutriByte</strong>, we aim to revolutionize meal planning and nutrition tracking by providing 
-            personalized, AI-driven solutions. Many people struggle with unhealthy eating habits due to 
-            one-size-fits-all meal plans, time-consuming manual tracking, and the high cost of healthy foods. 
-            Our platform offers smart meal planning, budget-friendly grocery integration, and AI-powered 
-            nutrient tracking, making it easier for users to make informed, healthier food choices effortlessly.
-        </p>
-    </section>
-    
-    <button onclick="fetchMessage()">Get Message</button>
-    <p id="message"></p>
-
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriByte Team</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
         .team-member {
             border: 1px solid #ddd;
             padding: 15px;
-            margin: 10px auto;
-            max-width: 400px;
+            margin: 20px auto;
+            max-width: 500px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .team-member img {
             width: 150px;
@@ -79,39 +29,127 @@
 </head>
 <body>
 
-    <h1>NutriByte Team</h1>
-    <p>Welcome to our CS4800 project page! Meet our team members below:</p>
-
-    <!-- Bryan Martinez Ramirez -->
-    <div class="team-member">
-        <h2>Bryan Martinez Ramirez</h2>
-        <img src="{{ url_for('static', filename='images/bryan_pic.jpeg') }}" alt="Bryan Martinez Ramirez">
-        <p><strong>Interests:</strong> Machine Learning, Quantum Computing</p>
-        <p><a href="https://www.linkedin.com/in/bmartirami/" target="_blank">LinkedIn Profile</a></p>
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="location.href='/chatbot'">Chatbot</button>
+        <button onclick="location.href='/team'">Team Page</button>
     </div>
 
-    <div class="team-member">
-        <h2>Eduardo Castro Becerra</h2>
-        <img src="{{ url_for('static', filename='images/eduardo_pic.jpg') }}" alt="Eduardo Castro Becerra">
-        <p><strong>Interests:</strong> Embedded Systems, Robotics</p>
-        <p><a href="https://www.linkedin.com/in/ecastrobecerra/" target="_blank">LinkedIn Profile</a></p>
+    <h1>Welcome to NutriByte</h1>
+
+    <!-- Project Logo -->
+    <div style="text-align:center;">
+        <img src="https://i.imgur.com/zR9hI8A.png" alt="NutriByte Logo" style="max-width: 200px;">
     </div>
 
-     <!-- Template for Teammates -->
-    <div class="team-member">
-        <h2>DeeAna Phommavanh</h2>
-        <img src="{{ url_for('static', filename='images/Me.JPG') }}" alt="DeeAna Phommavanh">
-        <p><strong>Interests:</strong> Cybersecurity, Movies</p>
-        <p><a href="https://www.linkedin.com/in/diana-phommavanh" target="_blank">LinkedIn Profile</a></p>
+    <!-- Team Info -->
+    <section>
+        <h2>Team Information</h2>
+        <p><strong>Team Name:</strong> NutriByte Devs</p>
+        <p><strong>Team Members:</strong></p>
+        <ul>
+            <li>Bryan Martinez Ramirez</li>
+            <li>Eduardo Castro Becerra</li>
+            <li>DeeAna Phommavanh</li>
+            <li>Emil Oliver Pabustan</li>
+        </ul>
+
+        <p>Our team members' Info:</p>
+
+        <div class="team-member">
+            <h2>Bryan Martinez Ramirez</h2>
+            <img src="{{ url_for('static', filename='images/bryan_pic.jpeg') }}" alt="Bryan Martinez Ramirez">
+            <p><strong>Interests:</strong> Machine Learning, Quantum Computing</p>
+            <p><a href="https://www.linkedin.com/in/bmartirami/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+
+        <div class="team-member">
+            <h2>Eduardo Castro Becerra</h2>
+            <img src="{{ url_for('static', filename='images/eduardo_pic.jpg') }}" alt="Eduardo Castro Becerra">
+            <p><strong>Interests:</strong> Embedded Systems, Robotics</p>
+            <p><a href="https://www.linkedin.com/in/ecastrobecerra/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+
+        <div class="team-member">
+            <h2>DeeAna Phommavanh</h2>
+            <img src="{{ url_for('static', filename='images/Me.JPG') }}" alt="DeeAna Phommavanh">
+            <p><strong>Interests:</strong> Cybersecurity, Movies</p>
+            <p><a href="https://www.linkedin.com/in/diana-phommavanh" target="_blank">LinkedIn Profile</a></p>
+        </div>
+
+        <div class="team-member">
+            <h2>Emil Oliver Pabustan</h2>
+            <img src="{{ url_for('static', filename='images/emil_pic.jpg') }}" alt="Emil Oliver Pabustan">
+            <p><strong>Interests:</strong> Artificial Intelligence, Game Development</p>
+            <p><a href="https://www.linkedin.com/in/emiloliver-hernan-pabustan/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+    </section>
+
+    <!-- Project Info -->
+    <section>
+        <h2>Project Details</h2>
+        <p><strong>Project Name:</strong> NutriByte – Personalized AI Nutrition Assistant</p>
+        <p>
+            NutriByte is an AI-powered web platform that helps users generate meal plans, search recipes, and track nutritional intake,
+            all while staying budget-conscious. Our chatbot and meal plan generator make healthy living easy and tailored to your lifestyle.
+        </p>
+    </section>
+
+    <!-- Screenshots -->
+    <section>
+        <h2>Project Screenshots</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <div>
+                <img src="https://i.imgur.com/OifWCZa.png" alt="Meal Tracker Screenshot" style="max-width: 600px; border: 1px solid #ccc; border-radius: 10px;">
+                <p style="text-align: center;">Screenshot 1: Calorie & Meal Tracker</p>
+            </div>
+            <div>
+                <img src="https://i.imgur.com/QKDMdSG.png" alt="Chatbot Screenshot" style="max-width: 600px; border: 1px solid #ccc; border-radius: 10px;">
+                <p style="text-align: center;">Screenshot 2: Chat with NutriByte AI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- External Links -->
+    <section>
+        <h2>Project Links</h2>
+        <ul>
+            <li><strong>Live Demo:</strong> <a href="https://nutri-byte.com" target="_blank">nutri-byte.com</a></li>
+            <li><strong>GitHub Repository:</strong> 
+                <a href="https://github.com/NutriByte/NutriByte.git" target="_blank">GitHub Repo</a>
+            </li>
+            <li><strong>Presentation Slides:</strong> 
+                <a href="https://docs.google.com/presentation/d/1xylxiu8Z2FyprHqRyfjLwbsi0UVVRAxPDcgK5hgGqFA/edit?usp=sharing" target="_blank">Slides (Google Docs)</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Meal Plan Generator and Recipe Search -->
+    <div class="meal-plan-section">
+        <button onclick="generateMealPlan()">Generate Meal Plan</button>
+        <div class="recipe-search">
+            <input type="text" id="recipe-query" placeholder="Search for recipes...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
     </div>
 
-    <!-- Template for Teammates -->
-    <div class="team-member">
-        <h2>Emil Oliver Pabustan</h2>
-        <img src="{{ url_for('static', filename='images/emil_pic.jpg') }}" alt="Emil Oliver Pabustan">
-        <p><strong>Interests:</strong> Artificial Intelligence, Game Development</p>
-        <p><a href="https://www.linkedin.com/in/emiloliver-hernan-pabustan/" target="_blank">LinkedIn Profile</a></p>
-    </div>
+    <!-- Mission Statement -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            At <strong>NutriByte</strong>, we aim to revolutionize meal planning and nutrition tracking by providing 
+            personalized, AI-driven solutions. Many people struggle with unhealthy eating habits due to 
+            one-size-fits-all meal plans, time-consuming manual tracking, and the high cost of healthy foods. 
+            Our platform offers smart meal planning, budget-friendly grocery integration, and AI-powered 
+            nutrient tracking, making it easier for users to make informed, healthier food choices effortlessly.
+        </p>
+    </section>
+
+    <!-- Get Message Button -->
+    <button onclick="fetchMessage()">Get Message</button>
+    <p id="message"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>

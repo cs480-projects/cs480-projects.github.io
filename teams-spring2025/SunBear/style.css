@@ -1,34 +1,95 @@
-body{
+body {
   background-color: #6B818C;
   text-align: center;
 }
-h1{
+
+h1 {
   color: #FFFFFF;
   font-family: 'Franklin Gothic Medium';
   font-size: 32px;
   font-weight: bold;
 }
-div{
 
-  float:left; 
-  margin:0; 
-  width:25%;
-  color: #00241B;
- 
-  
-}
-p{
+p {
   font-size: 20px;
   color: #3D2B3D;
 }
-section{
+
+div {
+  float: left;
+  margin: 0;
+  width: 25%;
+  color: #00241B;
+}
+
+section {
   margin: 0 auto;
-  position: relative;
-  top: 400px;
   color: #FFFFFF;
   width: 50%;
 }
 
-.button{
+.project-section {
+  margin-bottom: 20px; /* Optional: adds spacing *below* the section */
+}
+
+
+
+.button {
   font-size: 30px;
+}
+
+
+.logo-header {
+  padding: 20px;
+}
+
+.logo {
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+#team {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.student {
+  width: 25%;
+  margin: 0 10px;
+}
+
+.student img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.screenshots {
+  margin-top: 50px;
+}
+
+.screenshots img {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+footer {
+  margin-top: 50px;
+  padding: 2px;
+  color: #fff;
+  background-color: #4B5E6A;
+}
+
+footer a {
+  color: #FFD700;
+  margin: 500 500px;
+  text-decoration: none;
 }

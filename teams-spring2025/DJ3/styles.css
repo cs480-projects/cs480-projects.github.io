@@ -7,6 +7,12 @@ body {
     text-align: center;
 }
 
+.header-content img {
+    width: 100px;  /* adjust as needed */
+    height: auto;  /* maintains aspect ratio */
+}
+
+
 header.parallax {
     background: url('banner.jpg') no-repeat center center/cover;
     height: 60vh;
@@ -84,16 +90,23 @@ section {
     border-radius: 10px;
 }
 
+
+#gallery {
+    text-align: center;
+}
+
 .gallery-container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the images horizontally */
+    gap: 20px; /* Space between images (optional) */
 }
 
 .gallery-container img {
-    width: 200px;
-    border-radius: 10px;
+    width: 300px; /* Make images bigger - adjust size as needed */
+    height: auto; /* Keep image aspect ratio */
 }
+
 
 .button {
     display: inline-block;
