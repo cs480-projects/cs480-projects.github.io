@@ -62,6 +62,7 @@ body {
     animation: hover 4s infinite ease-in-out;
     animation-delay: 2s;
     margin-bottom: 20%;
+    text-align: center;
 }
 
 .logo img {
