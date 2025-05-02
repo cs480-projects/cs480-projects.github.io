@@ -97,3 +97,8 @@ body::before {
 .repo:hover {
     background-color: #0056b3;
 }
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
