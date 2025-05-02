@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --green: #5CDCA0;
+    --red: #B95858;
+    --white: #E8EEEC;
+    --black: #1D1D1D;
+}
+
+body {
+    background-image: url("./assets/backgroundFight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.YuStudy-container {
+    font-family: "Bungee", sans-serif;
+    cursor: url("./assets/duckCharacterCursor.png"), auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-container {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.logo {
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin-top: 20%;
+    animation: hover 4s infinite ease-in-out;
+    cursor: url("./assets/duckCharacterCursor.png"), auto;
+}
+
+.text-below-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.click-the-logo {
+    font-size: 1.5rem;
+    color: var(--white);
+    animation: hover 4s infinite ease-in-out;
+    animation-delay: 2s;
+    margin-bottom: 20%;
+}
+
+.logo img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.team-container,
+.link-container,
+.screenshot-container {
+    width: 90%;
+    display: flex;
+    align-items: start;
+}
+
+.team,
+.link-title,
+.screenshot-title {
+    position: relative;
+    width: auto;
+    font-size: 2rem;
+    margin: 0;
+    color: var(--white);
+    text-shadow: var(--green) 3px 3px;
+}
+
+.team::after,
+.link-title::after,
+.screenshot-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, var(--green), var(--white))
+}
+
+.body-container,
+.links,
+.pictures {
+    width: 90%;
+}
+
+.body-container h1,
+.links h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.pictures img {
+    width: auto;
+    aspect-ratio: 5.5/3;
+    background-size: contain;
+}
+
+.links h1 {
+    animation: glow 3s infinite ease-in-out;
+    cursor: url("./assets/duckCharacterCursor.png"), auto;
+}
+
+.links a {
+    display: table;
+    text-decoration: none;
+}
+
+.unclickable-link {
+    color: var(--red) !important;
+    cursor: url("./assets/duckCharacterCursor.png"), auto;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    height: 64px;
+    width: 64px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    cursor: url("./assets/duckCharacterCursor.png"), auto;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.arrow:hover {
+    transform: scale(1.15);
+    background-color: var(--green);
+}
+
+.arrow img {
+    height: 50%;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s ease;
+}
+
+.arrow img.rotated {
+    transform: rotate(180deg);
+}
+
+@keyframes glow {
+    0% {
+        color: var(--white);
+    }
+
+    50% {
+        color: var(--green);
+    }
+
+    100% {
+        color: var(--white);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+    
+    .logo {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .click-the-logo {
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
+
+    .team,
+    .link-title,
+    .screenshot-title {
+        font-size: 3rem;
+    }
+
+    .body-container h1,
+    .links h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .logo {
+        width: 30%;
+        margin-top: 0;
+    }
+
+    .click-the-logo {
+        margin-bottom: 5%;
+    }
+
+    .pictures {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pictures img {
+        width: 30%;
+        height: auto;
+    }
+
+    .links h1 {
+        animation: none;
+        color: var(--white);
+        transition: color 0.2s ease-in-out;
+    }
+
+    .links h1:hover {
+        color: var(--green);
+    }
+
+    .arrow {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
