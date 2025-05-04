@@ -98,3 +98,35 @@ nav a:hover {
 html {
     scroll-behavior: smooth;
 }
+
+/* Screenshots section */
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .screenshots .team-member {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .screenshot {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+
+  .screenshots h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  .screenshots p {
+    font-size: 0.9em;
+    color: #555;
+  }
