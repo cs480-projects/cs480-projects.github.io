@@ -22,6 +22,15 @@
             font-size: 3em;
             text-shadow: 3px 3px 5px #000;
         }
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
         .intro {
             background-color: #ff69b4;
             color: white;
@@ -99,6 +108,39 @@
             color: white;
         }
         
+        .screenshots {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        
+        .screenshot {
+            display: inline-block;
+            width: 45%;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .screenshot:hover {
+            transform: scale(1.05);
+        }
+        
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .screenshot h3 {
+            background-color: #ff69b4;
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+        
         .buttons {
             margin-top: 20px;
         }
@@ -136,12 +178,26 @@
             0% { transform: rotate(3deg); }
             100% { transform: rotate(-3deg); }
         }
+        .team-name {
+            font-size: 1.5em;
+            color: white;
+            background-color: #ff69b4;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <!-- Replace with your actual logo -->
+            <img src="/api/placeholder/150/150" alt="TripSync Logo" width="150" height="150">
+        </div>
         <h1>Welcome to TripSync!</h1>
-        <p class="weather-sync cool-effect">Meet the Team Who's Making It Happen!</p>
+        <p class="weather-sync cool-effect">Plan Your Perfect Trip with Weather in Mind!</p>
+        <div class="team-name">Team: The Climate Changers</div>
     </header>
 
     <div class="intro">
@@ -152,35 +208,35 @@
     <div class="students">
         <!-- Student 1 -->
         <div class="student">
-            <img src="https://media.tenor.com/kVlfgrVr4O8AAAAM/breakdance-break.gif" alt="Student 1" width="100" height="100">
+            <img src="/api/placeholder/100/100" alt="Giselle Avila">
             <h2>Giselle Avila</h2>
             <p>Frontend Specialist & Designer</p>
         </div>
 
         <!-- Student 2 -->
         <div class="student">
-            <img src="data:image/jpeg;base64,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" alt="Student 2" width="100" height="100">
+            <img src="/api/placeholder/100/100" alt="Mark Haddad">
             <h2>Mark Haddad</h2>
             <p>Backend Developer</p>
         </div>
 
         <!-- Student 3 -->
         <div class="student">
-            <img src="https://media3.giphy.com/media/25RLdGV4YlQ69BalEN/giphy.gif?cid=6c09b952uziwjdots723jk4jyaw5h3bpkrtk1khndq821elp&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Student 3" width="100" height="100">
+            <img src="/api/placeholder/100/100" alt="Nathaniel Dale">
             <h2>Nathaniel Dale</h2>
             <p>Backend Developer</p>
         </div>
 
         <!-- Student 4 -->
         <div class="student">
-            <img src="https://media.tenor.com/TTQF7ubqYbsAAAAM/stumble-shake.gif" alt="Student 4" width="100" height="100">
+            <img src="/api/placeholder/100/100" alt="Michael O'Neill">
             <h2>Michael O'Neill</h2>
             <p>Fullstack Developer</p>
         </div>
 
         <!-- Student 5 -->
         <div class="student">
-            <img src="https://media1.giphy.com/media/xkOyMLboh9kWFjCYCr/giphy.gif?cid=6c09b9527f5hj3w7ch73u4jxl84zpxcjt3lk5hoqh6t01uwv&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Student 5" width="100" height="100">
+            <img src="/api/placeholder/100/100" alt="Julian Soriano">
             <h2>Julian Soriano</h2>
             <p>Fullstack Developer</p>
         </div>
@@ -195,6 +251,30 @@
         </ul>
     </div>
 
+    <div class="screenshots">
+        <h2>Project Screenshots</h2>
+        
+        <div class="screenshot">
+            <h3>Dashboard View</h3>
+            <img src="/api/placeholder/600/400" alt="TripSync Dashboard">
+        </div>
+        
+        <div class="screenshot">
+            <h3>Weather Integration</h3>
+            <img src="/api/placeholder/600/400" alt="Weather Integration">
+        </div>
+        
+        <div class="screenshot">
+            <h3>Trip Planning Interface</h3>
+            <img src="/api/placeholder/600/400" alt="Trip Planning">
+        </div>
+        
+        <div class="screenshot">
+            <h3>User Profile</h3>
+            <img src="/api/placeholder/600/400" alt="User Profile">
+        </div>
+    </div>
+
     <div class="buttons">
         <a href="http://traveltripsync.com:5173/home" class="button" target="_blank">View Deployed Website</a>
         <a href="https://github.com/TheClimateChangers/TripSync" class="button" target="_blank">View GitHub Repo</a>
@@ -203,7 +283,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 TripSync - All rights reserved. Powered by retro vibes & modern tech!</p>
+        <p>&copy; 2025 TripSync - The Climate Changers Team | All rights reserved. Powered by retro vibes & modern tech!</p>
     </footer>
 </body>
 </html>
