@@ -1,0 +1,143 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fb;
+    color: #222;
+}
+
+header {
+    background: #22223b;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #4ea8de;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section {
+    padding: 3rem 0 2rem 0;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #22223b;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.team-member {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.06);
+    padding: 2rem 1rem 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-member:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(34,34,59,0.10);
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #4ea8de;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+}
+.projects-list {
+    list-style: disc inside;
+    margin: 1.5rem 0 0 1rem;
+    padding: 0;
+}
+.projects-list li {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 2rem auto 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #bfc0c0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: none;
+}
+.contact-form button {
+    background: #4ea8de;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact-form button:hover {
+    background: #22223b;
+}
+footer {
+    background: #22223b;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+@media (max-width: 700px) {
+    header .container, .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+    .section {
+        padding: 2rem 0 1rem 0;
+    }
+}
