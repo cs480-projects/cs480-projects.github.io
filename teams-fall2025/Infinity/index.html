@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body class="text-zinc-200 min-h-screen">
+    <header>
+        <div class="container flex justify-between items-center mx-auto p-5 backdrop-blur">
+            <a class="text-3xl" href="index.html">infinity</a>
+            <nav>
+                <ul class="flex flex-row gap-8">
+                    <li><a href="#about" class="hover:text-zinc-400 transition-all">about</a></li>
+                    <li><a href="#team" class="hover:text-zinc-400 transition-all">team</a></li>
+                    <li><a href="#projects" class="hover:text-zinc-400 transition-all">projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="opacity-10"/>
+    </header>
+    <main>
+        <div class="container mx-auto mt-8" id="about">
+            <p class="text-xl">about us</p>
+            <p class="mt-2 text-sm text-zinc-400">- we're team infinity, a group of software engineering students working on a project</p>
+        </div>
+        <div class="container mx-auto mt-12" id="team">
+            <p class="text-xl">our team</p>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
+                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
+                    <p class="text-lg">kenneth chau</p>
+                    <p class="text-sm text-zinc-400">full stack developer</p>
+                </div>
+                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
+                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
+                    <p class="text-lg">kira inman</p>
+                    <p class="text-sm text-zinc-400">lorem ipsum</p>
+                </div>
+                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
+                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
+                    <p class="text-lg">david torres</p>
+                    <p class="text-sm text-zinc-400">lorem ipsum</p>
+                </div>
+                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
+                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
+                    <p class="text-lg">tam tran</p>
+                    <p class="text-sm text-zinc-400">lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-12" id="projects">
+            <p class="text-xl">our project</p>
+            <p class="mt-2 text-sm text-zinc-400">- we're creating a hangout planner app, <span class="italic">hangout</span>, to help friends schedule their meetups</p>
+        </div>
+    </main>
+    <footer>
+        <hr class="opacity-10 mt-8"/>
+        <div class="container mx-auto p-5 text-sm text-zinc-400 flex justify-between">
+            <p>© 2025 team infinity</p>
+            <a href="https://github.com/CS4800-Team-Infinity" class="hover:text-zinc-200 transition-all" rel="noreferrer" target="_blank">github</a>
+        </div>
+    </footer>
+</body>
+</html>

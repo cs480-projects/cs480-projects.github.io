@@ -1,0 +1,11 @@
+* {
+    font-family: 'Roboto Mono', 'system-ui';
+    background-color: #09090b;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
