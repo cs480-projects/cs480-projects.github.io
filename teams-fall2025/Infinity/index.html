@@ -1,70 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="text-zinc-200 min-h-screen">
+
+<body>
     <header>
-        <div class="container flex justify-between items-center mx-auto p-5 backdrop-blur">
-            <a class="text-3xl" href="index.html">infinity</a>
+        <div class="container">
+            <h1 class="brand">
+                <img src="assets/infinity-logo.png" alt="Infinity logo" class="brand-logo">
+                <span>Infinity</span>
+            </h1>
             <nav>
-                <ul class="flex flex-row gap-8">
-                    <li><a href="#about" class="hover:text-zinc-400 transition-all">about</a></li>
-                    <li><a href="#team" class="hover:text-zinc-400 transition-all">team</a></li>
-                    <li><a href="#projects" class="hover:text-zinc-400 transition-all">projects</a></li>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
         </div>
-        <hr class="opacity-10"/>
     </header>
+
     <main>
-        <div class="container mx-auto mt-8" id="about">
-            <p class="text-xl">about us</p>
-            <p class="mt-2 text-sm text-zinc-400">- we're team infinity, a group of software engineering students working on a project</p>
-        </div>
-        <div class="container mx-auto mt-12" id="team">
-            <p class="text-xl">our team</p>
-            <div class="mt-4 grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
-                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
-                    <p class="text-lg">kenneth chau</p>
-                    <p class="text-sm text-zinc-400">full stack developer</p>
+        <section class="intro">
+            <div class="container intro-grid">
+                <div class="intro-copy">
+                    <h2>Infinity presents Hangout, Fall 2025</h2>
+                    <p class="intro-sub">
+                        One place to discover events, pick a time together, confirm who is in.
+                    </p>
+
+                    <ul class="intro-points">
+                        <li><i class="fa-solid fa-circle-check"></i> Discover local events on a map</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Create events in seconds</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Smart polls choose time and place</li>
+                    </ul>
+
+                    <div class="intro-ctas">
+                        <a href="#projects" class="btn btn-primary">Explore our project</a>
+                        <a href="#team" class="btn btn-ghost">Meet the team</a>
+                    </div>
                 </div>
-                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
-                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
-                    <p class="text-lg">kira inman</p>
-                    <p class="text-sm text-zinc-400">lorem ipsum</p>
-                </div>
-                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
-                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
-                    <p class="text-lg">david torres</p>
-                    <p class="text-sm text-zinc-400">lorem ipsum</p>
-                </div>
-                <div class="p-4 border border-zinc-800 rounded-lg backdrop-blur items-center text-center hover:scale-105 transition-all">
-                    <div class="w-24 h-24 mx-auto rounded-full bg-zinc-800 mb-2"></div>
-                    <p class="text-lg">tam tran</p>
-                    <p class="text-sm text-zinc-400">lorem ipsum</p>
+
+                <div class="intro-media">
+                    <img src="../Infinity/assets/team.webp" alt="Infinity team collaborating on Hangout">
                 </div>
             </div>
-        </div>
-        <div class="container mx-auto mt-12" id="projects">
-            <p class="text-xl">our project</p>
-            <p class="mt-2 text-sm text-zinc-400">- we're creating a hangout planner app, <span class="italic">hangout</span>, to help friends schedule their meetups</p>
-        </div>
+        </section>
+
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Our team, Infinity, is excited to be working on Hangout, an Event Planner & Group Hangout Web App,
+                    for Fall 2025. Together, we aim to create a platform that makes organizing events and connecting
+                    with friends easier and more enjoyable. With our shared creativity and teamwork, we look forward to
+                    building a project that brings people together.</p>
+            </div>
+        </section>
+        <section id="team" class="section team-section">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+
+                <div class="team-grid">
+                    <!-- Card 1 -->
+                    <article class="team-card">
+                        <div class="photo-frame">
+                            <img src="../Infinity/assets/tam.jpg" alt="Tam Tran">
+                        </div>
+                        <h3 class="member-name">Tam Tran</h3>
+                        <p class="member-role">Full-stack Developer, UX/UI Designer</p>
+                        <ul class="member-social">
+                            <li><a href="https://www.linkedin.com/in/tamtran-/" aria-label="LinkedIn"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/itistamtran" aria-label="GitHub"><i
+                                        class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="team-card">
+                        <div class="photo-frame">
+                            <img src="../Infinity/assets/kenneth.jpeg" alt="Kenneth Chau">
+                        </div>
+                        <h3 class="member-name">Kenneth Chau</h3>
+                        <p class="member-role">Full-stack Developer</p>
+                        <ul class="member-social">
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/contactkc"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="team-card">
+                        <div class="photo-frame">
+                            <img src="../Infinity/assets/kira.jpg" alt="Kira Inman">
+                        </div>
+                        <h3 class="member-name">Kira Inman</h3>
+                        <p class="member-role">Full-stack Developer</p>
+                        <ul class="member-social">
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/CranKinman"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="team-card">
+                        <div class="photo-frame">
+                            <img src="../Infinity/assets/david.jpg" alt="David Torres">
+                        </div>
+                        <h3 class="member-name">David Torres</h3>
+                        <p class="member-role">Full-stack Developer</p>
+                        <ul class="member-social">
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/datorres335"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section project">
+            <div class="container">
+                <h2>Hangout Project</h2>
+
+                <!-- Problem -->
+                <article id="problem" class="project-block">
+                    <h3>The Problem</h3>
+                    <ul class="bullets">
+                        <li>Hard to find a date and time that works for everyone</li>
+                        <li>Managing preferences, budgets, and locations in chat threads is messy</li>
+                        <li>Event discovery is scattered across different apps and sites</li>
+                    </ul>
+                </article>
+
+                <!-- User Interview video -->
+                <article id="interviews" class="project-block">
+
+                    <div class="video-frame video-large">
+                        <iframe src="https://www.youtube-nocookie.com/embed/jqmnkv4wU08"
+                            title="Hangout user interview highlights" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </article>
+
+                <!-- Solution -->
+                <article id="solution" class="project-block">
+                    <h3>Our solution</h3>
+                    <div class="solution-cards">
+                        <div class="card">
+                            <i class="fa-solid fa-map-location-dot icon"></i>
+                            <h4>Event Finder</h4>
+                            <p>Interactive map with filters by category and date, save and discuss events.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-bolt icon"></i>
+                            <h4>Quick Create</h4>
+                            <p>Create an event in seconds with one shareable link.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-square-poll-vertical icon"></i>
+                            <h4>Smart Polls</h4>
+                            <p>Suggests the best time and place that fits the group.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-regular fa-bell icon"></i>
+                            <h4>RSVPs & Reminders</h4>
+                            <p>Clear RSVPs plus reminders so people actually show up.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-regular fa-calendar-check icon"></i>
+                            <h4>Calendar Sync</h4>
+                            <p>Auto add the final plan to everyone’s calendar.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-chart-line icon"></i>
+                            <h4>Hangout Tracker</h4>
+                            <p>Lightweight streaks that make regular meetups easy.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tech stack -->
+                <article id="tech" class="project-block">
+                    <h3>Tech stack</h3>
+                    <ul class="bullets">
+                        <li>MERN, MongoDB, Express, React (TypeScript), Node.js</li>
+                        <li>Real-time updates with WebSockets</li>
+                        <li>Notifications via Email and SMS</li>
+                    </ul>
+                </article>
+
+                <!-- Links -->
+                <article id="links" class="project-block">
+                    <h3>Links</h3>
+                    <div class="intro-ctas">
+                        <a href="#" class="btn btn-primary btn-disabled" aria-disabled="true">Web Demo (Coming
+                            soon)</a>
+                        <a href="https://github.com/CS4800-Team-Infinity" class="btn btn-ghost" target="_blank"
+                            rel="noopener">
+                            GitHub
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </main>
     <footer>
-        <hr class="opacity-10 mt-8"/>
-        <div class="container mx-auto p-5 text-sm text-zinc-400 flex justify-between">
-            <p>© 2025 team infinity</p>
-            <a href="https://github.com/CS4800-Team-Infinity" class="hover:text-zinc-200 transition-all" rel="noreferrer" target="_blank">github</a>
+        <div class="container footer-bar">
+            <p>&copy; 2025 Infinity. All rights reserved.</p>
+            <a href="https://github.com/CS4800-Team-Infinity" class="footer-github" aria-label="Infinity on GitHub"
+                target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
     </footer>
 </body>
+
 </html>
