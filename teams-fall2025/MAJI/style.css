@@ -1,0 +1,133 @@
+body {
+    font-family: 'Geneva','Montserrat',sans-serif;
+    background: #edf2f4;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: #ef233c;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav ul {
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    list-style: none;
+    gap: 2rem;    
+}
+nav a {
+    text-decoration: none;
+    color: #141312;
+    position: relative;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #fdf0d5;
+}
+
+section{
+    padding: rem 0;
+}
+
+/* Hero section */
+.hero .container{
+    background: #f7f9fb;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Team section */
+.team .container {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-bottom: 0rem;
+}
+
+.team-member h3 {
+  margin: 0.rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.team-member:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Info section */
+
+.project .container {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.video {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video iframe,
+.video video {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background: #2b2d42;
+    color: white;
+    padding: 0rem 2rem;
+    
+}
