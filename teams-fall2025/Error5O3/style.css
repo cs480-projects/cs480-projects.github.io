@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f2f4f8;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e2e6ea;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e2b3c;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #495670;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #2e6cf6;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section.light {
+  background-color: #ffffff;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #1e2b3c;
+}
+
+.section p {
+  font-size: 1.05rem;
+  max-width: 700px;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #f9fafc;
+  border: 1px solid #dce1e7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #2b3c50;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #667085;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.project-list li {
+  background: #ffffff;
+  border: 1px solid #e2e6ea;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.project-list li:hover {
+  background: #f0f4ff;
+}
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e2e6ea;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  header .container {
+    align-items: flex-start;
+  }
+}
