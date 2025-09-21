@@ -1,19 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Clueless</title>
-    </head>
-    <body>
-        <header>
-            <h1>Clueless</h1>
-        </header>
-        <h2>Team Members</h2>
-        <ul>
-            <li>Darlyn Villanueva</li>
-            <li>Alicia Huang</li>
-            <li>Cay Weaks</li>
-            <li>Kristie Lee</li>
-        </ul>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clueless Team</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Clueless</h1>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#team" class="nav-link">Team</a>
+          <a href="#project" class="nav-link">Project</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Us</h2>
+            <div class="title-underline"></div>
+          </div>
+          <div class="about-content">
+            <p class="about-text">
+              We are a small team of four students working together to create a
+              time management app with game-like elements.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="section team-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="title-underline"></div>
+          </div>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-avatar">👤</div>
+              <h3 class="member-name">Darlyn Villanueva</h3>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">👤</div>
+              <h3 class="member-name">Alicia Huang</h3>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">👤</div>
+              <h3 class="member-name">Cay Weaks</h3>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <img src="images/Zorua.png" alt="Zorua" class="avatar-image" />
+              </div>
+              <h3 class="member-name">Kristie Lee</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section id="project" class="section project-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Project</h2>
+            <div class="title-underline"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-info">
+              <h3 class="project-name">PomTime - Time Management App</h3>
+              <p class="project-description">
+                A time management app that helps users stay focused and
+                productive by tracking their time and providing insights on how
+                to improve their productivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Team Clueless</p>
+      </div>
+    </footer>
+  </body>
 </html>
