@@ -4,156 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Thatchworks — Mosaic</title>
-
-  <!-- Simple, self-contained styling -->
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --accent:#7dd3fc;
-      --muted:#9aa6b2;
-      --glass: rgba(255,255,255,0.03);
-      --radius:12px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#071124 0%, #071b2a 100%);
-      color:#e6eef6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-      padding:32px;
-    }
-
-    .container{
-      max-width:1000px;
-      margin:0 auto;
-    }
-
-    header.top {
-      display:flex;
-      align-items:center;
-      gap:20px;
-      margin-bottom:22px;
-    }
-    .logo {
-      width:72px;
-      height:72px;
-      border-radius:14px;
-      background: linear-gradient(135deg,var(--accent), #60a5fa);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#05202a;
-      font-weight:700;
-      font-size:20px;
-      box-shadow: 0 6px 18px rgba(3,7,18,0.6);
-    }
-    h1{
-      margin:0;
-      font-size:22px;
-      letter-spacing:-0.2px;
-    }
-    .tagline{
-      color:var(--muted);
-      font-size:13px;
-      margin-top:6px;
-    }
-
-    .grid {
-      display:grid;
-      grid-template-columns: 1fr 320px;
-      gap:18px;
-    }
-
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius: var(--radius);
-      padding:18px;
-      box-shadow: 0 6px 20px rgba(2,6,12,0.6);
-      border: 1px solid rgba(255,255,255,0.03);
-    }
-
-    .section-title{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      margin-bottom:12px;
-    }
-    .section-title h2{
-      font-size:15px;
-      margin:0;
-    }
-    .pill{
-      background:var(--glass);
-      color:var(--muted);
-      font-size:12px;
-      padding:6px 10px;
-      border-radius:999px;
-    }
-
-    p.lead { color:var(--muted); margin:0 0 12px 0; }
-
-    .features { display:grid; gap:8px; margin:10px 0; }
-    .feature {
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-    }
-    .dot { width:10px; height:10px; border-radius:3px; background:var(--accent); margin-top:6px; flex:0 0 10px; }
-    .feature b { display:block; font-size:14px; }
-    .feature span { color:var(--muted); font-size:13px; }
-
-    .team-list { display:flex; flex-direction:column; gap:10px; }
-    .member {
-      display:flex;
-      gap:12px;
-      align-items:center;
-    }
-    .avatar {
-      width:48px;
-      height:48px;
-      border-radius:10px;
-      background:linear-gradient(180deg,#1f2937,#0b1220);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:var(--accent);
-      font-weight:700;
-      font-size:16px;
-      flex:0 0 48px;
-      border:1px solid rgba(255,255,255,0.02);
-    }
-    .meta { flex:1; }
-    .meta .name { font-weight:600; }
-    .meta .role { color:var(--muted); font-size:13px; }
-
-    .links { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
-    .btn {
-      background:transparent;
-      border:1px solid rgba(255,255,255,0.06);
-      padding:8px 12px;
-      border-radius:10px;
-      color:var(--accent);
-      text-decoration:none;
-      font-weight:600;
-      font-size:13px;
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-    }
-
-    footer { color:var(--muted); font-size:13px; margin-top:18px; text-align:center; }
-
-    /* Responsive */
-    @media (max-width:900px){
-      .grid{ grid-template-columns: 1fr; }
-      header.top { flex-direction:row; gap:12px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
@@ -198,7 +49,7 @@
         <p class="lead">Planned stack:</p>
         <ul style="color:var(--muted); margin-top:6px">
           <li>Frontend: React + Tailwind (or plain React with CSS modules)</li>
-          <li>Backend: Django (or Node/Express) + REST API</li>
+          <li>Backend: FastAPI</li>
           <li>DB: PostgreSQL</li>
           <li>Auth: JWT / OAuth for 3rd-party logins</li>
         </ul>
@@ -215,8 +66,8 @@
         </ol>
 
         <div style="margin-top:14px">
-          <a class="btn" href="#" onclick="alert('Replace with actual demo link')">Live Demo</a>
-          <a class="btn" href="#" onclick="alert('Replace with repo link')">GitHub Repo</a>
+          <a class="btn" href="#" onclick="alert('Coming soon!')">Live Demo</a>
+          <a class="btn" href="https://github.com/Thatchworks/mosaic-project-cs4800">GitHub Repo</a>
         </div>
       </main>
 
@@ -228,40 +79,39 @@
         </div>
 
         <div class="team-list">
-          <!-- Replace placeholders with real team members -->
+
           <div class="member">
-            <div class="avatar">AN</div>
+            <div class="avatar"><img src="assets/arthurpfp.png" alt="Arthur Nguyen"></div>
             <div class="meta">
               <div class="name">Arthur Nguyen</div>
             </div>
           </div>
 
           <div class="member">
-            <div class="avatar">NB</div>
+            <div class="avatar"><img src="assets/nathanpfp.jfif" alt="Nathan Brown"></div>
             <div class="meta">
               <div class="name">Nathan Brown</div>
             </div>
           </div>
 
           <div class="member">
-            <div class="avatar">IB</div>
+            <div class="avatar"><img src="assets/ivanapfp.png" alt="Ivana Banderas"></div>
             <div class="meta">
               <div class="name">Ivana Banderas</div>
             </div>
           </div>
 
           <div class="member">
-            <div class="avatar">KN</div>
+            <div class="avatar"><img src="assets/kevinpfp.jfif" alt="Kevin Nevarez"></div>
             <div class="meta">
               <div class="name">Kevin Nevarez</div>
             </div>
           </div>
 
-          <!-- Add more members by copying the block above -->
         </div>
 
         <div style="margin-top:16px">
-          <div class="section-title" style="margin-bottom:8px"><h2>Short bio</h2></div>
+          <div class="section-title" style="margin-bottom:8px"><h2>Short Bio</h2></div>
           <div style="color:var(--muted); font-size:13px">
             <em>Thatchworks is building Mosaic to help small teams manage both their projects and client relationships in one unified interface.</em>
           </div>
@@ -270,7 +120,7 @@
     </div>
 
     <footer>
-      © Thatchworks — Mosaic · <span style="color:var(--muted)">Update this page in your class repo with your team info</span>
+      Thatchworks — Mosaic
     </footer>
   </div>
 </body>
