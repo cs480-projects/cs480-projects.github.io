@@ -234,6 +234,44 @@ header.major > :last-child {
 header.main > :last-child {
   margin: 0 0 1em 0; }
 
+/* Header */
+#header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: solid 5px #f56a6a;
+  padding: 6em 0 1em 0;
+  position: relative; }
+  #header > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0; }
+  #header .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125em; }
+  #header .icons {
+    text-align: right; }
+  @media screen and (max-width: 1680px) {
+    #header {
+      padding-top: 5em; } }
+  @media screen and (max-width: 736px) {
+    #header {
+      padding-top: 6.5em; }
+      #header .logo {
+        font-size: 1.25em;
+        margin: 0; }
+      #header .icons {
+        height: 5em;
+        line-height: 5em;
+        position: absolute;
+        right: -0.5em;
+        top: 0; } }
+
 /* Box */
 .box {
   border-radius: 0.375em;
@@ -323,7 +361,7 @@ a.image {
 
 /* Profile Image */
 #profile {
-  max-width: 200px;
+  max-width: 260px;
 }
 
 /* List */
