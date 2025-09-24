@@ -7,6 +7,10 @@ app = Flask(__name__)
 def hello():
     return "Hello from Andrew's new endpoint!"
 
+@app.route('/ianpoint', methods=['GET'])
+def hello():
+    return "Hello from Ian's new endpoint!"
+
 # Optional: root for testing
 @app.route('/', methods=['GET'])
 def root():
