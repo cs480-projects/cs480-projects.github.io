@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ParkIt – Stadium Parking Map</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+  <style>
+    #map { height: 500px; width: 100%; margin-top: 20px; border-radius: 12px; }
+    .container { padding: 20px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Stadium Parking Map</h1>
+  </header>
+
+  <main class="container">
+    <p>Click markers to see nearby parking options and prices!</p>
+    <div id="map"></div>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize map centered on Los Angeles
+    const map = L.map('map').setView([34.0522, -118.2437], 11);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Sample stadiums with nearby parking spots
+    const parkingSpots = [
+    // SoFi Stadium (Inglewood) - nearby streets
+    { name: "SoFi Stadium Spot 1", lat: 33.9518, lng: -118.3410, price: "$25" },
+    { name: "SoFi Stadium Spot 2", lat: 33.9495, lng: -118.3385, price: "$30" },
+
+    // Crypto.com Arena (Downtown LA) - nearby streets
+    { name: "Crypto Arena Spot 1", lat: 34.0420, lng: -118.2650, price: "$20" },
+    { name: "Crypto Arena Spot 2", lat: 34.0445, lng: -118.2685, price: "$22" },
+
+    // YouTube Theater (Hollywood) - nearby streets
+    { name: "YouTube Theater Spot 1", lat: 34.0950, lng: -118.3250, price: "$18" },
+    { name: "YouTube Theater Spot 2", lat: 34.0975, lng: -118.3270, price: "$20" },
+
+    // Intuit Dome (Inglewood) - nearby streets
+    { name: "Intuit Dome Spot 1", lat: 33.9575, lng: -118.3455, price: "$28" },
+    { name: "Intuit Dome Spot 2", lat: 33.9560, lng: -118.3415, price: "$30" }
+  ];
+
+    // Add markers to map
+    parkingSpots.forEach(spot => {
+      L.marker([spot.lat, spot.lng])
+        .addTo(map)
+        .bindPopup(`<strong>${spot.name}</strong><br>${spot.price}`);
+    });
+  </script>
+</body>
+</html>
