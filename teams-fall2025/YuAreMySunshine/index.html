@@ -1,10 +1,252 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Team Information</title>
-</head>
-<body>
-    <h1>Team information will go here</h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BroncoBites – Smart Campus Meal Planning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ====== Header / Nav ====== -->
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="logo">
+          <img
+            class="team-avatar"
+            src="images/BroncoBites.png"
+            alt="BroncoBites"
+          />
+          BroncoBites
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#project">Project</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ====== Hero ====== -->
+    <section class="hero container" id="home">
+      <div>
+        <p class="kicker">Campus Nutrition • Fitness Goals</p>
+        <h1>
+          Eat with purpose. <span style="color: var(--brand)">Crush</span> your
+          goals.
+        </h1>
+        <p class="lead">
+          BroncoBites suggests affordable, nearby meals from campus dining and
+          markets that match your calories, protein, and dietary needs — no car
+          required.
+        </p>
+        <div
+          style="
+            margin-top: 1.1rem;
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+          "
+        >
+          <span class="pill">⚡ Auto meal plans</span>
+          <span class="pill">🥗 Vegetarian friendly</span>
+          <span class="pill">📍 On-campus options</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="At‑a‑glance stats">
+        <h3>Today’s Sample Targets</h3>
+        <div class="hero-grid">
+          <div class="card">
+            <div class="kicker">Calories</div>
+            <h2 style="margin: 0.2rem 0">2,400 kcal</h2>
+            <p class="meta">Based on height, weight & activity</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Protein</div>
+            <h2 style="margin: 0.2rem 0">150 g</h2>
+            <p class="meta">Muscle gain goal</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Budget</div>
+            <h2 style="margin: 0.2rem 0">$18 / day</h2>
+            <p class="meta">Dining dollars aware</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Restrictions</div>
+            <h2 style="margin: 0.2rem 0">Vegetarian</h2>
+            <p class="meta">Customizable</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ====== Problem / Solution ====== -->
+    <section id="problem">
+      <div class="container">
+        <p class="kicker">The Problem</p>
+        <h2 class="section-title">Fitness goals, limited campus choices</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Goal‑driven nutrition is hard</h3>
+            <p>
+              Students aiming to build muscle or lose fat need consistent
+              calories and macros — which is tough without planning.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Car‑less = campus‑bound</h3>
+            <p>
+              On‑campus students often rely on places like Centerpointe or
+              groceries from Vista Market when travel is limited.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Menus change, time is short</h3>
+            <p>
+              Hunting for options that meet goals is tedious. People give up and
+              settle for whatever’s close.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution">
+      <div class="container">
+        <p class="kicker">Proposed Solution</p>
+        <h2 class="section-title">
+          Meet <span style="color: var(--brand)">BroncoBites</span>
+        </h2>
+        <div class="feature">
+          <div class="demo">
+            <h3>What it does</h3>
+            <ul>
+              <li>
+                Generates meal suggestions that fit your calorie & protein
+                targets.
+              </li>
+              <li>
+                Supports dietary restrictions like vegetarian or gluten‑free.
+              </li>
+              <li>
+                Lets you 👍 like or 👎 blacklist items to personalize future
+                plans.
+              </li>
+              <li>
+                Focuses on campus dining halls & markets you can actually
+                access.
+              </li>
+            </ul>
+          </div>
+          <div class="demo">
+            <h3>Why it helps</h3>
+            <p>
+              We remove the guesswork by mapping campus menus to your goals, so
+              you can fuel your day without leaving campus — or blowing your
+              budget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Team ====== -->
+    <section id="team">
+      <div class="container">
+        <p class="kicker">Team</p>
+        <h2 class="section-title">Meet the Team</h2>
+
+        <div class="team-cards">
+          <!-- Card 1 -->
+          <article class="team-card">
+            <img class="team-avatar" src="images/eli.png" alt="Eli Tolentino" />
+            <h3 class="team-name">Eli Tolentino</h3>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="team-card">
+            <img class="team-avatar" src="images/jaron.png" alt="Jaron Lin" />
+            <h3 class="team-name">Jaron Lin</h3>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="team-card">
+            <img
+              class="team-avatar"
+              src="images/timothy.png"
+              alt="Timothy Lee"
+            />
+            <h3 class="team-name">Timothy Lee</h3>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="team-card">
+            <img class="team-avatar" src="images/javi.png" alt="Javi Wu" />
+            <h3 class="team-name">Javi Wu</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <p class="kicker">Project</p>
+
+        <article class="project-card">
+          <!-- gradient header -->
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">🍽️</div>
+            <span class="status-badge">In Development</span>
+          </div>
+
+          <!-- body -->
+          <div class="project-body">
+            <h2 class="project-title">BroncoBites</h2>
+            <h3 class="project-subtitle">Campus Meal Planning Assistant</h3>
+
+            <p class="project-desc">
+              A web service that suggests on-campus meal plans tailored to your
+              goals and constraints. BroncoBites maps dining hall menus and
+              market items to your calories, protein targets, dietary needs, and
+              budget—so students without a car can still eat with purpose.
+            </p>
+
+            <ul class="project-features">
+              <li>🤖 Auto-generated plans for calorie & protein goals</li>
+              <li>🥗 Dietary filters (e.g., Vegetarian, Vegan, Gluten-free)</li>
+              <li>👎 Thumbs-down to blacklist items you don’t like</li>
+              <li>📍 Campus-aware (Centerpointe, Vista Market, etc.)</li>
+            </ul>
+
+            <div class="project-stack">
+              <span class="chip">MongoDB</span>
+              <span class="chip">Express</span>
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+      <div class="container">
+        <p>
+          <strong>BroncoBites</strong> — a student‑focused meal planning
+          concept. Built with semantic HTML + modern CSS. Replace placeholders
+          with live menu data and add JavaScript or a backend to power
+          calculations, preferences, and blacklists.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
