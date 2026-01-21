@@ -7,7 +7,7 @@ blinker==1.4
 Brlapi==0.8.3
 bs4==0.0.1
 bson==0.5.10
-certifi==2022.9.14
+certifi==2022.12.7
 cffi==1.15.1
 chardet==4.0.0
 charset-normalizer==2.1.1
